@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bryan Soto B. — Portafolio</title>
+<meta name="description" content="Portafolio de Bryan Barquero (Soto) — Desarrollador Full-Stack especializado en Odoo ERP, Flutter y DevOps." />
+<meta property="og:title" content="Bryan Soto B. — Portafolio" />
+<meta property="og:description" content="Desarrollador Full-Stack · Odoo ERP · Flutter · DevOps" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav">
+    <a href="#top" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="#about" data-sec="about"><span class="hash">#</span> sobre-mí</a>
+      <a href="#stack" data-sec="stack"><span class="hash">#</span> stack</a>
+      <a href="#projects" data-sec="projects"><span class="hash">#</span> proyectos</a>
+      <a href="#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container" id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="hero">
+      <div class="hero__grid">
+        <div class="reveal">
+          <span class="hero__status"><span class="live"></span> Disponible para proyectos freelance</span>
+          <h1>
+            <span>Bryan</span><br />
+            <span class="grad">Soto B.</span>
+          </h1>
+          <p class="hero__role mono">&gt; <span id="typedRole" data-roles='["Full-Stack Developer","Especialista en Odoo ERP","Flutter Developer","DevOps & Docker"]'>Full-Stack Developer</span><span class="blink"></span></p>
+          <p class="hero__bio">Desarrollador full-stack enfocado en <strong>módulos personalizados de Odoo (V16 → V19)</strong>, pipelines CI/CD con Docker y apps móviles cross-platform con Flutter. Facturación electrónica, nómina e integraciones a medida.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              Ver proyectos
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Hablemos</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://github.com/bzark01" target="_blank" aria-label="GitHub" title="GitHub @bzark01">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12.5C24 5.9 18.6.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/bsotob/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.3-1.9 3.6 0 4.2 2.3 4.2 5.4v6.3zM5.3 7.4a2 2 0 110-4.1 2 2 0 010 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.8C24 .8 23.2 0 22.2 0z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Terminal card -->
+        <div class="reveal">
+          <div class="term">
+            <div class="term__bar">
+              <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+              <span class="tname">bryan@dev — ~/whoami</span>
+            </div>
+            <div class="term__body">
+              <span class="term__line"><span class="p">$</span> <span class="v">cat perfil.json</span></span>
+              <span class="term__line"><span class="c">{</span></span>
+              <span class="term__line">  <span class="k">"nombre"</span>: <span class="s">"Bryan Soto B."</span>,</span>
+              <span class="term__line">  <span class="k">"rol"</span>: <span class="s">"Full-Stack · Odoo &amp; Flutter"</span>,</span>
+              <span class="term__line">  <span class="k">"ubicación"</span>: <span class="s">"Costa Rica 🇨🇷"</span>,</span>
+              <span class="term__line">  <span class="k">"experiencia"</span>: <span class="s">"5 años"</span>,</span>
+              <span class="term__line">  <span class="k">"foco"</span>: [<span class="s">"Odoo"</span>, <span class="s">"Flutter"</span>, <span class="s">"DevOps"</span>],</span>
+              <span class="term__line">  <span class="k">"github"</span>: <span class="s">"@bzark01"</span></span>
+              <span class="term__line"><span class="c">}</span></span>
+              <span class="term__line"><span class="p">$</span> <span class="v">_</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" style="padding-top: 60px;">
+      <div class="about__grid">
+        <div class="about__photo reveal">
+          <image-slot id="portrait" shape="rounded" radius="16" placeholder="Tu foto aquí"></image-slot>
+          <div class="badge"><span class="pin">◉</span> Costa Rica · GMT-6</div>
+        </div>
+        <div class="about__body reveal">
+          <span class="eyebrow mono">sobre-mí</span>
+          <h2 class="section__title">Construyo ERPs a medida y apps que la gente usa todos los días.</h2>
+          <p>Soy <strong>Bryan</strong>, desarrollador full-stack con 5 años de experiencia. Mi especialidad es la <strong>creación y migración de módulos personalizados de Odoo (V16 → V19)</strong>: facturación electrónica, nómina, comisiones e integraciones con servicios externos.</p>
+          <p>Implemento <strong>pipelines CI/CD con Docker</strong> y gestiono despliegues en la nube (Hetzner, Contabo) con Docker Compose. En el lado móvil, desarrollo aplicaciones cross-platform con Flutter, y construyo integraciones como bots de WhatsApp y APIs externas.</p>
+          <div class="about__facts">
+            <div class="fact"><div class="fact__k">// disponibilidad</div><div class="fact__v">Freelance · Remoto</div></div>
+            <div class="fact"><div class="fact__k">// enfoque</div><div class="fact__v">Odoo ERP · Flutter</div></div>
+            <div class="fact"><div class="fact__k">// experiencia</div><div class="fact__v">+5 años</div></div>
+            <div class="fact"><div class="fact__k">// infraestructura</div><div class="fact__v">Docker · Cloud</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TECH STACK ===================== -->
+    <section class="section" id="stack">
+      <div class="reveal" style="margin-bottom: 40px;">
+        <span class="eyebrow mono">stack</span>
+        <h2 class="section__title">Tecnologías con las que trabajo</h2>
+        <p class="section__sub">El conjunto de herramientas que uso para llevar ERPs y apps de la idea a producción.</p>
+      </div>
+      <div class="tech__cats">
+        <div class="techcat reveal">
+          <div class="techcat__title"><span class="n">01</span> Backend &amp; ERP</div>
+          <div class="chips">
+            <span class="chip">Python <span class="lvl"></span></span>
+            <span class="chip">Odoo 16–19 <span class="lvl"></span></span>
+            <span class="chip">PostgreSQL <span class="lvl"></span></span>
+            <span class="chip">XML-RPC / JSON-RPC <span class="lvl"></span></span>
+          </div>
+        </div>
+        <div class="techcat reveal">
+          <div class="techcat__title"><span class="n">02</span> Frontend &amp; Mobile</div>
+          <div class="chips">
+            <span class="chip">Flutter <span class="lvl"></span></span>
+            <span class="chip">Dart <span class="lvl"></span></span>
+            <span class="chip">TypeScript <span class="lvl"></span></span>
+            <span class="chip">JavaScript <span class="lvl"></span></span>
+            <span class="chip">Svelte <span class="lvl"></span></span>
+            <span class="chip">OWL <span class="lvl"></span></span>
+            <span class="chip">HTML/CSS/SCSS <span class="lvl"></span></span>
+          </div>
+        </div>
+        <div class="techcat reveal">
+          <div class="techcat__title"><span class="n">03</span> DevOps &amp; Infra</div>
+          <div class="chips">
+            <span class="chip">Docker <span class="lvl"></span></span>
+            <span class="chip">Docker Compose <span class="lvl"></span></span>
+            <span class="chip">Shell / Bash <span class="lvl"></span></span>
+            <span class="chip">PowerShell <span class="lvl"></span></span>
+            <span class="chip">CI/CD <span class="lvl"></span></span>
+            <span class="chip">Git / GitHub <span class="lvl"></span></span>
+          </div>
+        </div>
+        <div class="techcat reveal">
+          <div class="techcat__title"><span class="n">04</span> Cloud &amp; Servidores</div>
+          <div class="chips">
+            <span class="chip">Hetzner <span class="lvl"></span></span>
+            <span class="chip">Contabo <span class="lvl"></span></span>
+            <span class="chip">Linux (Ubuntu) <span class="lvl"></span></span>
+            <span class="chip">SSH <span class="lvl"></span></span>
+          </div>
+        </div>
+        <div class="techcat reveal">
+          <div class="techcat__title"><span class="n">05</span> Integraciones</div>
+          <div class="chips">
+            <span class="chip">WhatsApp Bot <span class="lvl"></span></span>
+            <span class="chip">APIs REST <span class="lvl"></span></span>
+            <span class="chip">Facturación Electrónica CR <span class="lvl"></span></span>
+            <span class="chip">Webhooks <span class="lvl"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="proj__top">
+        <div class="reveal">
+          <span class="eyebrow mono">proyectos</span>
+          <h2 class="section__title">En qué he trabajado</h2>
+        </div>
+        <div class="filters reveal">
+          <button class="filter active" data-cat="all">Todos</button>
+          <button class="filter" data-cat="odoo">Odoo · ERP</button>
+          <button class="filter" data-cat="movil">Móvil</button>
+          <button class="filter" data-cat="devops">DevOps</button>
+          <button class="filter" data-cat="ia">IA</button>
+        </div>
+      </div>
+
+      <div class="proj__grid">
+
+        <!-- 1. CasaShare -->
+        <article class="card reveal" data-cats="movil">
+          <div class="card__top">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="6" y="2" width="12" height="20" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M10 18h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M9 6h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="card__links">
+              <a href="https://github.com/bzark01/casashare" target="_blank" title="Repositorio"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12.5C24 5.9 18.6.5 12 .5z"/></svg></a>
+            </div>
+          </div>
+          <div class="card__name">CasaShare <span class="pub">Flutter</span></div>
+          <p class="card__desc">App móvil cross-platform de gastos compartidos del hogar: sincronización en tiempo real, categorías, recordatorios y reportes de consumo.</p>
+          <div class="card__tags"><span>Flutter</span><span>Dart</span><span>Python</span><span>Docker</span></div>
+          <div class="card__meta">
+            <span class="lang"><span class="ld" style="background:#00B4AB"></span> Dart</span>
+            <span class="m"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Tiempo real</span>
+          </div>
+        </article>
+
+        <!-- 2. Odoo-Hub -->
+        <article class="card reveal" data-cats="odoo devops">
+          <div class="card__top">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="card__links">
+              <a href="https://github.com/bzark01/odoo-hub" target="_blank" title="Repositorio"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12.5C24 5.9 18.6.5 12 .5z"/></svg></a>
+            </div>
+          </div>
+          <div class="card__name">Odoo-Hub <span class="pub">DevOps</span></div>
+          <p class="card__desc">Hub centralizado para gestionar y desplegar múltiples instancias y módulos de Odoo, con orquestación de contenedores e interfaz moderna.</p>
+          <div class="card__tags"><span>TypeScript</span><span>Python</span><span>Docker</span><span>Odoo</span></div>
+          <div class="card__meta">
+            <span class="lang"><span class="ld" style="background:#3178c6"></span> TypeScript</span>
+            <span class="m"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.8"/></svg> Multi-instancia</span>
+          </div>
+        </article>
+
+        <!-- 3. Suite Nómina CR -->
+        <article class="card reveal" data-cats="odoo">
+          <div class="card__top">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l4 4v16H6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 2v5h5M9 12h6M9 16h6M9 8h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="card__links">
+              <a href="https://github.com/bzark01" target="_blank" title="Repositorio"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12.5C24 5.9 18.6.5 12 .5z"/></svg></a>
+            </div>
+          </div>
+          <div class="card__name">Suite Nómina CR <span class="pub">Odoo</span></div>
+          <p class="card__desc">Sistema completo de nómina costarricense: liquidaciones, embargos, impuesto sobre la renta, aguinaldos, carga masiva por Excel, vacaciones automáticas y reportes. Cumple la regulación laboral de CR.</p>
+          <div class="card__tags"><span>Python</span><span>Odoo</span><span>PostgreSQL</span><span>XML</span></div>
+          <div class="card__meta">
+            <span class="lang"><span class="ld" style="background:#3572A5"></span> Python</span>
+            <span class="m"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> 10+ módulos</span>
+          </div>
+        </article>
+
+        <!-- 4. sales_commission_management -->
+        <article class="card reveal" data-cats="odoo">
+          <div class="card__top">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="card__links">
+              <a href="https://github.com/bzark01" target="_blank" title="Repositorio"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12.5C24 5.9 18.6.5 12 .5z"/></svg></a>
+            </div>
+          </div>
+          <div class="card__name">sales_commission <span class="pub">Odoo</span></div>
+          <p class="card__desc">Gestión y cálculo de comisiones de ventas con soporte multimoneda, reglas configurables por vendedor/producto/categoría, aprobaciones multinivel y reportes. Módulo enterprise.</p>
+          <div class="card__tags"><span>Python</span><span>Odoo</span><span>JavaScript</span><span>XML</span></div>
+          <div class="card__meta">
+            <span class="lang"><span class="ld" style="background:#3572A5"></span> Python</span>
+            <span class="m"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.8"/></svg> 27+ modelos</span>
+          </div>
+        </article>
+
+        <!-- 5. claude_connector -->
+        <article class="card reveal" data-cats="odoo ia">
+          <div class="card__top">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.8 4.7L18.5 9 13.8 10.8 12 15.5 10.2 10.8 5.5 9l4.7-1.3L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M18.5 16.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+            <div class="card__links">
+              <a href="https://github.com/bzark01" target="_blank" title="Repositorio"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12.5C24 5.9 18.6.5 12 .5z"/></svg></a>
+            </div>
+          </div>
+          <div class="card__name">claude_connector <span class="pub">IA</span></div>
+          <p class="card__desc">Integración nativa de Claude AI (Anthropic) dentro de Odoo: generación automática de dashboards desde lenguaje natural y asistente IA contextual sobre los datos del ERP.</p>
+          <div class="card__tags"><span>Python</span><span>Odoo</span><span>Claude API</span><span>JavaScript</span></div>
+          <div class="card__meta">
+            <span class="lang"><span class="ld" style="background:#3572A5"></span> Python</span>
+            <span class="m"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.5 4 4 1.5-4 1.5L12 14l-1.5-4-4-1.5 4-1.5L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> IA · Anthropic</span>
+          </div>
+        </article>
+
+        <!-- 6. hr_work_shift_dynamics -->
+        <article class="card reveal" data-cats="odoo">
+          <div class="card__top">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="card__links">
+              <a href="https://github.com/bzark01" target="_blank" title="Repositorio"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12.5C24 5.9 18.6.5 12 .5z"/></svg></a>
+            </div>
+          </div>
+          <div class="card__name">hr_work_shift <span class="pub">Odoo</span></div>
+          <p class="card__desc">Gestión completa de jornadas laborales integrada a la nómina costarricense: turnos rotativos, cálculo automático de horas extras, festivos y nocturnidad.</p>
+          <div class="card__tags"><span>Python</span><span>Odoo</span><span>XML</span></div>
+          <div class="card__meta">
+            <span class="lang"><span class="ld" style="background:#3572A5"></span> Python</span>
+            <span class="m"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l2.5 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Turnos &amp; horas</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+      <div class="contact__card reveal">
+        <span class="eyebrow mono" style="justify-content:center; display:flex;">contacto</span>
+        <h2>¿Construimos algo juntos?</h2>
+        <p>Abierto a proyectos freelance de Odoo, desarrollo móvil con Flutter o consultoría de infraestructura. Hablemos.</p>
+        <div class="contact__actions">
+          <a href="https://www.linkedin.com/in/bsotob/" target="_blank" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.3-1.9 3.6 0 4.2 2.3 4.2 5.4v6.3zM5.3 7.4a2 2 0 110-4.1 2 2 0 010 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.8C24 .8 23.2 0 22.2 0z"/></svg>
+            Conecta en LinkedIn
+          </a>
+          <a href="https://github.com/bzark01" target="_blank" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12.5C24 5.9 18.6.5 12 .5z"/></svg>
+            @bzark01
+          </a>
+        </div>
+        <p class="contact__mono">// respondo normalmente en menos de 24h</p>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">diseñado &amp; construido por mí · v1.0</span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="image-slot.js"></script>
+<script src="portfolio.js"></script>
+
+</body>
+</html>
