@@ -19,16 +19,18 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* ---------- Project filters ---------- */
+  /* ---------- Project filters (solo sobre #odooGrid) ---------- */
   const filters = document.querySelectorAll('.filter');
-  // Soporta cards envueltas en <a class="card-link"> y las antiguas <article class="card">
-  const cards = document.querySelectorAll('.proj__grid .card-link, .proj__grid > .card');
+  const odooCards = document.querySelectorAll('#odooGrid .card-link');
+  // Todas las cards (Odoo + Otros) reciben el efecto spotlight y la navegación
+  const allCards = document.querySelectorAll('.proj__grid .card-link');
+
   filters.forEach(f => {
     f.addEventListener('click', () => {
       filters.forEach(x => x.classList.remove('active'));
       f.classList.add('active');
       const cat = f.dataset.cat;
-      cards.forEach(c => {
+      odooCards.forEach(c => {
         const match = cat === 'all' || (c.dataset.cats || '').split(' ').includes(cat);
         c.classList.toggle('hide', !match);
       });
@@ -36,7 +38,7 @@
   });
 
   /* ---------- Card spotlight follow ---------- */
-  cards.forEach(c => {
+  allCards.forEach(c => {
     c.addEventListener('pointermove', (e) => {
       const r = c.getBoundingClientRect();
       c.style.setProperty('--mx', `${e.clientX - r.left}px`);
