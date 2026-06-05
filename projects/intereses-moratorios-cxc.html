@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Intereses Moratorios sobre Cuentas por Cobrar — Bryan Soto B.</title>
+<meta name="description" content="Cálculo y emisión de intereses moratorios sobre facturas vencidas para Odoo 18, con o sin Factura Electrónica de Costa Rica." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Contabilidad</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · contabilidad CxC</span>
+      </div>
+      <h1 class="proj-hero__title">Intereses Moratorios sobre <span class="grad">Cuentas por Cobrar</span></h1>
+      <p class="proj-hero__pitch">Calcula intereses moratorios sobre las facturas de cliente vencidas y emite el documento de cobro para Odoo 18. Tasa anual prorrateada por días de atraso, días de gracia y overrides por cliente. Funciona con o sin Facturación Electrónica de Costa Rica: genera un asiento contable o una Nota de Débito Electrónica.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Intereses Moratorios sobre Cuentas por Cobrar">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/intereses-moratorios-cxc/1.png" alt="Configuración de intereses"><figcaption>01. Configuración: tasa anual, días de gracia, frecuencia y tipo de documento</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/intereses-moratorios-cxc/2.png" alt="Reporte de seguimiento por cliente"><figcaption>02. Seguimiento por cliente: saldo vencido e interés calculado por factura</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/intereses-moratorios-cxc/3.png" alt="Asistente de generación"><figcaption>03. Asistente para generar el cobro de intereses a uno o varios clientes</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/intereses-moratorios-cxc/4.png" alt="Asiento contable"><figcaption>04. Asiento contable: cargo a CxC contra el ingreso por intereses</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/intereses-moratorios-cxc/5.png" alt="Nota de Débito"><figcaption>05. Nota de Débito lista para emitir cuando se usa Facturación Electrónica</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>El dinero que se pierde cuando los clientes pagan tarde y nadie cobra el interés</h3>
+        <p>Las facturas vencidas representan un costo financiero real, pero calcular el interés moratorio factura por factura —prorrateando los días de atraso, respetando los días de gracia y la tasa de cada cliente— es tedioso y se termina dejando de cobrar.</p>
+        <p>Este módulo lo automatiza: lee las facturas vencidas, calcula el interés con la fórmula configurada y genera el documento de cobro. Si la empresa usa Facturación Electrónica de Costa Rica, emite una Nota de Débito Electrónica; si no, registra un asiento contable interno. El mismo módulo se adapta a clientes locales y extranjeros.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18l5-5 3 3 7-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 8h4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cálculo automático de interés</h4><p>Tasa anual prorrateada por días vencidos, con días de gracia y monto mínimo configurables.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Con o sin Factura Electrónica</h4><p>Detecta la FE de Costa Rica: emite Nota de Débito Electrónica o un asiento contable interno.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Seguimiento por cliente</h4><p>Reporte con saldo vencido, días de atraso e interés moratorio detallado factura por factura.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M5 20a7 7 0 0 1 14 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Reglas por cliente</h4><p>Excluye clientes, o define una tasa y días de gracia específicos por contacto.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 2L9 5M12 2l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="8" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Manual o automático</h4><p>Genera el cobro desde un asistente multi-cliente o deja que una tarea programada lo haga.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7 4h10l3 4-8 12L4 8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 4l5 16 5-16" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Apegado al marco legal CR</h4><p>Interés moratorio como indemnización: exento de IVA y dentro de la tasa máxima de ley.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">account_followup</span>
+          <span class="chip">Cron</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Cuánto interés moratorio estás dejando de cobrar?</h3>
+      <p>Configuro el cálculo a tu política de cobro y lo integro con tu contabilidad o tu Factura Electrónica.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Intereses Moratorios sobre Cuentas por Cobrar</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
