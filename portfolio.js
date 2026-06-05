@@ -21,7 +21,8 @@
 
   /* ---------- Project filters ---------- */
   const filters = document.querySelectorAll('.filter');
-  const cards = document.querySelectorAll('.proj__grid .card');
+  // Soporta cards envueltas en <a class="card-link"> y las antiguas <article class="card">
+  const cards = document.querySelectorAll('.proj__grid .card-link, .proj__grid > .card');
   filters.forEach(f => {
     f.addEventListener('click', () => {
       filters.forEach(x => x.classList.remove('active'));
@@ -40,6 +41,22 @@
       const r = c.getBoundingClientRect();
       c.style.setProperty('--mx', `${e.clientX - r.left}px`);
       c.style.setProperty('--my', `${e.clientY - r.top}px`);
+    });
+  });
+
+  /* ---------- Card click → navegar a detalle (sin tragar clicks en links internos) ---------- */
+  document.querySelectorAll('.card-link[data-href]').forEach(el => {
+    const go = () => { window.location.href = el.dataset.href; };
+    el.addEventListener('click', (e) => {
+      if (e.target.closest('a, button')) return;
+      go();
+    });
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        if (e.target.closest('a, button')) return;
+        e.preventDefault();
+        go();
+      }
     });
   });
 

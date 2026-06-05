@@ -493,6 +493,34 @@ a { color: inherit; text-decoration: none; }
 .card:hover { border-color: var(--border-strong); transform: translateY(-5px); box-shadow: 0 30px 60px -34px rgba(0,0,0,.55); }
 .card:hover::before { opacity: 1; }
 .card.hide { display: none; }
+
+/* Clickable card wrapper */
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--radius);
+}
+.card-link.hide { display: none; }
+.card-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.card-link .card { cursor: pointer; }
+
+.card__cta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--accent);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border);
+  transition: gap .2s var(--ease);
+}
+.card__cta svg { width: 14px; height: 14px; transition: transform .2s var(--ease); }
+.card-link:hover .card__cta { gap: 10px; }
+.card-link:hover .card__cta svg { transform: translateX(3px); }
+
 .card__top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
 .card__icon {
   width: 44px; height: 44px; border-radius: 11px;
