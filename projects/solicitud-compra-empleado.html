@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Solicitud de Compra de Empleado — Bryan Soto B.</title>
+<meta name="description" content="Solicitudes de material por empleado con aprobación de varios niveles y tablero operativo para Odoo 18." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Compras</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · compras + RRHH</span>
+      </div>
+      <h1 class="proj-hero__title">Solicitud de Compra de <span class="grad">Empleado</span></h1>
+      <p class="proj-hero__pitch">Permite que cualquier empleado solicite material desde Odoo 18 y lo lleva por un flujo de aprobación de varios niveles —jefe de departamento y gerente— hasta convertirlo en orden de compra o transferencia interna. Incluye un tablero operativo en tiempo real del estado de todas las solicitudes.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>OWL</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Solicitud de Compra de Empleado">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/solicitud-compra-empleado/1.png" alt="Tablero de solicitudes"><figcaption>01. Tablero operativo en vivo: totales, pendientes y distribución por estado</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/solicitud-compra-empleado/2.png" alt="Solicitud de compra"><figcaption>02. Solicitud con flujo de aprobación de varios niveles</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/solicitud-compra-empleado/3.png" alt="Lista de solicitudes"><figcaption>03. Lista de solicitudes con su estado dentro del flujo</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/solicitud-compra-empleado/4.png" alt="Configuración"><figcaption>04. Configuración: almacén de origen, aprobaciones y proveedores</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/solicitud-compra-empleado/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Pedir material por correo y WhatsApp, sin control ni trazabilidad</h3>
+        <p>En muchas empresas el empleado pide material por correo, chat o de palabra. Nadie sabe quién aprobó qué, en qué estado va el pedido, ni cuánto se está gastando por departamento. Las compras se duplican y los reclamos no tienen respaldo.</p>
+        <p>Este módulo formaliza el proceso dentro de Odoo: el empleado crea su solicitud, el jefe de departamento y el gerente la aprueban por niveles, y al aprobarse se genera la orden de compra o la transferencia interna según el caso. Un tablero en tiempo real muestra el avance por estado, departamento y almacén, y cada requisición tiene su reporte en PDF.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Solicitud por empleado</h4><p>Cualquier empleado pide el material que necesita desde su propia solicitud.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="18" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Aprobación multinivel</h4><p>Pasa por el jefe de departamento y el gerente de requerimientos antes de comprarse.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="1" y="6" width="15" height="10" rx="1" stroke="currentColor" stroke-width="1.8"/><path d="M16 9h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="5.5" cy="18" r="1.8" stroke="currentColor" stroke-width="1.8"/><circle cx="18.5" cy="18" r="1.8" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Compra o transferencia</h4><p>Al aprobarse genera la orden de compra o la transferencia interna de stock.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Tablero en tiempo real</h4><p>Totales, pendientes de aprobación y distribución por estado, departamento y almacén.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 21a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Proveedor por línea</h4><p>El jefe de departamento elige el proveedor de cada material solicitado.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l4 4v16H6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 2v5h5M9 13h6M9 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Reporte por requisición</h4><p>Genera un PDF con el detalle de cada requerimiento de material.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">OWL</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu equipo pide material por chat y nadie controla el gasto?</h3>
+      <p>Adapto el flujo de aprobación a tu organigrama e integro las compras con tu inventario.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Solicitud de Compra de Empleado</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
