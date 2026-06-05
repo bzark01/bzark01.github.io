@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cierre y Control de Caja — Bryan Soto B.</title>
+<meta name="description" content="Control de turnos de cajero, arqueo y bloqueo de pagos sin caja abierta para Odoo 18." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Contabilidad</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · 5 modelos</span>
+      </div>
+      <h1 class="proj-hero__title">Cierre y Control de <span class="grad">Caja</span></h1>
+      <p class="proj-hero__pitch">Control de turnos de caja por cajero para Odoo 18: apertura y cierre con monto, arqueo por denominación, bloqueo de pagos sin caja abierta y aprobación de diferencias. Se integra con la Caja Registradora nativa, sin reemplazar tu contabilidad.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Cierre y Control de Caja">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/cierre-control-caja/1.png" alt="Configuración por cajero"><figcaption>01. Configuración por cajero: diarios, topes y modo de bloqueo</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/cierre-control-caja/2.png" alt="Caja abierta"><figcaption>02. Turno de caja abierto, con apertura y cuadre en tiempo real</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/cierre-control-caja/3.png" alt="Arqueo por denominación"><figcaption>03. Arqueo por denominación de billetes y monedas</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/cierre-control-caja/4.png" alt="Cierre con PIN"><figcaption>04. Confirmación del cierre con PIN del cajero</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/cierre-control-caja/5.png" alt="Reporte diario de pagos"><figcaption>05. Reporte diario de pagos con cuadre y arqueo</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Sin control de turno, nadie sabe quién dejó descuadrada la caja</h3>
+        <p>La Caja Registradora estándar registra movimientos, pero no responde lo básico del día a día en tienda: quién abrió la caja, con cuánto, qué cobró durante su turno y quién la cerró. Cuando aparece un sobrante o un faltante, no hay rastro del responsable ni del momento.</p>
+        <p>Este módulo agrega la capa de control operativo que falta. Cada cajero abre su turno con un monto inicial, el sistema impide registrar pagos sin una caja abierta, y al cerrar exige un arqueo por denominación que detecta automáticamente el sobrante o faltante. Las diferencias por encima del umbral quedan retenidas para aprobación de un supervisor, y todo el proceso queda documentado.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Turno por cajero</h4><p>Apertura y cierre con monto, hora y consecutivo. Una sola caja abierta por usuario a la vez.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Arqueo por denominación</h4><p>Cuenta billetes y monedas; el total alimenta el contado y detecta sobrante o faltante.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Bloqueo de pagos sin caja</h4><p>Modo estricto o de advertencia: impide cobrar si el cajero no tiene una caja abierta.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Aprobación de diferencias</h4><p>Si la diferencia supera el umbral, el cierre queda pendiente de aprobación del supervisor.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Reporte diario PDF y Excel</h4><p>Desglose por diario, totales, arqueo y estado de cuadre, listo para conciliar.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 2L9 5M12 2l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="8" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Permisos y diarios por usuario</h4><p>Cada cajero ve solo sus turnos y cobra únicamente en los diarios autorizados; cierre con PIN.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">QWeb</span>
+          <span class="chip">xlsxwriter</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu efectivo cuadra al final del día?</h3>
+      <p>Adapto el control de caja a tu operación de tienda e integro el arqueo con tu contabilidad.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Cierre y Control de Caja</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
