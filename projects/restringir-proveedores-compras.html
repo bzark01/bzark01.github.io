@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Restringir Proveedores en Compras — Bryan Soto B.</title>
+<meta name="description" content="Limita el campo Proveedor a solo proveedores en compras, facturas de proveedor y productos para Odoo 18." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Compras</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · compras</span>
+      </div>
+      <h1 class="proj-hero__title">Restringir Proveedores en <span class="grad">Compras</span></h1>
+      <p class="proj-hero__pitch">Hace que el campo Proveedor muestre únicamente proveedores —no toda la libreta de contactos— en órdenes de compra, facturas de proveedor y líneas de proveedor de producto en Odoo 18. Un contacto cuenta como proveedor si tiene historial de compra o si se marca a mano, y todo el filtro se enciende o apaga con un interruptor en Ajustes.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Restringir Proveedores en Compras">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/restringir-proveedores-compras/1.png" alt="Interruptor en Ajustes de Compras"><figcaption>01. Interruptor global en Ajustes de Compras para activar o desactivar el filtro</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/restringir-proveedores-compras/2.png" alt="Casilla Es Proveedor en el contacto"><figcaption>02. Casilla 'Es Proveedor' en el contacto, como válvula de escape manual</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/restringir-proveedores-compras/3.png" alt="Selección filtrada en la orden de compra"><figcaption>03. En la orden de compra el campo Proveedor solo lista proveedores</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/restringir-proveedores-compras/4.png" alt="Selección filtrada en la factura de proveedor"><figcaption>04. El mismo filtro aplica en las facturas de proveedor</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/restringir-proveedores-compras/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Escoger el proveedor entre cientos de contactos que no lo son</h3>
+        <p>Por defecto, el campo Proveedor de una compra lista TODOS los contactos de la empresa: clientes, empleados, prospectos. En una base con miles de contactos, encontrar al proveedor correcto es lento y se presta a equivocaciones —terminar una orden de compra a nombre de un cliente.</p>
+        <p>Este módulo limita ese campo a quienes realmente son proveedores, en los tres lugares donde importa: órdenes de compra, facturas de proveedor y las líneas de proveedor del producto. Quien aún no tiene historial de compra se marca con una casilla, las facturas de cliente no se tocan, y todo se desactiva con un clic si alguna vez hace falta el comportamiento original.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.5-3.5M8 11h6M11 8v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Solo proveedores en el campo</h4><p>Filtra la selección en órdenes de compra, facturas de proveedor y líneas de proveedor del producto.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Casilla 'Es Proveedor'</h4><p>Válvula de escape para incluir a un proveedor nuevo que aún no tiene historial de compra.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7l8-4 8 4-8 4-8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 7v6l8 4 8-4V7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Detección automática</h4><p>Quien ya tiene historial de compra se reconoce como proveedor sin marcar nada.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="8" width="20" height="8" rx="4" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="12" r="2.6" fill="currentColor"/></svg></div>
+            <div class="feat-list__body"><h4>Interruptor global</h4><p>Se activa o desactiva desde Ajustes de Compras y aplica al instante, sin reiniciar.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17 16l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>No afecta a clientes</h4><p>Las facturas de cliente y sus campos siguen mostrando todos los contactos, como siempre.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Filtro en Contactos</h4><p>Un filtro rápido 'Proveedores' en la lista de contactos para ver solo a quienes lo son.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu equipo de compras pierde tiempo buscando al proveedor correcto?</h3>
+      <p>Ajusto el criterio de proveedor a tus reglas y lo extiendo a cualquier otro campo que lo necesite.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Restringir Proveedores en Compras</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
