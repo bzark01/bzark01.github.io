@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Control Contable de Cambios de Costo — Bryan Soto B.</title>
+<meta name="description" content="Separa la cuenta de contrapartida del ajuste manual de costo en Odoo 18, sin afectar las recepciones de mercadería." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Contabilidad</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 18 · contabilidad de inventario</span>
+      </div>
+      <h1 class="proj-hero__title">Control Contable de <span class="grad">Cambios de Costo</span></h1>
+      <p class="proj-hero__pitch">Cuando alguien ajusta a mano el costo de un producto, Odoo genera un asiento cuya contrapartida cae en la cuenta puente de compras y la desbalancea. Este módulo redirige esa contrapartida a una cuenta propia de diferencias de costo, dejando la cuenta puente limpia y conciliable.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>XML</span><span>Contabilidad</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Control Contable de Cambios de Costo">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/control-cambios-costo/1.png" alt="Configuración de la cuenta en la categoría"><figcaption>01. Cuenta de cambio de costo por categoría</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/control-cambios-costo/2.png" alt="Bloque de cuentas de existencias"><figcaption>02. Contrapartida separada de la cuenta de entrada</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/control-cambios-costo/3.png" alt="Producto antes del cambio de costo"><figcaption>03. Producto con stock y costo actual</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/control-cambios-costo/4.png" alt="Nuevo costo del producto"><figcaption>04. Cambio manual del costo</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/control-cambios-costo/5.png" alt="Asiento de revaluación generado"><figcaption>05. Contrapartida en la cuenta de diferencias de costo</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>El ajuste manual de costo ensucia la cuenta puente de compras</h3>
+        <p>En la valuación automática de Odoo, cambiar a mano el costo de un producto con stock genera un asiento de revaluación. Por defecto, la contrapartida usa la misma cuenta que las recepciones de mercadería: la cuenta puente de compras.</p>
+        <p>Como ese ajuste no tiene una factura de proveedor que lo compense, el monto queda colgado en la cuenta puente y la desbalancea. El módulo permite definir, por categoría, una cuenta dedicada de diferencias de costo para esa contrapartida, sin tocar el flujo de recepciones.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cuenta de contrapartida dedicada</h4><p>Define qué cuenta recibe el ajuste manual de costo, separada de la cuenta de compras.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Sin afectar recepciones</h4><p>Las compras y recepciones de mercadería siguen exactamente igual.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Configuración por categoría</h4><p>Una política contable por familia de productos; el contador la fija una sola vez.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V10M10 21V4M16 21v-8M22 21H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cuenta puente limpia</h4><p>La cuenta de compras queda conciliable; las diferencias de costo van a su propia cuenta.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Compatible y opt-in</h4><p>Si no se configura la cuenta, el comportamiento es idéntico al estándar de Odoo.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18v4H3zM3 14h18v4H3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Multi-compañía</h4><p>Cada empresa configura su propia cuenta de diferencias de costo.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo 18</span>
+          <span class="chip">XML</span>
+          <span class="chip">Contabilidad</span>
+          <span class="chip">Inventario</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu cuenta puente de compras no cuadra por ajustes de costo?</h3>
+      <p>Separo la contrapartida de los cambios de costo para mantener tu conciliación de compras limpia, sin tocar las recepciones.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Control Contable de Cambios de Costo</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
