@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Restringir Aplicar Ajustes en Código de Barras — Bryan Soto B.</title>
+<meta name="description" content="Oculta el botón Aplicar de ajustes de inventario en la app Código de Barras a operarios sin permiso, para Odoo 18." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Inventario</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · inventario + barcode</span>
+      </div>
+      <h1 class="proj-hero__title">Restringir Aplicar Ajustes en <span class="grad">Código de Barras</span></h1>
+      <p class="proj-hero__pitch">Oculta el botón 'Aplicar' de los ajustes de inventario en la app móvil de Código de Barras de Odoo 18 para los operarios sin permiso. Así evita que un colaborador cierre por accidente un conteo a medias —que descuadraría el stock— y centraliza la validación final en manos del encargado.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>OWL</span><span>JavaScript</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Restringir Aplicar Ajustes en Código de Barras">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/restringir-aplicar-codigo-barras/1.png" alt="Operario sin el botón Aplicar"><figcaption>01. Operario sin permiso: cuenta los productos, pero no ve el botón 'Aplicar'</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/restringir-aplicar-codigo-barras/2.png" alt="Encargado con el botón Aplicar"><figcaption>02. Encargado con permiso: ve y usa 'Aplicar' para cerrar el conteo</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/restringir-aplicar-codigo-barras/3.png" alt="Permiso dedicado"><figcaption>03. Permiso dedicado, que se asigna usuario por usuario</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/restringir-aplicar-codigo-barras/4.png" alt="Captura 4"><figcaption>04.</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/restringir-aplicar-codigo-barras/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Un toque accidental en la PDA y el inventario queda descuadrado</h3>
+        <p>Durante un conteo físico o cíclico, basta que un operario presione por error el botón 'Aplicar' en su colector para que Odoo cierre el ajuste con datos parciales: los productos que aún no se habían contado se asumen como faltantes y el stock real se descuadra. Corregirlo después cuesta horas.</p>
+        <p>Este módulo quita ese riesgo de raíz: el botón 'Aplicar' solo aparece para los usuarios con un permiso específico. El resto del personal cuenta tranquilo desde la app de Código de Barras, sin posibilidad de cerrar el conteo, y el encargado valida al final —desde la PDA si tiene el permiso, o desde el escritorio bajo supervisión.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 6v4M11 6v4M14 6v4M16.5 6v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Botón oculto al operario</h4><p>En la app de Código de Barras, 'Aplicar' desaparece para quien no tiene el permiso.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Permiso por usuario</h4><p>Un permiso dedicado que no se asigna a nadie por defecto; se otorga a los encargados.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 8v4M12 15h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Sin cierres parciales</h4><p>Evita que un clic accidental aplique el ajuste a medio conteo y descuadre el inventario.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>El escritorio intacto</h4><p>Solo afecta el botón de la app Código de Barras; el flujo de escritorio funciona igual que siempre.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M3 20a6 6 0 0 1 12 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 11l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cuenta uno, aplica otro</h4><p>Varios operarios cuentan por zonas; el supervisor consolida y aplica al final.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 3-6.7L3 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 4v4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Totalmente reversible</h4><p>Si se desinstala, el botón vuelve a mostrarse para todos, sin tocar datos.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">OWL</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">XML</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Un conteo cerrado a medias te volvió a descuadrar la bodega?</h3>
+      <p>Aseguro tus conteos de inventario y defino quién puede aplicar ajustes desde el colector.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Restringir Aplicar Ajustes en Código de Barras</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
