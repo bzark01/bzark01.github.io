@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Propagación de Cambio de Lote en Cadena — Bryan Soto B.</title>
+<meta name="description" content="Propaga el cambio manual de lote en entregas multi-paso y regulariza el stock de tránsito en Odoo 18." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Inventario</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · inventario + lotes</span>
+      </div>
+      <h1 class="proj-hero__title">Propagación de Cambio de <span class="grad">Lote en Cadena</span></h1>
+      <p class="proj-hero__pitch">Cuando el operario cambia a mano el lote reservado en una entrega multi-paso (Recolección → Empaque → Salida) bajo FEFO, Odoo no lo refleja en el resto de la cadena y el inventario queda descuadrado. Este módulo propaga el lote nuevo por toda la cadena, compensa el stock de tránsito al instante y regulariza los remanentes con una tarea programada.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>Cron</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Propagación de Cambio de Lote en Cadena">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/propagacion-cambio-lote/1.png" alt="Recolección con lote FEFO"><figcaption>01. Recolección multi-paso con el lote que asignó FEFO</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/propagacion-cambio-lote/2.png" alt="Cambio manual del lote"><figcaption>02. El operario cambia el lote reservado por el que pide el cliente</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/propagacion-cambio-lote/3.png" alt="Lote propagado al Empaque"><figcaption>03. El lote nuevo se propaga solo a la operación de Empaque</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/propagacion-cambio-lote/4.png" alt="Lote propagado a la Salida"><figcaption>04. Y también a la Salida, sin tocar nada a mano</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/propagacion-cambio-lote/5.png" alt="Entrega validada y cuadrada"><figcaption>05. La entrega se valida con el inventario de tránsito cuadrado</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Cambiar el lote a mano descuadra todo el inventario de tránsito</h3>
+        <p>En bodegas que entregan en varios pasos y manejan lotes con FEFO, es común que un cliente exija un vencimiento más lejano que el que reservó el sistema. El operario cambia el lote a mano, pero Odoo no actualiza ese cambio en las demás operaciones de la cadena: aparecen saldos negativos en las zonas de tránsito (Empaque, Salida) y queda 'stock fantasma' del lote que ya nadie va a usar.</p>
+        <p>Este módulo cierra ese hueco. Si el cambio se hace en una etapa intermedia, propaga el lote nuevo hacia adelante; si se hace en el último paso, genera y valida al instante un traslado de compensación que cuadra las ubicaciones de tránsito. Y una tarea programada barre periódicamente cualquier remanente y lo devuelve a Existencias. El inventario se mantiene cuadrado sin trabajo manual extra.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h12M16 8l-3-3M16 8l-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 16H8M8 16l3-3M8 16l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cascada hacia adelante</h4><p>Al cambiar el lote en una etapa, lo propaga solo a las operaciones siguientes de la cadena.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 3-6.7L3 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 4v4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Compensación inmediata</h4><p>Si el cambio es en el último paso, crea y valida al instante un traslado que cuadra el tránsito.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="13" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 9v4l3 2M9 2h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Regularización por tarea</h4><p>Una acción planificada devuelve a Existencias el stock remanente de las zonas de tránsito.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="10" width="18" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="16" width="18" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>2 y 3 pasos</h4><p>Funciona en almacenes con Recolección + Salida y con Recolección + Empaque + Salida.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Sin negativos ni fantasmas</h4><p>Elimina los saldos negativos y el stock atrapado en las ubicaciones de tránsito.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 17h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M10.3 3.6 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Prudente por diseño</h4><p>Si el lote nuevo no está disponible, no fuerza el movimiento: avisa en el chatter y lo deja para el CRON.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">Cron</span>
+          <span class="chip">stock</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Cambiar un lote a mano te deja la bodega descuadrada?</h3>
+      <p>Implemento la propagación de lotes y la compensación de tránsito a la medida de tu flujo multi-paso.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Propagación de Cambio de Lote en Cadena</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
