@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Venta — Entrega Automática (estilo PdV) — Bryan Soto B.</title>
+<meta name="description" content="Validación automática de la orden de entrega al confirmar la venta, por tipo de operación, para Odoo 18." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Ventas</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · ventas + stock</span>
+      </div>
+      <h1 class="proj-hero__title">Entrega Automática en <span class="grad">Ventas</span></h1>
+      <p class="proj-hero__pitch">Al confirmar un pedido de venta en Odoo 18, la orden de entrega se valida sola —entrega total inmediata— y descuenta el inventario sin pasos manuales, imitando la rapidez del Punto de Venta. El comportamiento se decide por tipo de operación de cada almacén, no pedido por pedido.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>sale_stock</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Venta — Entrega Automática (estilo PdV)">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/entrega-automatica-ventas/1.png" alt="Casilla en el tipo de operación"><figcaption>01. Casilla 'Confirmar entrega automática' en el tipo de operación del almacén</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/entrega-automatica-ventas/2.png" alt="Venta confirmada con entrega automática"><figcaption>02. Al confirmar la venta, la cantidad ya aparece entregada</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/entrega-automatica-ventas/3.png" alt="Entrega validada automáticamente"><figcaption>03. La orden de entrega queda en 'Hecho' sola, con el inventario descontado</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/entrega-automatica-ventas/4.png" alt="Venta con entrega manual"><figcaption>04. En un almacén sin la casilla, la venta confirma pero la entrega queda pendiente</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/entrega-automatica-ventas/5.png" alt="Entrega pendiente de validar"><figcaption>05. Esa entrega queda 'Disponible' para validarse a mano cuando se decida</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Confirmar la venta y, además, abrir y validar cada entrega a mano</h3>
+        <p>En una venta de mostrador, obligar al vendedor a confirmar el pedido y luego abrir la orden de entrega para validarla es un paso de más que frena la fila. El Punto de Venta lo resuelve, pero no toda venta pasa por el PdV.</p>
+        <p>Este módulo trae esa inmediatez al módulo de Ventas: al confirmar el pedido, la entrega se valida sola y el inventario se descuenta al instante. Y como el control vive en el tipo de operación de cada almacén, cada bodega decide una sola vez si sus entregas salen automáticas o siguen el flujo manual de revisión; ambos comportamientos conviven en la misma base.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="1" y="6" width="15" height="10" rx="1" stroke="currentColor" stroke-width="1.8"/><path d="M16 9h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="5.5" cy="18" r="1.8" stroke="currentColor" stroke-width="1.8"/><circle cx="18.5" cy="18" r="1.8" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Entrega inmediata al confirmar</h4><p>Al confirmar la venta, la orden de entrega se valida sola y descuenta el inventario.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 9h6M9 13h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8.5 17l1.5 1.5 2.5-2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Control por tipo de operación</h4><p>Una casilla por almacén decide si sus entregas salen automáticas; no se configura pedido por pedido.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Sin Punto de Venta</h4><p>Lleva la velocidad del PdV al módulo de Ventas, sin instalar ni operar un punto de venta.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="18" r="2" fill="currentColor"/></svg></div>
+            <div class="feat-list__body"><h4>Convive con el flujo manual</h4><p>Los tipos de operación sin la casilla conservan la entrega manual de siempre, en la misma base.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 11h18" stroke="currentColor" stroke-width="1.8"/><path d="M12 14v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Entrega completa, sin backorder</h4><p>Siempre entrega la cantidad total solicitada; no genera entregas parciales.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 17h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M10.3 3.6 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Tolerante a fallos</h4><p>Si la entrega no puede validarse (lotes/series), la venta confirma igual y la entrega queda pendiente.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">sale_stock</span>
+          <span class="chip">stock</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tus ventas de mostrador se atascan validando entregas a mano?</h3>
+      <p>Configuro la entrega automática por almacén y la combino con tus flujos que sí requieren control manual.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Venta — Entrega Automática (estilo PdV)</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
