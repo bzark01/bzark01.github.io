@@ -804,3 +804,38 @@ html.pf-switching *, html.pf-switching *::before, html.pf-switching *::after { t
 [data-style="hybrid"] .contact__card,
 [data-style="hybrid"] .card__tags span,
 [data-style="hybrid"] .pub { border-radius: 0 !important; }
+
+/* ===========================================================
+   Catálogo Odoo: amplitud, contador por chip, "cargar más"
+   =========================================================== */
+.proj__stats {
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--text-muted);
+  letter-spacing: .01em;
+}
+.proj__stats strong { color: var(--accent); font-weight: 700; }
+
+.filter__n { opacity: .5; font-weight: 700; font-size: .82em; }
+.filter.active .filter__n { opacity: .85; }
+
+.proj__more { display: flex; justify-content: center; margin-top: 30px; }
+.proj__more-btn {
+  appearance: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 12px 24px;
+  transition: color .15s var(--ease), border-color .15s var(--ease), background .15s var(--ease);
+}
+.proj__more-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--surface-hover);
+}
