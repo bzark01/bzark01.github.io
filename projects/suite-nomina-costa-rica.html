@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Suite de Nómina Costa Rica — Bryan Soto B.</title>
+<meta name="description" content="Suite completa de nómina para Costa Rica en Odoo: CCSS, INS, renta, aguinaldo, embargos, liquidaciones, pagos bancarios y jornadas." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+<style>
+  .suite-band{display:flex;flex-wrap:wrap;gap:18px;margin:8px 0 40px;}
+  .suite-stat{background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
+    border-radius:14px;padding:18px 24px;min-width:150px;}
+  .suite-stat__n{display:block;font-family:var(--font-mono,'Sora',monospace);font-size:30px;
+    font-weight:700;color:var(--accent,#4ade80);line-height:1;}
+  .suite-stat__l{display:block;margin-top:6px;color:var(--text-muted,#94a3b8);font-size:13px;}
+  .suite-sec{padding:36px 0;border-top:1px solid var(--border,#1b2430);}
+  .suite-sec__head{max-width:760px;margin-bottom:24px;}
+  .suite-sec__head h3{font-size:clamp(22px,3vw,30px);margin:6px 0 10px;}
+  .suite-sec__head p{color:var(--text-muted,#94a3b8);line-height:1.65;margin:0 0 8px;}
+  .suite-sec__mods{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .suite-mod{font-family:var(--font-mono,'Sora',monospace);font-size:12px;
+    color:var(--accent,#4ade80);background:rgba(74,222,128,.08);
+    border:1px solid rgba(74,222,128,.25);border-radius:999px;padding:4px 11px;}
+  .suite-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;}
+  .suite-fig{margin:0;background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
+    border-radius:12px;overflow:hidden;transition:transform .25s var(--ease,ease),border-color .25s;}
+  .suite-fig:hover{transform:translateY(-3px);border-color:var(--accent,#4ade80);}
+  .suite-fig img{display:block;width:100%;height:auto;}
+  .suite-fig figcaption{padding:10px 14px;font-size:12.5px;color:var(--text-muted,#94a3b8);
+    font-family:var(--font-mono,'Sora',monospace);border-top:1px solid var(--border,#1b2430);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Nómina</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// suite · 29 módulos integrados</span>
+      </div>
+      <h1 class="proj-hero__title">Suite de <span class="grad">Nómina Costa Rica</span></h1>
+      <p class="proj-hero__pitch">La planilla de Costa Rica, completa y al día con la legislación: CCSS, INS, renta, aguinaldo, embargos, liquidaciones, pagos bancarios y jornadas rotativas — todo dentro de Odoo.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo</span><span>Python</span><span>PostgreSQL</span><span>XML</span><span>Localización CR</span>
+      </div>
+    </header>
+
+    <div class="suite-band"><div class="suite-stat"><span class="suite-stat__n">29</span><span class="suite-stat__l">módulos integrados</span></div><div class="suite-stat"><span class="suite-stat__n">7</span><span class="suite-stat__l">áreas de la planilla</span></div><div class="suite-stat"><span class="suite-stat__n">100%</span><span class="suite-stat__l">legislación CR</span></div></div>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 01</span>
+        <h3>Núcleo de planilla quincenal</h3>
+        <p>El corazón de la suite: estructuras salariales adaptadas a la planilla quincenal de Costa Rica, con el cálculo automático de días, rebajos de CCSS, impuesto sobre la renta y todas las líneas que exige la legislación local.</p><p>Incluye el manejo de feriados de pago obligatorio y mejoras al comprobante de pago, de modo que cada colaborador recibe un desglose claro de su salario bruto, deducciones y neto.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">l10n_cr_payroll</span><span class="suite-mod">l10n_cr_days_compute</span><span class="suite-mod">l10n_cr_payslip_improvements</span><span class="suite-mod">l10n_cr_public_holidays</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s1_1.png" alt="Núcleo de planilla quincenal 1"><figcaption>Comprobante de pago con el desglose completo de líneas</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s1_2.png" alt="Núcleo de planilla quincenal 2"><figcaption>Lote de planilla quincenal con sus comprobantes</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s1_3.png" alt="Núcleo de planilla quincenal 3"><figcaption>Estructura salarial de la planilla quincenal</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s1_4.png" alt="Núcleo de planilla quincenal 4"><figcaption>Feriados de Costa Rica con pago obligatorio</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 02</span>
+        <h3>Aguinaldo, Renta y Embargos</h3>
+        <p>Automatiza los cálculos legales más delicados: el aguinaldo proporcional de diciembre, el impuesto sobre la renta por tramos con sus créditos familiares, y los embargos salariales ordenados por vía judicial.</p><p>Cada embargo se registra con su orden judicial, monto y porcentaje retenible, y la suite garantiza que nunca se exceda el límite legal de deducción sobre el salario.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">l10n_cr_bonus</span><span class="suite-mod">l10n_cr_income_tax</span><span class="suite-mod">l10n_cr_garnishment</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s2_1.png" alt="Aguinaldo, Renta y Embargos 1"><figcaption>Registro de embargo salarial con orden judicial</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s2_2.png" alt="Aguinaldo, Renta y Embargos 2"><figcaption>Configuración de embargos por empleado</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s2_3.png" alt="Aguinaldo, Renta y Embargos 3"><figcaption>Tramos del impuesto sobre la renta</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s2_4.png" alt="Aguinaldo, Renta y Embargos 4"><figcaption>Créditos fiscales (cónyuge e hijos)</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s2_5.png" alt="Aguinaldo, Renta y Embargos 5"><figcaption>Estructura de cálculo del aguinaldo</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 03</span>
+        <h3>Liquidaciones y Rebajos</h3>
+        <p>Gestiona el fin de la relación laboral con el cálculo de preaviso, cesantía, vacaciones y aguinaldo proporcional según la causa de terminación, respetando los topes de cesantía de ley.</p><p>El módulo de rebajos centraliza adelantos, préstamos y deducciones recurrentes, aplicándolos automáticamente a la planilla con su periodicidad y saldo pendiente.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">l10n_cr_termination</span><span class="suite-mod">payroll_deductions</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s3_1.png" alt="Liquidaciones y Rebajos 1"><figcaption>Motivos de terminación configurables</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s3_2.png" alt="Liquidaciones y Rebajos 2"><figcaption>Parámetros de cesantía y preaviso</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s3_3.png" alt="Liquidaciones y Rebajos 3"><figcaption>Configuración general de liquidaciones</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s3_4.png" alt="Liquidaciones y Rebajos 4"><figcaption>Tipos de rebajo con su cuenta contable</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 04</span>
+        <h3>Cargas sociales: CCSS e INS</h3>
+        <p>Genera los archivos TXT que la Caja Costarricense de Seguro Social y el INS exigen cada mes, con la estructura exacta de cada ente y la validación de ocupaciones, jornadas y observaciones.</p><p>La integración con la API de Riesgos del Trabajo del INS permite reportar las planillas de forma electrónica, sin re-digitar datos en portales externos.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">ccss_payroll_txt</span><span class="suite-mod">ins_payroll_txt</span><span class="suite-mod">ins_payroll_api</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s4_1.png" alt="Cargas sociales: CCSS e INS 1"><figcaption>Datos patronales para el archivo de la CCSS</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s4_2.png" alt="Cargas sociales: CCSS e INS 2"><figcaption>Asistente de generación del TXT de la CCSS</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s4_3.png" alt="Cargas sociales: CCSS e INS 3"><figcaption>Configuración de la integración con el INS</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s4_4.png" alt="Cargas sociales: CCSS e INS 4"><figcaption>Parámetros del archivo TXT del INS</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 05</span>
+        <h3>Pagos bancarios automatizados</h3>
+        <p>Convierte el lote de planilla en el archivo de pago que cada banco acepta para acreditar salarios en una sola transacción: BAC, BCT y Banco Popular.</p><p>El tesorero descarga el archivo desde el lote de planilla y lo sube a la banca electrónica; cero digitación cuenta por cuenta.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">bac_payment_file</span><span class="suite-mod">bct_payment_file</span><span class="suite-mod">bp_payment_file</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s5_1.png" alt="Pagos bancarios automatizados 1"><figcaption>Generador de archivo de pago BAC</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s5_2.png" alt="Pagos bancarios automatizados 2"><figcaption>Generador de archivo de pago BCT</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s5_3.png" alt="Pagos bancarios automatizados 3"><figcaption>Generador de archivo de pago Banco Popular</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s5_4.png" alt="Pagos bancarios automatizados 4"><figcaption>Diario bancario configurado para pagos automatizados</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 06</span>
+        <h3>Jornadas y Asistencia</h3>
+        <p>Gestiona horarios rotativos para personal de turnos (seguridad, salud, producción): tipos de jornada con sus códigos de nómina, programación semanal y procesamiento automático de la asistencia hacia la planilla.</p><p>Se integra con relojes marcadores ZKTeco vía push, de modo que las marcas del dispositivo alimentan directamente las horas trabajadas y las entradas de nómina.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">hr_work_shift_rotation</span><span class="suite-mod">hr_payroll_timesheet</span><span class="suite-mod">zk_attendance</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s6_1.png" alt="Jornadas y Asistencia 1"><figcaption>Tipos de jornada laboral con sus horas y códigos</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s6_2.png" alt="Jornadas y Asistencia 2"><figcaption>Detalle de una jornada con su código de nómina</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s6_3.png" alt="Jornadas y Asistencia 3"><figcaption>Tipos de hora para la nómina</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s6_4.png" alt="Jornadas y Asistencia 4"><figcaption>Configuración del reloj marcador ZKTeco</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 07</span>
+        <h3>Personal, Portal y Operación masiva</h3>
+        <p>La capa operativa que sostiene la planilla: emisión de constancias y acciones de personal, importación masiva de colaboradores y contratos desde Excel, aumentos salariales en lote y reportes avanzados exportables a Excel y PDF.</p><p>Incluye un portal de autoservicio donde el colaborador solicita y descarga sus documentos, soporte multi-moneda y multi-compañía, y la asignación automática de vacaciones según la antigüedad.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">hr_employee_documents</span><span class="suite-mod">hr_employee_registration</span><span class="suite-mod">hr_mass_import</span><span class="suite-mod">l10n_cr_payroll_bulk_upload</span><span class="suite-mod">l10n_cr_payroll_salary_increase</span><span class="suite-mod">l10n_cr_payroll_report_advanced</span><span class="suite-mod">hr_payroll_multi_currency</span><span class="suite-mod">hr_payroll_multicompany</span><span class="suite-mod">hr_portal_document_management</span><span class="suite-mod">l10n_cr_auto_vacation_assignment</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s7_1.png" alt="Personal, Portal y Operación masiva 1"><figcaption>Constancia salarial generada para el empleado</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s7_2.png" alt="Personal, Portal y Operación masiva 2"><figcaption>Importación masiva de RRHH desde Excel</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s7_3.png" alt="Personal, Portal y Operación masiva 3"><figcaption>Carga masiva de información de nómina</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s7_4.png" alt="Personal, Portal y Operación masiva 4"><figcaption>Asistente de reportes avanzados de nómina</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/suite-nomina-costa-rica/s7_5.png" alt="Personal, Portal y Operación masiva 5"><figcaption>Portal de solicitud de documentos</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás de la suite</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">XML</span>
+          <span class="chip">QWeb</span>
+          <span class="chip">Tareas programadas</span>
+          <span class="chip">API REST (INS)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Necesitás la planilla de Costa Rica bien hecha en Odoo?</h3>
+      <p>Implemento la suite completa, la adapto a tu operación y capacito a tu equipo de RRHH.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Suite de Nómina Costa Rica</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
