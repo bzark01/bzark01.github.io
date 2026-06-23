@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Conversión de Moneda en Reportes Contables — Bryan Soto B.</title>
+<meta name="description" content="Estados financieros y facturas en cualquier moneda para Odoo, con tasa por fecha de cada movimiento." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Contabilidad</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · localización Costa Rica</span>
+      </div>
+      <h1 class="proj-hero__title">Conversión de Moneda en <span class="grad">Reportes Contables</span></h1>
+      <p class="proj-hero__pitch">Presenta tus estados financieros y facturas en cualquier moneda con un clic. La contabilidad se mantiene en colones; el módulo convierte cada monto usando la tasa de cambio vigente en la fecha de cada movimiento.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo</span><span>Contabilidad</span><span>Multimoneda</span><span>Python</span><span>JavaScript</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Conversión de Moneda en Reportes Contables">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/conversion-moneda-reportes/1.png" alt="Balance General en colones"><figcaption>01. Reporte en la moneda de la compañía</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/conversion-moneda-reportes/2.png" alt="Selector de moneda"><figcaption>02. Selector de moneda en la barra de filtros</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/conversion-moneda-reportes/3.png" alt="Balance convertido a dólares"><figcaption>03. El mismo reporte convertido a dólares</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/conversion-moneda-reportes/4.png" alt="Imprimir factura en moneda"><figcaption>04. Impresión de factura en la moneda elegida</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/conversion-moneda-reportes/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Tu contabilidad está en colones, pero tu socio pide los números en dólares</h3>
+        <p>Entregar un Balance General o un Estado de Resultados en otra moneda solía implicar exportar a Excel y reconvertir a mano cada saldo con una sola tasa, perdiendo precisión y horas de trabajo.</p>
+        <p>Este módulo agrega un selector de moneda a los reportes contables y a la impresión de facturas: al elegir otra moneda, cada movimiento se convierte con la tasa vigente en su propia fecha contable, sin tocar la contabilidad real.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 15l3-3 3 2 4-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Reportes en cualquier moneda</h4><p>Balance, Resultados, Libro Mayor, Antigüedad de saldos y más, con un selector de moneda en la barra de filtros.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Tasa por fecha de cada asiento</h4><p>Cada movimiento se convierte con la tasa vigente en su fecha contable, no con una tasa única para todo el período.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Facturas en otra moneda</h4><p>Imprime el PDF de la factura electrónica en la moneda elegida desde el menú Acciones, sin reemitir el documento.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 8h7a2.5 2.5 0 010 5H9a2.5 2.5 0 000 5h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Sin alterar la contabilidad</h4><p>La conversión es solo de presentación: los asientos y saldos reales permanecen en la moneda de la compañía.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1018 0 9 9 0 00-18 0z" stroke="currentColor" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Respeta los documentos legales</h4><p>Los reportes tributarios que deben presentarse en colones (impuestos, D-104) quedan fuera de la conversión por diseño.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">XML</span>
+          <span class="chip">OWL</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Necesitás tus estados financieros en varias monedas?</h3>
+      <p>Adapto la conversión multimoneda a tu operación contable y a tu localización.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Conversión de Moneda en Reportes Contables</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
