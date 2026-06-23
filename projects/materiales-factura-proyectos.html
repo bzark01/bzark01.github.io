@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Materiales de Factura a Proyectos — Bryan Soto B.</title>
+<meta name="description" content="Carga de productos de facturas de proveedor a proyectos, inventario y ventas en Odoo 19." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Proyectos</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · proyectos · inventario · ventas</span>
+      </div>
+      <h1 class="proj-hero__title">Materiales de Factura a <span class="grad">Proyectos</span></h1>
+      <p class="proj-hero__pitch">Lleva los materiales de una factura de proveedor directo al inventario y a la orden de venta del proyecto, en un solo clic. Pensado para talleres y empresas de servicio que compran repuestos para ejecutar trabajos y necesitan controlarlos en bodega y facturárselos al cliente.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Materiales de Factura a Proyectos">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/materiales-factura-proyectos/1.png" alt="Configuración"><figcaption>01. Activación por compañía en Facturación Plus</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/materiales-factura-proyectos/2.png" alt="Carga a proyecto"><figcaption>02. Productos de la factura listos para cargar</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/materiales-factura-proyectos/3.png" alt="Cargado"><figcaption>03. Asignación de ubicación, proyecto y tarea</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/materiales-factura-proyectos/4.png" alt="Albarán"><figcaption>04. Albarán de entrada generado automáticamente</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/materiales-factura-proyectos/5.png" alt="Referencias"><figcaption>05. Catálogo de referencias por proveedor</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Comprar materiales para un trabajo no debería significar digitar todo dos veces</h3>
+        <p>En talleres y empresas de servicio, los repuestos que se compran para una orden de trabajo tienen que entrar al inventario y, además, cargarse en la orden de venta del proyecto para cobrárselos al cliente. Hacerlo a mano duplica el trabajo y abre la puerta a errores de cantidad y a olvidos de facturación.</p>
+        <p>Este módulo cierra el puente: desde la factura de proveedor ya registrada, ingresa los productos a la bodega con un albarán y los agrega a la orden de venta de la tarea. Además aprende cómo nombra cada proveedor sus productos, para autocompletar las facturas siguientes.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Carga en un clic</h4><p>De la factura de proveedor al inventario y a la orden de venta de la tarea, sin volver a digitar.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7l9-4 9 4-9 4-9-4zm0 0v10l9 4 9-4V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Albarán automático</h4><p>Ingresa los materiales a la bodega con trazabilidad del proveedor y la factura de origen.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Productos a la tarea</h4><p>Agrega productos y servicios a la orden de venta del proyecto, listos para facturar al cliente.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Referencias de proveedor</h4><p>Reconoce el código o descripción del proveedor y autocompleta el producto interno correcto.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4v16M6 8l12-4M6 14l12 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Dividir entre destinos</h4><p>Reparte una misma compra entre varias ubicaciones, proyectos o tareas con un asistente.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Validación todo-o-nada</h4><p>Comprueba ubicación, proyecto, tarea y estado de la orden antes de mover inventario.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo 19</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu taller compra repuestos para cada trabajo?</h3>
+      <p>Adapto el módulo a tu flujo de compras, inventario y facturación de proyectos.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Materiales de Factura a Proyectos</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
