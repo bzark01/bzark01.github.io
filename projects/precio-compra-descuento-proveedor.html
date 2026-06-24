@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Precio de Compra con Descuento en Proveedores — Bryan Soto B.</title>
+<meta name="description" content="Precio neto de proveedor en tiempo real y captura automática del descuento al comprar, para Odoo." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Compras</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · Compras</span>
+      </div>
+      <h1 class="proj-hero__title">Precio de Compra con <span class="grad">Descuento en Proveedores</span></h1>
+      <p class="proj-hero__pitch">Muestra el precio de compra real de cada proveedor, ya con su descuento aplicado, y captura automáticamente ese descuento cada vez que confirmás una orden de compra. Sin cuentas aparte ni doble digitación.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo</span><span>Compras</span><span>Python</span><span>XML</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Precio de Compra con Descuento en Proveedores">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/precio-compra-descuento-proveedor/1.png" alt="Precio Final en la tarifa del proveedor"><figcaption>01. Columna Precio Final en la pestaña Compra del producto</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/precio-compra-descuento-proveedor/2.png" alt="Orden de compra con descuento"><figcaption>02. Descuento negociado en la línea de la orden</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/precio-compra-descuento-proveedor/3.png" alt="Tarifa actualizada"><figcaption>03. La tarifa del proveedor se actualiza al confirmar</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/precio-compra-descuento-proveedor/4.png" alt="Ficha del proveedor"><figcaption>04. Precio Final visible en la ficha del proveedor</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/precio-compra-descuento-proveedor/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Comparar costos reales de proveedores no debería ser una hoja de cálculo aparte</h3>
+        <p>Cuando un proveedor te da un precio con descuento, lo que importa para decidir es el costo neto. Pero en la tarifa del producto solo se ve el precio bruto y el porcentaje por separado, así que comparar entre proveedores obliga a sacar la cuenta a mano una y otra vez.</p>
+        <p>Este módulo agrega una columna Precio Final que calcula el neto en tiempo real (Precio menos Descuento) y, además, guarda solo el descuento de cada orden de compra al confirmarla. El costo real queda siempre a la vista y actualizado sin re-digitar nada.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12l4 4 14-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Precio Final automático</h4><p>Columna de solo lectura con el precio del proveedor ya rebajado, en tiempo real.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 1 1-3-6.7M21 5v4h-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>El descuento viaja solo</h4><p>Al confirmar la orden de compra, el descuento de la línea se guarda en la tarifa del proveedor.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M9 4v16" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Comparación rápida</h4><p>Compará el costo neto real entre varios proveedores de un mismo producto de un vistazo.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8h9a3 3 0 0 1 0 6H7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Sin doble digitación</h4><p>El descuento pactado en cada compra queda registrado sin recapturarlo a mano.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Columna opcional</h4><p>Se muestra u oculta con el selector de columnas, tanto en el producto como en las tarifas de proveedor.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cero configuración</h4><p>Funciona apenas se instala; no requiere ajustes ni mantenimiento.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Querés ver el costo real de cada proveedor sin sacar cuentas?</h3>
+      <p>Adapto el módulo a tu flujo de compras e integro con tus tarifas de proveedor.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Precio de Compra con Descuento en Proveedores</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
