@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Factura Electrónica CR — Bryan Soto B.</title>
+<meta name="description" content="Solución completa de facturación electrónica de Costa Rica para Odoo: emisión, recepción, firma XML y envío a Hacienda (v4.4)." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#destacados"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#destacados" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Localización CR</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// en producción</span>
+      </div>
+      <h1 class="proj-hero__title">Factura Electrónica <span class="grad">— Costa Rica</span></h1>
+      <p class="proj-hero__pitch">Solución completa de facturación electrónica para Costa Rica sobre Odoo: emisión y recepción de comprobantes v4.4, firma XML con certificado de Hacienda, envío al Ministerio de Hacienda, mensajes de aceptación/rechazo y notas de crédito y débito. Desplegada en producción en múltiples clientes de distintas versiones (V16 → V19).</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar info</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>XML</span><span>Hacienda CR</span><span>XAdES</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Factura Electrónica">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 04</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/factura-electronica/1.png" alt="Emisión de comprobante"><figcaption>01. Emisión de comprobante electrónico</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/factura-electronica/2.png" alt="Estado en Hacienda"><figcaption>02. Estado de envío y respuesta de Hacienda</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/factura-electronica/3.png" alt="Recepción de documentos"><figcaption>03. Recepción y aceptación de documentos</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/factura-electronica/4.png" alt="Configuración"><figcaption>04. Configuración del certificado y ambiente</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Facturar electrónicamente en Costa Rica no es opcional</h3>
+        <p>Toda empresa en Costa Rica debe emitir comprobantes electrónicos válidos ante el <strong>Ministerio de Hacienda</strong>: XML firmado, estructura v4.4, envío al API, y manejo de las respuestas (aceptado, rechazado, procesando). Un error en el XML o en la firma y el documento se cae.</p>
+        <p>Esta solución integra todo el flujo <strong>dentro de Odoo</strong>: el usuario factura como siempre y el módulo se encarga de generar, firmar, enviar y conciliar el estado con Hacienda — sin salir del ERP.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 2v5h5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Emisión v4.4</h4><p>Facturas, tiquetes, notas de crédito y débito con la estructura vigente de Hacienda.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Firma XML (XAdES)</h4><p>Firma digital con el certificado del contribuyente y validación de la clave numérica.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Envío a Hacienda</h4><p>Envío automático al API, seguimiento del estado y reintentos ante fallas de red.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v12H5.5L4 17.5V4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Recepción y aceptación</h4><p>Recibe comprobantes de proveedores y genera los mensajes de aceptación/rechazo.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Trazabilidad</h4><p>Cada documento guarda su XML, respuesta de Hacienda y bitácora de estados.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 9a9 9 0 1 0 2-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 4v4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Multi-versión</h4><p>Mantenida y desplegada en clientes de Odoo V16 a V19 con el mismo estándar.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo 16–19</span>
+          <span class="chip">XML v4.4</span>
+          <span class="chip">Firma XAdES</span>
+          <span class="chip">API Hacienda</span>
+          <span class="chip">OAuth2</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">QWeb / PDF</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Necesitas facturar electrónicamente en Costa Rica?</h3>
+      <p>Implemento y doy soporte a la facturación electrónica CR en tu Odoo, en cualquier versión, lista para pasar las validaciones de Hacienda.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Escríbeme</a>
+        <a href="../index.html#destacados" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Factura Electrónica CR</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
