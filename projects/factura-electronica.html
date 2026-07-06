@@ -4,13 +4,46 @@
 <script>document.documentElement.classList.add('js');</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Factura Electrónica CR — Bryan Soto B.</title>
-<meta name="description" content="Solución completa de facturación electrónica de Costa Rica para Odoo: emisión, recepción, firma XML y envío a Hacienda (v4.4)." />
+<title>Factura Electrónica Costa Rica — Bryan Soto B.</title>
+<meta name="description" content="Suite completa de facturación electrónica de Costa Rica para Odoo: emisión v4.4, firma XML, envío a Hacienda, exoneraciones, retenciones, CAByS, recepción de proveedores y reportes." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../portfolio.css" />
 <link rel="stylesheet" href="project.css" />
+<style>
+  .suite-band{display:flex;flex-wrap:wrap;gap:18px;margin:8px 0 40px;}
+  .suite-stat{background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
+    border-radius:14px;padding:18px 24px;min-width:150px;}
+  .suite-stat__n{display:block;font-family:var(--font-mono,'Sora',monospace);font-size:30px;
+    font-weight:700;color:var(--accent,#4ade80);line-height:1;}
+  .suite-stat__l{display:block;margin-top:6px;color:var(--text-muted,#94a3b8);font-size:13px;}
+  .suite-sec{padding:36px 0;border-top:1px solid var(--border,#1b2430);}
+  .suite-sec__head{max-width:820px;margin-bottom:24px;}
+  .suite-sec__head h3{font-size:clamp(22px,3vw,30px);margin:6px 0 10px;}
+  .suite-sec__head p{color:var(--text-muted,#94a3b8);line-height:1.65;margin:0 0 8px;}
+  .suite-sec__mods{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .suite-mod{font-family:var(--font-mono,'Sora',monospace);font-size:12px;
+    color:var(--accent,#4ade80);background:rgba(74,222,128,.08);
+    border:1px solid rgba(74,222,128,.25);border-radius:999px;padding:4px 11px;}
+  .suite-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;}
+  .suite-fig{margin:0;background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
+    border-radius:12px;overflow:hidden;transition:transform .25s var(--ease,ease),border-color .25s;}
+  .suite-fig:hover{transform:translateY(-3px);border-color:var(--accent,#4ade80);}
+  .suite-fig img{display:block;width:100%;height:auto;cursor:zoom-in;}
+  .suite-fig figcaption{padding:10px 14px;font-size:12.5px;color:var(--text-muted,#94a3b8);
+    font-family:var(--font-mono,'Sora',monospace);border-top:1px solid var(--border,#1b2430);}
+
+  .mv-lb{position:fixed;inset:0;background:rgba(8,12,18,.94);display:none;z-index:9999;align-items:center;justify-content:center;}
+  .mv-lb.open{display:flex;}
+  .mv-lb img{max-width:92vw;max-height:84vh;border-radius:10px;box-shadow:0 24px 70px rgba(0,0,0,.6);}
+  .mv-lb__cap{position:fixed;bottom:22px;left:0;right:0;text-align:center;color:#cbd5e1;font-family:var(--font-mono,'Sora',monospace);font-size:13px;padding:0 20px;}
+  .mv-lb__count{position:fixed;top:24px;left:26px;color:#cbd5e1;font-family:var(--font-mono,'Sora',monospace);font-size:13px;}
+  .mv-lb__close{position:fixed;top:18px;right:26px;background:none;border:none;color:#fff;font-size:34px;line-height:1;cursor:pointer;}
+  .mv-lb__nav{position:fixed;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:26px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+  .mv-lb__nav:hover{background:var(--accent,#4ade80);color:#06281a;}
+  .mv-lb__prev{left:22px;} .mv-lb__next{right:22px;}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -37,83 +70,161 @@
       </a>
       <div class="proj-hero__meta">
         <span class="proj-hero__cat">Odoo · Localización CR</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// en producción</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// suite · 14 módulos · en producción</span>
       </div>
-      <h1 class="proj-hero__title">Factura Electrónica <span class="grad">— Costa Rica</span></h1>
-      <p class="proj-hero__pitch">Solución completa de facturación electrónica para Costa Rica sobre Odoo: emisión y recepción de comprobantes v4.4, firma XML con certificado de Hacienda, envío al Ministerio de Hacienda, mensajes de aceptación/rechazo y notas de crédito y débito. Desplegada en producción en múltiples clientes de distintas versiones (V16 → V19).</p>
+      <h1 class="proj-hero__title">Factura Electrónica <span class="grad">Costa Rica</span></h1>
+      <p class="proj-hero__pitch">La facturación electrónica de Costa Rica, completa y al día con Hacienda: emisión v4.4 con firma XML, envío al Ministerio de Hacienda, exoneraciones, retenciones, catálogo CAByS, consulta del padrón, recepción de facturas de proveedor y reportes fiscales — todo dentro de Odoo y desplegado en producción de V16 a V19.</p>
       <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar info</a>
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+        <a href="factura-electronica-pos.html" class="btn btn--ghost">Ver versión POS</a>
       </div>
       <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>XML</span><span>Hacienda CR</span><span>XAdES</span>
+        <span>Odoo</span><span>Python</span><span>XML v4.4</span><span>Firma XAdES</span><span>API Hacienda</span><span>Localización CR</span>
       </div>
     </header>
 
-    <section class="carousel" aria-label="Capturas de Factura Electrónica">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 04</span>
+    <div class="suite-band"><div class="suite-stat"><span class="suite-stat__n">14</span><span class="suite-stat__l">módulos integrados</span></div><div class="suite-stat"><span class="suite-stat__n">v4.4</span><span class="suite-stat__l">estructura de Hacienda</span></div><div class="suite-stat"><span class="suite-stat__n">V16→V19</span><span class="suite-stat__l">versiones soportadas</span></div><div class="suite-stat"><span class="suite-stat__n">100%</span><span class="suite-stat__l">validaciones Hacienda</span></div></div>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 01</span>
+        <h3>Núcleo de facturación electrónica v4.4</h3>
+        <p>El corazón de la suite: genera la clave numérica, arma el XML v4.4, lo firma con el certificado del contribuyente y lo envía al API del Ministerio de Hacienda. El usuario factura como siempre y el módulo se encarga de firmar, enviar y conciliar el estado — facturas, tiquetes, notas de crédito y débito.</p>
+        <p>Una <strong>cola de envío</strong> reintenta ante fallas de red y tableros de salud muestran cuántos comprobantes fueron aceptados, rechazados o quedaron en error. Incluye los Recibos Electrónicos de Pago (REP 4.4), secuencias por diario y el adaptador de tipo de cambio del BCCR para la moneda.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_invoice</span><span class="suite-mod">sequences</span><span class="suite-mod">res_currency_cr_adapter</span></div>
       </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/factura-electronica/1.png" alt="Emisión de comprobante"><figcaption>01. Emisión de comprobante electrónico</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/factura-electronica/2.png" alt="Estado en Hacienda"><figcaption>02. Estado de envío y respuesta de Hacienda</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/factura-electronica/3.png" alt="Recepción de documentos"><figcaption>03. Recepción y aceptación de documentos</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/factura-electronica/4.png" alt="Configuración"><figcaption>04. Configuración del certificado y ambiente</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f1_1.png" alt="Factura electrónica 1"><figcaption>Comprobante electrónico con su clave numérica y PDF legal</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f1_2.png" alt="Factura electrónica 2"><figcaption>Cola de envío a Hacienda con el estado de cada documento</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f1_3.png" alt="Factura electrónica 3"><figcaption>Resumen por estado FE: aceptados, rechazados y errores</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f1_4.png" alt="Factura electrónica 4"><figcaption>Recibos Electrónicos de Pago (REP 4.4)</figcaption></figure>
       </div>
-      <div class="carousel__dots"></div>
     </section>
 
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Facturar electrónicamente en Costa Rica no es opcional</h3>
-        <p>Toda empresa en Costa Rica debe emitir comprobantes electrónicos válidos ante el <strong>Ministerio de Hacienda</strong>: XML firmado, estructura v4.4, envío al API, y manejo de las respuestas (aceptado, rechazado, procesando). Un error en el XML o en la firma y el documento se cae.</p>
-        <p>Esta solución integra todo el flujo <strong>dentro de Odoo</strong>: el usuario factura como siempre y el módulo se encarga de generar, firmar, enviar y conciliar el estado con Hacienda — sin salir del ERP.</p>
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 02</span>
+        <h3>Instalación guiada y puesta en marcha</h3>
+        <p>El instalador despliega toda la suite y ofrece un asistente de onboarding con checklist de progreso: datos de la compañía, certificado digital, usuario del API de Hacienda, actividad económica y secuencias con su diario.</p>
+        <p>Cada paso se valida contra Hacienda antes de dar por completada la configuración, de modo que la primera factura sale bien a la primera. También administra las resoluciones vigentes y las actividades económicas del contribuyente.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_invoice_install</span></div>
       </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 2v5h5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Emisión v4.4</h4><p>Facturas, tiquetes, notas de crédito y débito con la estructura vigente de Hacienda.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Firma XML (XAdES)</h4><p>Firma digital con el certificado del contribuyente y validación de la clave numérica.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Envío a Hacienda</h4><p>Envío automático al API, seguimiento del estado y reintentos ante fallas de red.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v12H5.5L4 17.5V4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Recepción y aceptación</h4><p>Recibe comprobantes de proveedores y genera los mensajes de aceptación/rechazo.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Trazabilidad</h4><p>Cada documento guarda su XML, respuesta de Hacienda y bitácora de estados.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 9a9 9 0 1 0 2-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 4v4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Multi-versión</h4><p>Mantenida y desplegada en clientes de Odoo V16 a V19 con el mismo estándar.</p></div>
-          </li>
-        </ul>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f2_1.png" alt="Onboarding 1"><figcaption>Asistente de puesta en marcha con checklist de 5 pasos</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f2_2.png" alt="Onboarding 2"><figcaption>Resoluciones de Hacienda por diario</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f2_3.png" alt="Onboarding 3"><figcaption>Catálogo de actividades económicas del contribuyente</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 03</span>
+        <h3>Catálogo CAByS</h3>
+        <p>Integra el Catálogo de Bienes y Servicios (CAByS) que Hacienda exige en cada línea del comprobante: más de veinte mil códigos con su impuesto asociado, importables desde el catálogo oficial y organizados en sus ocho niveles de categoría.</p>
+        <p>Cada producto queda vinculado a su código CAByS, y el módulo resuelve automáticamente la tarifa de IVA que corresponde, evitando rechazos por códigos o impuestos mal asignados.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">cabys</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f3_1.png" alt="CAByS 1"><figcaption>Catálogo CAByS con más de 20.000 códigos tributarios</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f3_2.png" alt="CAByS 2"><figcaption>Asistente de importación del catálogo oficial</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f3_3.png" alt="CAByS 3"><figcaption>Categorías CAByS jerárquicas</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 04</span>
+        <h3>Consulta a Hacienda y ubicaciones de Costa Rica</h3>
+        <p>Al digitar la cédula de un cliente, el módulo consulta el padrón del Ministerio de Hacienda y trae su nombre, tipo de identificación y actividades económicas — sin re-digitar datos en portales externos.</p>
+        <p>Incorpora el catálogo oficial de provincias, cantones, distritos y barrios que exige la dirección electrónica, y un proceso programado (cron) que completa en lote las actividades económicas de los contactos que aún no las tienen, con bitácora por corrida.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">l10n_cr_hacienda_info_query</span><span class="suite-mod">l10n_cr_country_codes</span><span class="suite-mod">partner_economic_activities_cron</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f4_1.png" alt="Hacienda 1"><figcaption>Ficha de cliente con datos traídos del padrón de Hacienda</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f4_2.png" alt="Hacienda 2"><figcaption>Catálogo oficial de cantones de Costa Rica</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f4_3.png" alt="Hacienda 3"><figcaption>Bitácora del proceso automático de actividades económicas</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 05</span>
+        <h3>Exoneraciones electrónicas</h3>
+        <p>Gestiona múltiples exoneraciones por cliente con consulta automática a las APIs de Hacienda: número de autorización, institución emisora, tipo de exoneración, porcentaje y vigencia. El impuesto se recalcula de forma inteligente aplicando la exoneración en la factura.</p>
+        <p>Cada documento muestra el monto exonerado y el sistema alerta con actividades a 30, 15 y 5 días del vencimiento, para renovar a tiempo y no facturar con una exoneración caduca.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_exoneration</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_1.png" alt="Exoneraciones 1"><figcaption>Exoneraciones registradas por cliente con su vigencia</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_2.png" alt="Exoneraciones 2"><figcaption>Tipos de exoneración según Hacienda</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_3.png" alt="Exoneraciones 3"><figcaption>Instituciones emisoras de autorizaciones</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 06</span>
+        <h3>Retenciones del Impuesto sobre la Renta</h3>
+        <p>Configura clientes como agentes de retención y calcula automáticamente la retención en pedidos, facturas y al momento del pago mediante un asistente. Genera el comprobante de retención y lo vincula con el Recibo Electrónico de Pago (REP 4.4) de Hacienda.</p>
+        <p>Con reglas y tipos de retención parametrizables, y un asistente para la declaración D-150, el módulo cubre el ciclo completo de la retención sin cálculos manuales.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_retention</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f6_1.png" alt="Retenciones 1"><figcaption>Comprobantes de retención generados</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f6_2.png" alt="Retenciones 2"><figcaption>Reglas de retención automáticas</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f6_3.png" alt="Retenciones 3"><figcaption>Asistente de declaración D-150</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f6_4.png" alt="Retenciones 4"><figcaption>Tipos de retención configurables</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 07</span>
+        <h3>Recepción de facturas de proveedor</h3>
+        <p>Recibe los comprobantes electrónicos de proveedores directamente desde un buzón de correo, interpreta el XML y crea la factura de proveedor en borrador, lista para revisar en una bandeja de aprobación.</p>
+        <p>El mapeo de productos por proveedor traduce las referencias del emisor a los productos internos, de modo que cada factura recibida llega ya conciliada con el catálogo de la empresa.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">cr_import_vendor_bills</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f7_1.png" alt="Recepción 1"><figcaption>Bandeja de aprobación de facturas recibidas por correo</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f7_2.png" alt="Recepción 2"><figcaption>Mapeo de referencias de productos por proveedor</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 08</span>
+        <h3>Notas de crédito y devolución de stock</h3>
+        <p>Al emitir una nota de crédito electrónica, el módulo permite devolver manualmente los productos al inventario con un botón «Devolver a Stock», detectando automáticamente el pedido de venta u orden de POS asociada.</p>
+        <p>Un catálogo de motivos de devolución clasifica cada merma y alimenta un reporte que muestra las devoluciones por causa, útil para control de calidad y análisis de pérdidas.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">credit_note_stock_return</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f8_1.png" alt="Nota de crédito 1"><figcaption>Nota de crédito electrónica con devolución de inventario</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f8_2.png" alt="Nota de crédito 2"><figcaption>Catálogo de motivos de devolución</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f8_3.png" alt="Nota de crédito 3"><figcaption>Reporte de mermas por motivo</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 09</span>
+        <h3>Reportes financieros y multimoneda</h3>
+        <p>Suma los reportes financieros de la OCA adaptados a Costa Rica —Libro Mayor, Libro Diario, Balance de Comprobación, Partidas Abiertas, Antigüedad de Saldos e Informe de Impuestos (IVA)— con un filtro por tipo de documento propio de la localización.</p>
+        <p>El conversor de moneda agrega un selector a los reportes contables dinámicos y a los PDF de la factura electrónica, imprimiendo cualquier reporte en la moneda elegida con la tasa vigente en la fecha de cada asiento.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">account_financial_report</span><span class="suite-mod">cr_report_currency_convert</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f9_1.png" alt="Reportes 1"><figcaption>Asistente del Libro Mayor</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f9_2.png" alt="Reportes 2"><figcaption>Informe de impuestos (IVA) para Hacienda</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f9_3.png" alt="Reportes 3"><figcaption>Impresión de reportes en la moneda elegida</figcaption></figure>
       </div>
     </section>
 
     <section class="detail" style="grid-template-columns: 1fr;">
       <div class="detail__block">
         <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
+        <h3>Tecnología detrás de la suite</h3>
         <div class="stack-grid">
           <span class="chip">Python</span>
           <span class="chip">Odoo 16–19</span>
@@ -123,26 +234,47 @@
           <span class="chip">OAuth2</span>
           <span class="chip">PostgreSQL</span>
           <span class="chip">QWeb / PDF</span>
+          <span class="chip">Tareas programadas</span>
         </div>
       </div>
     </section>
 
     <section class="proj-cta">
-      <h3>¿Necesitas facturar electrónicamente en Costa Rica?</h3>
-      <p>Implemento y doy soporte a la facturación electrónica CR en tu Odoo, en cualquier versión, lista para pasar las validaciones de Hacienda.</p>
+      <h3>¿Necesitás facturar electrónicamente en Costa Rica?</h3>
+      <p>Implemento y doy soporte a la facturación electrónica CR en tu Odoo, en cualquier versión, lista para pasar las validaciones de Hacienda. ¿Vendés con Punto de Venta? Mirá la <a href="factura-electronica-pos.html">versión POS</a>.</p>
       <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Escríbeme</a>
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
         <a href="../index.html#destacados" class="btn btn--ghost">Ver otros proyectos</a>
       </div>
     </section>
 
     <footer class="footer">
       <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Factura Electrónica CR</span>
+      <span class="mono">caso · Factura Electrónica Costa Rica</span>
     </footer>
   </main>
 </div>
 
 <script src="project.js"></script>
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll('.suite-fig'));
+  if(!figs.length) return;
+  var items=figs.map(function(f){var im=f.querySelector('img');var c=f.querySelector('figcaption');return {src:im?im.src:'',cap:c?c.textContent:''};});
+  var lb=document.createElement('div'); lb.className='mv-lb';
+  lb.innerHTML='<span class="mv-lb__count"></span><button class="mv-lb__close" aria-label="Cerrar">×</button><button class="mv-lb__nav mv-lb__prev" aria-label="Anterior">‹</button><img alt=""><button class="mv-lb__nav mv-lb__next" aria-label="Siguiente">›</button><div class="mv-lb__cap"></div>';
+  document.body.appendChild(lb);
+  var img=lb.querySelector('img'), cap=lb.querySelector('.mv-lb__cap'), cnt=lb.querySelector('.mv-lb__count'), idx=0;
+  function show(i){idx=(i+items.length)%items.length; img.src=items[idx].src; cap.textContent=items[idx].cap; cnt.textContent=(idx+1)+' / '+items.length;}
+  function open(i){show(i); lb.classList.add('open'); document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('open'); document.body.style.overflow='';}
+  figs.forEach(function(f,i){f.addEventListener('click',function(){open(i);});});
+  lb.querySelector('.mv-lb__close').addEventListener('click',close);
+  lb.querySelector('.mv-lb__prev').addEventListener('click',function(e){e.stopPropagation();show(idx-1);});
+  lb.querySelector('.mv-lb__next').addEventListener('click',function(e){e.stopPropagation();show(idx+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return; if(e.key==='Escape')close(); else if(e.key==='ArrowLeft')show(idx-1); else if(e.key==='ArrowRight')show(idx+1);});
+})();
+</script>
 </body>
 </html>
