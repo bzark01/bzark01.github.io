@@ -23,9 +23,9 @@
   .suite-sec__head h3{font-size:clamp(22px,3vw,30px);margin:6px 0 10px;}
   .suite-sec__head p{color:var(--text-muted,#94a3b8);line-height:1.65;margin:0 0 8px;}
   .suite-sec__mods{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
-  .suite-mod{font-family:var(--font-mono,'Sora',monospace);font-size:12px;
+  .suite-mod{font-size:12.5px;font-weight:500;
     color:var(--accent,#4ade80);background:rgba(74,222,128,.08);
-    border:1px solid rgba(74,222,128,.25);border-radius:999px;padding:4px 11px;}
+    border:1px solid rgba(74,222,128,.25);border-radius:999px;padding:4px 12px;}
   .pos-feats{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;list-style:none;padding:0;margin:0;}
   .pos-feat{display:flex;gap:14px;background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
     border-radius:12px;padding:16px 18px;transition:transform .2s var(--ease,ease),border-color .2s;}
@@ -86,7 +86,7 @@
         <h3>Facturación electrónica en el Punto de Venta</h3>
         <p>El módulo central: convierte cada venta del POS en un comprobante electrónico válido. Genera Facturas Electrónicas (FE), Tiquetes Electrónicos (TE) y Notas de Crédito (NC), los firma y los envía a Hacienda en tiempo real, mostrando el estado sin interrumpir el flujo de la caja.</p>
         <p>Resuelve además los casos propios del POS costarricense: usar el crédito de una NC como forma de pago, redistribuir los descuentos globales entre las líneas para cumplir la estructura v4.4, y seleccionar la actividad económica que corresponde a cada venta.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_invoice_pos</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Facturación en el POS</span></div>
       </div>
       <ul class="pos-feats">
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 2v5h5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><div><h4>FE, TE y NC desde caja</h4><p>El cajero emite factura, tiquete o nota de crédito electrónica directamente en la pantalla del POS.</p></div></li>
@@ -102,7 +102,7 @@
         <h3>Consulta a Hacienda dentro del POS</h3>
         <p>Módulo puente que lleva la consulta del padrón del Ministerio de Hacienda a la pantalla del Punto de Venta. Al asignar un cliente por su cédula, trae automáticamente su nombre y tipo de identificación para emitir la factura electrónica con los datos correctos.</p>
         <p>Se instala automáticamente cuando conviven la consulta de Hacienda y el POS, sin configuración adicional.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">l10n_cr_hacienda_info_query_pos</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Consulta a Hacienda en POS</span></div>
       </div>
       <ul class="pos-feats">
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Padrón al instante</h4><p>Digitás la cédula del cliente y el nombre llega desde Hacienda, sin salir de la caja.</p></div></li>
@@ -116,8 +116,8 @@
         <span class="eyebrow mono">// módulo 03</span>
         <h3>Punto de Venta multimoneda</h3>
         <p>Por defecto Odoo maneja una sola moneda en el POS. Este módulo habilita listas de precios en distintas divisas: al elegir una lista con otra moneda, el precio y la moneda se ajustan automáticamente y el recibo puede imprimirse en la moneda de la venta.</p>
-        <p>Permite recibir pagos en diferentes monedas con su tipo de cambio, generar la factura electrónica multimoneda correspondiente y presentar reportes en varias divisas. Compatible con el POS de Odoo y con la asignación de cajero (pos_hr).</p>
-        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_multi_currency_pos</span></div>
+        <p>Permite recibir pagos en diferentes monedas con su tipo de cambio, generar la factura electrónica multimoneda correspondiente y presentar reportes en varias divisas. Compatible con el POS de Odoo y con la identificación de cajero por empleado.</p>
+        <div class="suite-sec__mods"><span class="suite-mod">POS Multimoneda</span></div>
       </div>
       <ul class="pos-feats">
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M9.5 9.5a2.5 2.5 0 015 .5c0 2-3 1.5-3 3.5a2.5 2.5 0 005 .5M12 6v1M12 17v1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Listas de precio por moneda</h4><p>Cambiar de lista ajusta precio y moneda automáticamente en pantalla.</p></div></li>
@@ -132,7 +132,7 @@
         <h3>Gestión de sucursales PDV</h3>
         <p>Agrupa los puntos de venta por sucursal y controla qué usuarios pueden operar cada una, sin afectar la facturación ni el inventario. Un cajero asignado a una sucursal solo ve las cajas, sesiones y órdenes de la sucursal que le corresponde.</p>
         <p>Ideal para cadenas y operaciones con varios locales que necesitan aislar la operación de caja por punto físico manteniendo una sola base de datos.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">pos_branch_management</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Sucursales PDV</span></div>
       </div>
       <ul class="pos-feats">
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21V9l9-6 9 6v12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><div><h4>PDV por sucursal</h4><p>Agrupa cajas y sesiones bajo la sucursal física a la que pertenecen.</p></div></li>
@@ -147,7 +147,7 @@
         <h3>Cobro de facturas pendientes en caja</h3>
         <p>Extiende la función «Saldar deuda» del POS: al cobrar la deuda de un cliente, muestra un popup con sus facturas pendientes para que el cajero elija exactamente cuál factura está pagando, en lugar de aplicar el pago de forma genérica.</p>
         <p>Muestra número, total y saldo de cada factura, aplica el pago a la seleccionada y permite reimprimir el recibo — trazabilidad limpia entre el cobro de caja y la cuenta por cobrar.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">pos_settle_due_invoice_selection</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Cobro de facturas en POS</span></div>
       </div>
       <ul class="pos-feats">
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Selección de factura</h4><p>Popup con las facturas pendientes del cliente: el cajero elige cuál pagar.</p></div></li>

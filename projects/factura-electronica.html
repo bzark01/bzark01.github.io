@@ -23,9 +23,9 @@
   .suite-sec__head h3{font-size:clamp(22px,3vw,30px);margin:6px 0 10px;}
   .suite-sec__head p{color:var(--text-muted,#94a3b8);line-height:1.65;margin:0 0 8px;}
   .suite-sec__mods{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
-  .suite-mod{font-family:var(--font-mono,'Sora',monospace);font-size:12px;
+  .suite-mod{font-size:12.5px;font-weight:500;
     color:var(--accent,#4ade80);background:rgba(74,222,128,.08);
-    border:1px solid rgba(74,222,128,.25);border-radius:999px;padding:4px 11px;}
+    border:1px solid rgba(74,222,128,.25);border-radius:999px;padding:4px 12px;}
   .suite-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;}
   .suite-fig{margin:0;background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
     border-radius:12px;overflow:hidden;transition:transform .25s var(--ease,ease),border-color .25s;}
@@ -91,7 +91,7 @@
         <h3>Núcleo de facturación electrónica v4.4</h3>
         <p>El corazón de la suite: genera la clave numérica, arma el XML v4.4, lo firma con el certificado del contribuyente y lo envía al API del Ministerio de Hacienda. El usuario factura como siempre y el módulo se encarga de firmar, enviar y conciliar el estado — facturas, tiquetes, notas de crédito y débito.</p>
         <p>Una <strong>cola de envío</strong> reintenta ante fallas de red y tableros de salud muestran cuántos comprobantes fueron aceptados, rechazados o quedaron en error. Incluye los Recibos Electrónicos de Pago (REP 4.4), secuencias por diario y el adaptador de tipo de cambio del BCCR para la moneda.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_invoice</span><span class="suite-mod">sequences</span><span class="suite-mod">res_currency_cr_adapter</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Facturación Electrónica</span><span class="suite-mod">Secuencias por diario</span><span class="suite-mod">Tipo de cambio BCCR</span></div>
       </div>
       <div class="suite-gal">
         <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f1_1.png" alt="Factura electrónica 1"><figcaption>Comprobante electrónico con su clave numérica y PDF legal</figcaption></figure>
@@ -107,7 +107,7 @@
         <h3>Instalación guiada y puesta en marcha</h3>
         <p>El instalador despliega toda la suite y ofrece un asistente de onboarding con checklist de progreso: datos de la compañía, certificado digital, usuario del API de Hacienda, actividad económica y secuencias con su diario.</p>
         <p>Cada paso se valida contra Hacienda antes de dar por completada la configuración, de modo que la primera factura sale bien a la primera. También administra las resoluciones vigentes y las actividades económicas del contribuyente.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_invoice_install</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Instalador y onboarding</span></div>
       </div>
       <div class="suite-gal">
         <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f2_1.png" alt="Onboarding 1"><figcaption>Asistente de puesta en marcha con checklist de 5 pasos</figcaption></figure>
@@ -122,7 +122,7 @@
         <h3>Catálogo CAByS</h3>
         <p>Integra el Catálogo de Bienes y Servicios (CAByS) que Hacienda exige en cada línea del comprobante: más de veinte mil códigos con su impuesto asociado, importables desde el catálogo oficial y organizados en sus ocho niveles de categoría.</p>
         <p>Cada producto queda vinculado a su código CAByS, y el módulo resuelve automáticamente la tarifa de IVA que corresponde, evitando rechazos por códigos o impuestos mal asignados.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">cabys</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Catálogo CAByS</span></div>
       </div>
       <div class="suite-gal">
         <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f3_1.png" alt="CAByS 1"><figcaption>Catálogo CAByS con más de 20.000 códigos tributarios</figcaption></figure>
@@ -137,7 +137,7 @@
         <h3>Consulta a Hacienda y ubicaciones de Costa Rica</h3>
         <p>Al digitar la cédula de un cliente, el módulo consulta el padrón del Ministerio de Hacienda y trae su nombre, tipo de identificación y actividades económicas — sin re-digitar datos en portales externos.</p>
         <p>Incorpora el catálogo oficial de provincias, cantones, distritos y barrios que exige la dirección electrónica, y un proceso programado (cron) que completa en lote las actividades económicas de los contactos que aún no las tienen, con bitácora por corrida.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">l10n_cr_hacienda_info_query</span><span class="suite-mod">l10n_cr_country_codes</span><span class="suite-mod">partner_economic_activities_cron</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Consulta a Hacienda</span><span class="suite-mod">Ubicaciones de Costa Rica</span><span class="suite-mod">Actividades económicas (automático)</span></div>
       </div>
       <div class="suite-gal">
         <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f4_1.png" alt="Hacienda 1"><figcaption>Ficha de cliente con datos traídos del padrón de Hacienda</figcaption></figure>
@@ -152,12 +152,14 @@
         <h3>Exoneraciones electrónicas</h3>
         <p>Gestiona múltiples exoneraciones por cliente con consulta automática a las APIs de Hacienda: número de autorización, institución emisora, tipo de exoneración, porcentaje y vigencia. El impuesto se recalcula de forma inteligente aplicando la exoneración en la factura.</p>
         <p>Cada documento muestra el monto exonerado y el sistema alerta con actividades a 30, 15 y 5 días del vencimiento, para renovar a tiempo y no facturar con una exoneración caduca.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_exoneration</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Exoneraciones</span></div>
       </div>
       <div class="suite-gal">
         <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_1.png" alt="Exoneraciones 1"><figcaption>Exoneraciones registradas por cliente con su vigencia</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_2.png" alt="Exoneraciones 2"><figcaption>Tipos de exoneración según Hacienda</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_3.png" alt="Exoneraciones 3"><figcaption>Instituciones emisoras de autorizaciones</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_4.png" alt="Exoneraciones 2"><figcaption>Pedido de venta exonerado: el impuesto se ajusta automáticamente</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_5.png" alt="Exoneraciones 3"><figcaption>Factura electrónica con el monto exonerado y su detalle de autorización</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_2.png" alt="Exoneraciones 4"><figcaption>Tipos de exoneración según Hacienda</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f5_3.png" alt="Exoneraciones 5"><figcaption>Instituciones emisoras de autorizaciones</figcaption></figure>
       </div>
     </section>
 
@@ -167,7 +169,7 @@
         <h3>Retenciones del Impuesto sobre la Renta</h3>
         <p>Configura clientes como agentes de retención y calcula automáticamente la retención en pedidos, facturas y al momento del pago mediante un asistente. Genera el comprobante de retención y lo vincula con el Recibo Electrónico de Pago (REP 4.4) de Hacienda.</p>
         <p>Con reglas y tipos de retención parametrizables, y un asistente para la declaración D-150, el módulo cubre el ciclo completo de la retención sin cálculos manuales.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">cr_electronic_retention</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Retenciones</span></div>
       </div>
       <div class="suite-gal">
         <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f6_1.png" alt="Retenciones 1"><figcaption>Comprobantes de retención generados</figcaption></figure>
@@ -183,11 +185,11 @@
         <h3>Recepción de facturas de proveedor</h3>
         <p>Recibe los comprobantes electrónicos de proveedores directamente desde un buzón de correo, interpreta el XML y crea la factura de proveedor en borrador, lista para revisar en una bandeja de aprobación.</p>
         <p>El mapeo de productos por proveedor traduce las referencias del emisor a los productos internos, de modo que cada factura recibida llega ya conciliada con el catálogo de la empresa.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">cr_import_vendor_bills</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Recepción de proveedores</span></div>
       </div>
       <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f7_1.png" alt="Recepción 1"><figcaption>Bandeja de aprobación de facturas recibidas por correo</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f7_2.png" alt="Recepción 2"><figcaption>Mapeo de referencias de productos por proveedor</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f7_1.png" alt="Recepción 1"><figcaption>Factura de proveedor creada a partir del XML electrónico recibido</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f7_2.png" alt="Recepción 2"><figcaption>XML del proveedor cargado, con extracción de datos y aceptación electrónica</figcaption></figure>
       </div>
     </section>
 
@@ -197,7 +199,7 @@
         <h3>Notas de crédito y devolución de stock</h3>
         <p>Al emitir una nota de crédito electrónica, el módulo permite devolver manualmente los productos al inventario con un botón «Devolver a Stock», detectando automáticamente el pedido de venta u orden de POS asociada.</p>
         <p>Un catálogo de motivos de devolución clasifica cada merma y alimenta un reporte que muestra las devoluciones por causa, útil para control de calidad y análisis de pérdidas.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">credit_note_stock_return</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Devolución de stock</span></div>
       </div>
       <div class="suite-gal">
         <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f8_1.png" alt="Nota de crédito 1"><figcaption>Nota de crédito electrónica con devolución de inventario</figcaption></figure>
@@ -212,7 +214,7 @@
         <h3>Reportes financieros y multimoneda</h3>
         <p>Suma los reportes financieros de la OCA adaptados a Costa Rica —Libro Mayor, Libro Diario, Balance de Comprobación, Partidas Abiertas, Antigüedad de Saldos e Informe de Impuestos (IVA)— con un filtro por tipo de documento propio de la localización.</p>
         <p>El conversor de moneda agrega un selector a los reportes contables dinámicos y a los PDF de la factura electrónica, imprimiendo cualquier reporte en la moneda elegida con la tasa vigente en la fecha de cada asiento.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">account_financial_report</span><span class="suite-mod">cr_report_currency_convert</span></div>
+        <div class="suite-sec__mods"><span class="suite-mod">Reportes financieros</span><span class="suite-mod">Conversión de moneda</span></div>
       </div>
       <div class="suite-gal">
         <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica/f9_1.png" alt="Reportes 1"><figcaption>Asistente del Libro Mayor</figcaption></figure>
