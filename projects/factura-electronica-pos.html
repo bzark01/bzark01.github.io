@@ -36,6 +36,22 @@
   .pos-feat p{margin:0;color:var(--text-muted,#94a3b8);font-size:13px;line-height:1.55;}
   .pos-note{margin:6px 0 34px;padding:14px 18px;border-radius:12px;font-size:13.5px;line-height:1.6;
     color:var(--text-muted,#94a3b8);background:rgba(74,222,128,.05);border:1px dashed rgba(74,222,128,.3);}
+  .suite-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-bottom:20px;}
+  .suite-fig{margin:0;background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
+    border-radius:12px;overflow:hidden;transition:transform .25s var(--ease,ease),border-color .25s;}
+  .suite-fig:hover{transform:translateY(-3px);border-color:var(--accent,#4ade80);}
+  .suite-fig img{display:block;width:100%;height:auto;cursor:zoom-in;}
+  .suite-fig figcaption{padding:10px 14px;font-size:12.5px;color:var(--text-muted,#94a3b8);
+    font-family:var(--font-mono,'Sora',monospace);border-top:1px solid var(--border,#1b2430);}
+  .mv-lb{position:fixed;inset:0;background:rgba(8,12,18,.94);display:none;z-index:9999;align-items:center;justify-content:center;}
+  .mv-lb.open{display:flex;}
+  .mv-lb img{max-width:92vw;max-height:84vh;border-radius:10px;box-shadow:0 24px 70px rgba(0,0,0,.6);}
+  .mv-lb__cap{position:fixed;bottom:22px;left:0;right:0;text-align:center;color:#cbd5e1;font-family:var(--font-mono,'Sora',monospace);font-size:13px;padding:0 20px;}
+  .mv-lb__count{position:fixed;top:24px;left:26px;color:#cbd5e1;font-family:var(--font-mono,'Sora',monospace);font-size:13px;}
+  .mv-lb__close{position:fixed;top:18px;right:26px;background:none;border:none;color:#fff;font-size:34px;line-height:1;cursor:pointer;}
+  .mv-lb__nav{position:fixed;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:26px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+  .mv-lb__nav:hover{background:var(--accent,#4ade80);color:#06281a;}
+  .mv-lb__prev{left:22px;} .mv-lb__next{right:22px;}
 </style>
 </head>
 <body>
@@ -88,6 +104,10 @@
         <p>Resuelve además los casos propios del POS costarricense: usar el crédito de una NC como forma de pago, redistribuir los descuentos globales entre las líneas para cumplir la estructura v4.4, y seleccionar la actividad económica que corresponde a cada venta.</p>
         <div class="suite-sec__mods"><span class="suite-mod">Facturación en el POS</span></div>
       </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_1.png" alt="Venta en el POS"><figcaption>Venta en curso en el Punto de Venta, lista para cobrar</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_2.png" alt="Pago en el POS"><figcaption>Pantalla de pago: efectivo, tarjeta, crédito de NC y el interruptor «Factura» (FE / TE)</figcaption></figure>
+      </div>
       <ul class="pos-feats">
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 2v5h5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><div><h4>FE, TE y NC desde caja</h4><p>El cajero emite factura, tiquete o nota de crédito electrónica directamente en la pantalla del POS.</p></div></li>
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Envío en tiempo real</h4><p>Firma y transmisión a Hacienda al cerrar la orden, con el estado visible en el recibo.</p></div></li>
@@ -103,6 +123,9 @@
         <p>Módulo puente que lleva la consulta del padrón del Ministerio de Hacienda a la pantalla del Punto de Venta. Al asignar un cliente por su cédula, trae automáticamente su nombre y tipo de identificación para emitir la factura electrónica con los datos correctos.</p>
         <p>Se instala automáticamente cuando conviven la consulta de Hacienda y el POS, sin configuración adicional.</p>
         <div class="suite-sec__mods"><span class="suite-mod">Consulta a Hacienda en POS</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p2_1.png" alt="Selección de cliente en el POS"><figcaption>Selección de cliente desde el POS: al crear uno nuevo se consulta el padrón por su cédula</figcaption></figure>
       </div>
       <ul class="pos-feats">
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Padrón al instante</h4><p>Digitás la cédula del cliente y el nombre llega desde Hacienda, sin salir de la caja.</p></div></li>
@@ -133,6 +156,9 @@
         <p>Agrupa los puntos de venta por sucursal y controla qué usuarios pueden operar cada una, sin afectar la facturación ni el inventario. Un cajero asignado a una sucursal solo ve las cajas, sesiones y órdenes de la sucursal que le corresponde.</p>
         <p>Ideal para cadenas y operaciones con varios locales que necesitan aislar la operación de caja por punto físico manteniendo una sola base de datos.</p>
         <div class="suite-sec__mods"><span class="suite-mod">Sucursales PDV</span></div>
+      </div>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p4_1.png" alt="Sucursales PDV"><figcaption>Sucursales del Punto de Venta con su responsable y cantidad de cajas asignadas</figcaption></figure>
       </div>
       <ul class="pos-feats">
         <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21V9l9-6 9 6v12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><div><h4>PDV por sucursal</h4><p>Agrupa cajas y sesiones bajo la sucursal física a la que pertenecen.</p></div></li>
@@ -190,5 +216,25 @@
 </div>
 
 <script src="project.js"></script>
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll('.suite-fig'));
+  if(!figs.length) return;
+  var items=figs.map(function(f){var im=f.querySelector('img');var c=f.querySelector('figcaption');return {src:im?im.src:'',cap:c?c.textContent:''};});
+  var lb=document.createElement('div'); lb.className='mv-lb';
+  lb.innerHTML='<span class="mv-lb__count"></span><button class="mv-lb__close" aria-label="Cerrar">×</button><button class="mv-lb__nav mv-lb__prev" aria-label="Anterior">‹</button><img alt=""><button class="mv-lb__nav mv-lb__next" aria-label="Siguiente">›</button><div class="mv-lb__cap"></div>';
+  document.body.appendChild(lb);
+  var img=lb.querySelector('img'), cap=lb.querySelector('.mv-lb__cap'), cnt=lb.querySelector('.mv-lb__count'), idx=0;
+  function show(i){idx=(i+items.length)%items.length; img.src=items[idx].src; cap.textContent=items[idx].cap; cnt.textContent=(idx+1)+' / '+items.length;}
+  function open(i){show(i); lb.classList.add('open'); document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('open'); document.body.style.overflow='';}
+  figs.forEach(function(f,i){f.addEventListener('click',function(){open(i);});});
+  lb.querySelector('.mv-lb__close').addEventListener('click',close);
+  lb.querySelector('.mv-lb__prev').addEventListener('click',function(e){e.stopPropagation();show(idx-1);});
+  lb.querySelector('.mv-lb__next').addEventListener('click',function(e){e.stopPropagation();show(idx+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return; if(e.key==='Escape')close(); else if(e.key==='ArrowLeft')show(idx-1); else if(e.key==='ArrowRight')show(idx+1);});
+})();
+</script>
 </body>
 </html>
