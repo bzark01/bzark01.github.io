@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Trazabilidad de Lotes en Ventas — Soto B.</title>
+<meta name="description" content="Módulo Odoo que muestra los lotes y series despachados en el pedido, la factura y el reporte impreso." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Ventas</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo · Ventas + Inventario</span>
+      </div>
+      <h1 class="proj-hero__title">Trazabilidad de <span class="grad">Lotes en Ventas</span></h1>
+      <p class="proj-hero__pitch">Muestra los lotes y números de serie que realmente se despacharon directamente en el pedido de venta, en la factura y en el PDF impreso. El equipo comercial y el cliente conocen la trazabilidad sin entrar al módulo de Inventario.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo</span><span>Ventas</span><span>Inventario</span><span>Trazabilidad</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Trazabilidad de Lotes en Ventas">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/trazabilidad-lotes-ventas/1.png" alt="Lotes en el pedido de venta"><figcaption>01. Lotes/Series en las líneas del pedido</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/trazabilidad-lotes-ventas/2.png" alt="Lotes en la factura"><figcaption>02. Herencia automática a la factura</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/trazabilidad-lotes-ventas/3.png" alt="Lotes en el reporte impreso"><figcaption>03. Lotes y total de ítems en el PDF</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/trazabilidad-lotes-ventas/4.png" alt="Captura 4"><figcaption>04.</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/trazabilidad-lotes-ventas/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Saber qué lote se le despachó a cada cliente no debería requerir abrir Inventario</h3>
+        <p>En empresas que venden productos rastreados por lote o número de serie, la información de qué lote salió del almacén queda enterrada en las transferencias de inventario. El vendedor no la tiene a mano y el cliente no la ve en su factura.</p>
+        <p>Este módulo captura automáticamente los lotes al validar la entrega y los muestra donde el equipo comercial trabaja: en el pedido, en la factura y en el documento impreso, con total confiabilidad porque reflejan la salida real del inventario.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Lotes en el pedido</h4><p>Columna Lotes/Series en las líneas del pedido de venta, con el lote despachado en cada producto.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v15H6z M15 2v5h5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Herencia a la factura</h4><p>El lote viaja del pedido a la factura automáticamente, para garantías y respaldo fiscal.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 8h6M9 12h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Lotes en el PDF</h4><p>El reporte impreso muestra los lotes bajo cada producto y totaliza los ítems vendidos.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Captura confiable</h4><p>Los lotes se registran al validar la entrega: reflejan la salida real, no un dato editado a mano.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Entregas parciales</h4><p>Cada validación de entrega acumula los lotes correspondientes en la línea del pedido.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M6 6v13a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6M9 6V4h6v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cero configuración</h4><p>Funciona apenas se instala; solo requiere que el producto tenga trazabilidad activa.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">XML</span>
+          <span class="chip">QWeb</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Vendés productos con lote o número de serie?</h3>
+      <p>Integro la trazabilidad de tu inventario con el ciclo de ventas y facturación, adaptado a tu operación.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Trazabilidad de Lotes en Ventas</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
