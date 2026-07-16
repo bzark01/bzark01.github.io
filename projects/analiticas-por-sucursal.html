@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Analíticas por Sucursal — Soto B.</title>
+<meta name="description" content="Asignación automática de cuentas analíticas por sucursal y categoría en Odoo." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Contabilidad</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// contabilidad analítica · multi-sucursal</span>
+      </div>
+      <h1 class="proj-hero__title">Analíticas por <span class="grad">Sucursal</span></h1>
+      <p class="proj-hero__pitch">Asigna la cuenta analítica correcta de cada sucursal de forma automática, en ventas, punto de venta, facturas e inventario. Sin que nadie tenga que elegirla a mano.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo</span><span>Contabilidad</span><span>Ventas</span><span>Punto de Venta</span><span>Inventario</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Analíticas por Sucursal">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/analiticas-por-sucursal/1.png" alt="Plan analítico en el almacén"><figcaption>01. Cada sucursal se vincula a su plan analítico</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/analiticas-por-sucursal/2.png" alt="Cuentas analíticas por sucursal en la categoría"><figcaption>02. Mapeo de cuenta analítica por categoría y sucursal</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/analiticas-por-sucursal/3.png" alt="Analítica automática en la venta"><figcaption>03. La analítica se asigna sola al vender</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/analiticas-por-sucursal/4.png" alt="Captura 4"><figcaption>04.</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/analiticas-por-sucursal/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Reportar resultados por sucursal sin depender del criterio de cada usuario</h3>
+        <p>Cuando una empresa opera varias tiendas o sucursales, saber cuánto vende y cuánto cuesta cada una exige etiquetar cada operación con su cuenta analítica. Hacerlo a mano es lento y propenso a errores: basta que un cajero olvide la analítica para que el reporte de esa sucursal quede incompleto.</p>
+        <p>Este módulo elimina ese trabajo manual: define la regla una sola vez (sucursal → plan → cuenta por categoría) y a partir de ahí cada venta, factura, movimiento de inventario y devolución queda registrado automáticamente con la analítica de su sucursal, de punta a punta.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12l4 4 14-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Asignación automática</h4><p>La cuenta analítica de la sucursal se completa sola al agregar el producto.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Configuración por categoría</h4><p>Un mapeo por categoría de producto; los productos nuevos lo heredan.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Cobertura total</h4><p>Funciona en Ventas, Punto de Venta, Facturas e Inventario.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Por sucursal y categoría</h4><p>La misma categoría puede tener distinta analítica en cada sucursal.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17V7a2 2 0 012-2h12a2 2 0 012 2v10M4 17l4-4 3 3 5-6 4 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Reportes consistentes</h4><p>La analítica fluye de la venta a la factura, el inventario y las devoluciones.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cero trabajo manual</h4><p>Se configura una vez; después opera sola, sin intervención del usuario.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Odoo</span>
+          <span class="chip">Python</span>
+          <span class="chip">Contabilidad Analítica</span>
+          <span class="chip">Ventas</span>
+          <span class="chip">Punto de Venta</span>
+          <span class="chip">Inventario</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Necesitás resultados claros por cada sucursal?</h3>
+      <p>Configuro las analíticas de tus tiendas para que cada venta se registre sola en la sucursal correcta.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Analíticas por Sucursal</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
