@@ -11,6 +11,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../portfolio.css" />
 <link rel="stylesheet" href="project.css" />
+<style>
+  .suite-band{display:flex;flex-wrap:wrap;gap:18px;margin:8px 0 40px;}
+  .suite-stat{background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
+    border-radius:14px;padding:18px 24px;min-width:150px;}
+  .suite-stat__n{display:block;font-family:var(--font-mono,'Sora',monospace);font-size:30px;
+    font-weight:700;color:var(--accent,#4ade80);line-height:1;}
+  .suite-stat__l{display:block;margin-top:6px;color:var(--text-muted,#94a3b8);font-size:13px;}
+  .suite-sec{padding:36px 0;border-top:1px solid var(--border,#1b2430);}
+  .suite-sec__head{max-width:760px;margin-bottom:24px;}
+  .suite-sec__head h3{font-size:clamp(22px,3vw,30px);margin:6px 0 10px;}
+  .suite-sec__head p{color:var(--text-muted,#94a3b8);line-height:1.65;margin:0 0 8px;}
+  .suite-sec__mods{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .suite-mod{font-family:var(--font-mono,'Sora',monospace);font-size:12px;
+    color:var(--accent,#4ade80);background:rgba(74,222,128,.08);
+    border:1px solid rgba(74,222,128,.25);border-radius:999px;padding:4px 11px;}
+  .suite-gal{display:grid;grid-template-columns:1fr;gap:24px;}
+  .suite-fig{margin:0;background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
+    border-radius:12px;overflow:hidden;transition:transform .25s var(--ease,ease),border-color .25s;}
+  .suite-fig:hover{transform:translateY(-3px);border-color:var(--accent,#4ade80);}
+  .suite-fig img{display:block;width:100%;height:auto;}
+  .suite-fig figcaption{padding:10px 14px;font-size:12.5px;color:var(--text-muted,#94a3b8);
+    font-family:var(--font-mono,'Sora',monospace);border-top:1px solid var(--border,#1b2430);}
+
+  .mv-lb{position:fixed;inset:0;background:rgba(8,12,18,.94);display:none;z-index:9999;align-items:center;justify-content:center;}
+  .mv-lb.open{display:flex;}
+  .mv-lb img{max-width:92vw;max-height:84vh;border-radius:10px;box-shadow:0 24px 70px rgba(0,0,0,.6);}
+  .mv-lb__cap{position:fixed;bottom:22px;left:0;right:0;text-align:center;color:#cbd5e1;font-family:var(--font-mono,'Sora',monospace);font-size:13px;padding:0 20px;}
+  .mv-lb__count{position:fixed;top:24px;left:26px;color:#cbd5e1;font-family:var(--font-mono,'Sora',monospace);font-size:13px;}
+  .mv-lb__close{position:fixed;top:18px;right:26px;background:none;border:none;color:#fff;font-size:34px;line-height:1;cursor:pointer;}
+  .mv-lb__nav{position:fixed;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:26px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+  .mv-lb__nav:hover{background:var(--accent,#4ade80);color:#06281a;}
+  .mv-lb__prev{left:22px;} .mv-lb__next{right:22px;}
+  .suite-fig img{cursor:zoom-in;}
+
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -45,70 +80,41 @@
         <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
       </div>
       <div class="proj-hero__tags">
-        <span>Odoo</span><span>Reportes</span><span>PDF</span><span>Personalización</span>
+        <span>Odoo 19</span><span>Reportes</span><span>PDF</span><span>Personalización</span>
       </div>
     </header>
 
-    <section class="carousel" aria-label="Capturas de Tamaño de Fuente en Reportes">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 03</span>
+    <div class="suite-band"><div class="suite-stat"><span class="suite-stat__n">6</span><span class="suite-stat__l">zonas ajustables por reporte</span></div><div class="suite-stat"><span class="suite-stat__n">0</span><span class="suite-stat__l">reinicios necesarios</span></div><div class="suite-stat"><span class="suite-stat__n">100%</span><span class="suite-stat__l">compatible con los layouts de Odoo</span></div></div>
+
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 01</span>
+        <h3>Configuración por reporte</h3>
+        <p>Con el modo desarrollador activo, en Ajustes → Técnico → Reportes se abre cualquier reporte y aparece la sección &quot;Tamaño de Fuente&quot;: seis campos para definir el tamaño de letra de cada zona del documento y la escala del logo.</p><p>Cada reporte guarda su propia configuración. Un valor 0 mantiene el tamaño por defecto del sistema, así se ajusta solo lo necesario sin afectar a los demás documentos.</p>
       </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/tamano-fuente-reportes/1.png" alt="Lista de reportes"><figcaption>01. Ajustes → Técnico → Reportes</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/tamano-fuente-reportes/2.png" alt="Sección Tamaño de Fuente"><figcaption>02. Sección de configuración por reporte</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/tamano-fuente-reportes/3.png" alt="Campos configurados"><figcaption>03. Seis zonas ajustables por documento</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/tamano-fuente-reportes/s1_1.png" alt="Configuración por reporte 1"><figcaption>Ajustes → Técnico → Reportes: lista de reportes configurables</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/tamano-fuente-reportes/s1_2.png" alt="Configuración por reporte 2"><figcaption>Sección &quot;Tamaño de Fuente&quot; agregada a la ficha del reporte</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/tamano-fuente-reportes/s1_3.png" alt="Configuración por reporte 3"><figcaption>Los seis campos configurados con valores de ejemplo</figcaption></figure>
       </div>
-      <div class="carousel__dots"></div>
     </section>
 
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Los reportes de Odoo traen un tamaño de letra fijo que no siempre encaja</h3>
-        <p>Cuando una factura tiene muchas líneas, la letra estándar hace que el documento crezca a varias páginas; y en documentos oficiales, a veces se necesita una tipografía más grande y legible. Cambiar esto normalmente exige editar las plantillas técnicas del reporte.</p>
-        <p>Este módulo agrega, en la ficha de cada reporte, una sección donde se define el tamaño de fuente de cada zona del documento y la escala del logo. La configuración es independiente por reporte y se aplica en la siguiente impresión, sin reiniciar el sistema ni programar nada.</p>
+    <section class="suite-sec">
+      <div class="suite-sec__head">
+        <span class="eyebrow mono">// bloque 02</span>
+        <h3>El efecto en el reporte PDF</h3>
+        <p>El mismo reporte, impreso con los tamaños por defecto y con una configuración personalizada. El título gana presencia mientras el cuerpo y la tabla de líneas se compactan, ideal para documentos con muchos renglones.</p><p>Los cambios se aplican en la siguiente impresión, sin reiniciar el servidor: la configuración se lee directamente del reporte al momento de generar el PDF.</p>
       </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Control por reporte</h4><p>Cada documento tiene su propia configuración, sin afectar a los demás.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Seis zonas ajustables</h4><p>Encabezado, títulos, cuerpo, tablas, pie de página y escala del logo.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 10l7-7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Sin reinicios</h4><p>Los cambios se aplican en la siguiente generación del PDF.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Rangos validados</h4><p>Impide tamaños fuera de rango que dañarían el diseño del reporte.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Compatible con todo diseño</h4><p>Funciona con los layouts de Odoo (Standard, Boxed, Bold, Wave y más).</p></div>
-          </li>
-        </ul>
+      <div class="suite-gal">
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/tamano-fuente-reportes/s2_1.png" alt="El efecto en el reporte PDF 1"><figcaption>Comparación lado a lado: antes (por defecto) y después (personalizado)</figcaption></figure>
+        <figure class="suite-fig"><img loading="lazy" src="../images/projects/tamano-fuente-reportes/s2_2.png" alt="El efecto en el reporte PDF 2"><figcaption>Resultado final del PDF con los tamaños personalizados</figcaption></figure>
       </div>
     </section>
 
     <section class="detail" style="grid-template-columns: 1fr;">
       <div class="detail__block">
         <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
+        <h3>Tecnología detrás de la suite</h3>
         <div class="stack-grid">
           <span class="chip">Odoo 19</span>
           <span class="chip">Python</span>
@@ -136,5 +142,25 @@
 </div>
 
 <script src="project.js"></script>
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll('.suite-fig'));
+  if(!figs.length) return;
+  var items=figs.map(function(f){var im=f.querySelector('img');var c=f.querySelector('figcaption');return {src:im?im.src:'',cap:c?c.textContent:''};});
+  var lb=document.createElement('div'); lb.className='mv-lb';
+  lb.innerHTML='<span class="mv-lb__count"></span><button class="mv-lb__close" aria-label="Cerrar">\u00d7</button><button class="mv-lb__nav mv-lb__prev" aria-label="Anterior">\u2039</button><img alt=""><button class="mv-lb__nav mv-lb__next" aria-label="Siguiente">\u203a</button><div class="mv-lb__cap"></div>';
+  document.body.appendChild(lb);
+  var img=lb.querySelector('img'), cap=lb.querySelector('.mv-lb__cap'), cnt=lb.querySelector('.mv-lb__count'), idx=0;
+  function show(i){idx=(i+items.length)%items.length; img.src=items[idx].src; cap.textContent=items[idx].cap; cnt.textContent=(idx+1)+' / '+items.length;}
+  function open(i){show(i); lb.classList.add('open'); document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('open'); document.body.style.overflow='';}
+  figs.forEach(function(f,i){f.addEventListener('click',function(){open(i);});});
+  lb.querySelector('.mv-lb__close').addEventListener('click',close);
+  lb.querySelector('.mv-lb__prev').addEventListener('click',function(e){e.stopPropagation();show(idx-1);});
+  lb.querySelector('.mv-lb__next').addEventListener('click',function(e){e.stopPropagation();show(idx+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return; if(e.key==='Escape')close(); else if(e.key==='ArrowLeft')show(idx-1); else if(e.key==='ArrowRight')show(idx+1);});
+})();
+</script>
 </body>
 </html>
