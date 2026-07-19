@@ -22,18 +22,27 @@
   var LOADING_WORDS = ['Construyo', 'Diseño', 'Escalo'];
 
   /* ---------- Loading ---------- */
+  var LOAD_META = ['boot', 'init', 'load', 'link', 'ready'];
+
   function initLoading() {
     var el = document.getElementById('loading');
     if (!el) return;
     var countEl = document.getElementById('loadCount');
     var fillEl = document.getElementById('loadFill');
     var wordEl = document.getElementById('loadWord');
+    var metaEl = document.getElementById('loadMeta');
+    var steps = Array.prototype.slice.call(el.querySelectorAll('.boot li'));
+    var stepAt = steps.map(function (li) { return parseInt(li.getAttribute('data-at'), 10) || 0; });
 
     function finish() {
       el.classList.add('hide');
-      setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 500);
+      setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 550);
     }
-    if (reduceMotion) { finish(); return; }
+    if (reduceMotion) {
+      steps.forEach(function (li) { li.classList.add('show', 'done'); });
+      finish();
+      return;
+    }
 
     var start = performance.now();
     var last = -1;
@@ -43,6 +52,15 @@
         last = count;
         if (countEl) countEl.textContent = String(count).padStart(3, '0');
         if (fillEl) fillEl.style.transform = 'scaleX(' + (count / 100) + ')';
+
+        // Boot log: revelar líneas y marcarlas como completadas por umbral.
+        var active = 0;
+        steps.forEach(function (li, i) {
+          if (count >= stepAt[i]) { li.classList.add('show'); active = i; }
+          var doneAt = i < steps.length - 1 ? stepAt[i + 1] : 100;
+          if (count >= doneAt) li.classList.add('done');
+        });
+        if (metaEl) metaEl.textContent = LOAD_META[Math.min(active, LOAD_META.length - 1)];
       }
       if (count < 100) requestAnimationFrame(tick);
       else setTimeout(finish, 400);
