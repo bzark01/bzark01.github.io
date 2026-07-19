@@ -135,6 +135,8 @@
   .fcard{position:sticky; border-radius:28px; border:1px solid var(--b10); background:var(--panel); padding:40px; margin-bottom:28px; transform-origin:top center; transition:box-shadow .2s ease;}
   .fcard:hover{box-shadow:0 30px 70px -20px rgba(74,222,128,.25)}
   .fcard--0{top:96px} .fcard--1{top:120px} .fcard--2{top:144px; margin-bottom:0;}
+  .fcard--flat{position:static;}
+  .fcard--flat:last-child{margin-bottom:0;}
   .fcard__head{display:flex; align-items:flex-start; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-bottom:24px;}
   .fcard__l{display:flex; align-items:center; gap:20px;}
   .fcard__num{font-family:var(--disp); font-weight:700; font-size:clamp(40px,7vw,90px); color:rgba(231,234,241,.12); line-height:1;}
@@ -367,27 +369,47 @@
     </div>
 
     <div class="bento-more">// más destacados</div>
-    <div class="bento">
-      <a href="projects/factura-electronica-pos.html" class="tilt" style="grid-column:span 7; aspect-ratio:16/9">
-        <image-slot id="bento-fe-pos" shape="rect" fit="cover" src="images/projects/factura-electronica-pos/p1_1.png" placeholder="Factura Electrónica POS"></image-slot>
-        <div class="bento__ov"><div><span class="bento__pub">Odoo · Punto de Venta · CR</span><div class="bento__title">Factura Electrónica POS</div></div></div>
-      </a>
-      <a href="projects/taller-automotriz.html" class="tilt" style="grid-column:span 5; aspect-ratio:4/5">
-        <image-slot id="bento-taller" shape="rect" fit="cover" src="images/projects/taller-automotriz/s1_1.png" placeholder="Taller Automotriz"></image-slot>
-        <div class="bento__ov"><div><span class="bento__pub">Odoo · Taller</span><div class="bento__title">Taller Automotriz</div></div></div>
-      </a>
-      <a href="projects/rastreo-flota-gps.html" class="tilt" style="grid-column:span 5; aspect-ratio:4/5">
-        <image-slot id="bento-gps" shape="rect" fit="cover" src="images/projects/rastreo-flota-gps/1.png" placeholder="Rastreo GPS de Flota"></image-slot>
-        <div class="bento__ov"><div><span class="bento__pub">Odoo · Logística</span><div class="bento__title">Rastreo GPS de Flota</div></div></div>
-      </a>
-      <a href="projects/omnichat.html" class="tilt" style="grid-column:span 7; aspect-ratio:16/9">
-        <image-slot id="bento-omnichat" shape="rect" fit="cover" src="images/projects/omnichat/1.png" placeholder="OmniChat"></image-slot>
-        <div class="bento__ov"><div><span class="bento__pub">Odoo · Comunicación</span><div class="bento__title">OmniChat</div></div></div>
-      </a>
-      <a href="projects/impresion-etiquetas-odoo.html" class="tilt" style="grid-column:span 12; aspect-ratio:21/6">
-        <image-slot id="bento-etiquetas" shape="rect" fit="cover" src="images/projects/impresion-etiquetas-odoo/1.png" placeholder="Impresión de Etiquetas"></image-slot>
-        <div class="bento__ov"><div><span class="bento__pub">Odoo · Etiquetas</span><div class="bento__title">Impresión de Etiquetas</div></div></div>
-      </a>
+    <div class="featured">
+      <div class="fcard fcard--flat tilt">
+        <div class="fcard__head">
+          <div class="fcard__l"><span class="fcard__num">04</span><div><span class="fcard__kicker">Odoo · Punto de Venta · CR</span><h3 class="fcard__title">Factura Electrónica POS</h3></div></div>
+          <a href="projects/factura-electronica-pos.html" class="fcard__cta">Ver detalle</a>
+        </div>
+        <p>Facturación electrónica de Costa Rica dentro del Punto de Venta de Odoo: tiquetes y facturas electrónicas en tiempo real, consulta a Hacienda, multimoneda, sucursales y cobro de facturas pendientes.</p>
+        <div class="minitags"><span class="minitag">Python</span><span class="minitag">Odoo POS</span><span class="minitag">XML v4.4</span><span class="minitag">API Hacienda</span></div>
+      </div>
+      <div class="fcard fcard--flat tilt">
+        <div class="fcard__head">
+          <div class="fcard__l"><span class="fcard__num">05</span><div><span class="fcard__kicker">Odoo · Taller</span><h3 class="fcard__title">Taller Automotriz</h3></div></div>
+          <a href="projects/taller-automotriz.html" class="fcard__cta">Ver detalle</a>
+        </div>
+        <p>Suite Odoo para talleres automotrices: recepción 3D, bahías, citas, requisiciones, garantías y dashboard operativo.</p>
+        <div class="minitags"><span class="minitag">Python</span><span class="minitag">Odoo</span><span class="minitag">OWL</span><span class="minitag">Three.js</span></div>
+      </div>
+      <div class="fcard fcard--flat tilt">
+        <div class="fcard__head">
+          <div class="fcard__l"><span class="fcard__num">06</span><div><span class="fcard__kicker">Odoo · Logística</span><h3 class="fcard__title">Rastreo GPS de Flota</h3></div></div>
+          <a href="projects/rastreo-flota-gps.html" class="fcard__cta">Ver detalle</a>
+        </div>
+        <p>Rastreo GPS de conductores en tiempo real para Odoo 18, con app Android, recorridos, geocercas y alertas.</p>
+        <div class="minitags"><span class="minitag">Python</span><span class="minitag">Odoo</span><span class="minitag">Flutter</span><span class="minitag">Leaflet</span></div>
+      </div>
+      <div class="fcard fcard--flat tilt">
+        <div class="fcard__head">
+          <div class="fcard__l"><span class="fcard__num">07</span><div><span class="fcard__kicker">Odoo · Comunicación</span><h3 class="fcard__title">OmniChat</h3></div></div>
+          <a href="projects/omnichat.html" class="fcard__cta">Ver detalle</a>
+        </div>
+        <p>Atiende WhatsApp, Instagram y Messenger desde una sola bandeja en Odoo, con contexto del cliente y ventas integradas.</p>
+        <div class="minitags"><span class="minitag">Odoo 19</span><span class="minitag">WhatsApp Business</span><span class="minitag">Instagram DM</span><span class="minitag">OWL</span></div>
+      </div>
+      <div class="fcard fcard--flat tilt">
+        <div class="fcard__head">
+          <div class="fcard__l"><span class="fcard__num">08</span><div><span class="fcard__kicker">Odoo · Etiquetas</span><h3 class="fcard__title">Impresión de Etiquetas</h3></div></div>
+          <a href="projects/impresion-etiquetas-odoo.html" class="fcard__cta">Ver detalle</a>
+        </div>
+        <p>Diseñador visual de etiquetas e impresión directa en impresoras térmicas Zebra, EPSON y TSC desde Odoo.</p>
+        <div class="minitags"><span class="minitag">Odoo 19</span><span class="minitag">Python</span><span class="minitag">ZPL / TSPL</span><span class="minitag">OWL</span></div>
+      </div>
     </div>
   </section>
 
