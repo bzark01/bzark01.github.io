@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Selección de Vendedores para Ventas y PoS — Soto B.</title>
+<meta name="description" content="Catálogo de vendedores para Odoo 19 que se asigna en ventas, Punto de Venta y facturas, con reportes por vendedor." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Ventas</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · Ventas + Punto de Venta</span>
+      </div>
+      <h1 class="proj-hero__title">Selección de <span class="grad">Vendedores</span></h1>
+      <p class="proj-hero__pitch">Registra quién realizó cada venta —promotores, personal de piso, comisionistas— aunque no sean usuarios de Odoo. Un catálogo propio de vendedores que se asigna en la orden de venta, en el Punto de Venta y en la factura, y que fluye hasta los reportes.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo 19</span><span>Ventas</span><span>Punto de Venta</span><span>Facturación</span><span>Comisiones</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Selección de Vendedores para Ventas y PoS">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/seleccion-vendedores-ventas-pos/1.png" alt="Catálogo de vendedores"><figcaption>01. Catálogo de vendedores con código automático</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/seleccion-vendedores-ventas-pos/2.png" alt="Vendedor en la orden"><figcaption>02. Vendedor asignado en la orden de venta</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/seleccion-vendedores-ventas-pos/3.png" alt="Vendedor en la factura"><figcaption>03. Vendedor asignado en la factura</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/seleccion-vendedores-ventas-pos/4.png" alt="Botón en el PoS"><figcaption>04. Botón Vendedor en el Punto de Venta</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/seleccion-vendedores-ventas-pos/5.png" alt="Selección en el PoS"><figcaption>05. Selección del vendedor del pedido</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>El «comercial» de Odoo no siempre es quien hizo la venta</h3>
+        <p>En Odoo el comercial de una orden es un usuario del sistema. Pero en el mostrador o el piso de ventas, quien atiende y cierra la venta muchas veces no tiene —ni necesita— una cuenta de usuario: promotores, impulsadores, personal temporal.</p>
+        <p>Este módulo agrega un catálogo propio de vendedores, liviano y sin permisos de acceso a Odoo, que se asigna en la cotización, en el Punto de Venta y en la factura. El vendedor se imprime en el comprobante y queda disponible como filtro y agrupación en los reportes de ventas, facturas y PoS —ideal para el cálculo de comisiones.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 12a4 4 0 100-8 4 4 0 000 8zM4 20a8 8 0 0116 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Catálogo de vendedores</h4><p>Independientes de los usuarios de Odoo, con código automático y empleado vinculable.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>En la orden de venta</h4><p>Campo «Vendedor asignado» que se copia a la factura al facturar.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4zM8 4v16M4 9h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Botón en el Punto de Venta</h4><p>Elige el vendedor del pedido con un clic; se guarda con el tiquete.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2zM9 13h6M9 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Impreso en la factura</h4><p>El vendedor aparece en el PDF de la factura y en el tiquete del PoS.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3 8 4-16 3 8h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Reportes por vendedor</h4><p>Filtro y agrupación en Análisis de Ventas, Facturas y Punto de Venta.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Asignación automática</h4><p>Al cargar una orden de venta en el PoS, su vendedor se asigna solo.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo 19</span>
+          <span class="chip">OWL</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Necesitás saber quién vende, aunque no sea usuario de Odoo?</h3>
+      <p>Adapto el catálogo de vendedores y su integración con Ventas, Punto de Venta y las comisiones de tu negocio.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Selección de Vendedores para Ventas y PoS</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
