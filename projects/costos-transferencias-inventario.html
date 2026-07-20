@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Costos en Transferencias de Inventario — Soto B.</title>
+<meta name="description" content="Valor de costo por línea y total en las recepciones, entregas y traslados de Odoo." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Inventario</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · Inventario</span>
+      </div>
+      <h1 class="proj-hero__title">Costos en <span class="grad">Transferencias de Inventario</span></h1>
+      <p class="proj-hero__pitch">Muestra el valor de costo de la mercancía dentro de cada recepción, entrega o traslado interno: costo unitario y subtotal por línea, y el valor total de la transferencia en la lista y en el formulario. Todo automático, en la moneda de la compañía.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo 19</span><span>Inventario</span><span>Python</span><span>XML</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Costos en Transferencias de Inventario">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/costos-transferencias-inventario/1.png" alt="Columna Valor Total en la lista de recepciones"><figcaption>01. Valor total de cada transferencia en la lista, con suma al pie</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/costos-transferencias-inventario/2.png" alt="Valor total y costo por línea en el formulario"><figcaption>02. Valor Total de Costo en la cabecera y costo por línea</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/costos-transferencias-inventario/3.png" alt="Detalle de costo por línea de producto"><figcaption>03. Costo unitario y subtotal en cada línea de operación</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/costos-transferencias-inventario/4.png" alt="Filtro Con valor mayor a cero"><figcaption>04. Filtro para ver solo transferencias valoradas</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/costos-transferencias-inventario/5.png" alt="Campo Costo en la ficha del producto"><figcaption>05. El costo del producto alimenta el cálculo</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Saber cuánto vale lo que entra y sale de la bodega, sin salir de Odoo</h3>
+        <p>El equipo de almacén y contabilidad necesita conocer el valor de costo de cada recepción, entrega o traslado, pero Odoo no lo muestra dentro de la transferencia: hay que abrir la ficha de cada producto o exportar a una hoja de cálculo para hacer las sumas a mano.</p>
+        <p>Este módulo pone ese valor a la vista automáticamente: costo unitario y subtotal en cada línea, valor total en la cabecera y una columna con la suma en la lista de operaciones. El dato queda almacenado, así que también se filtra, se agrupa y se exporta a Excel.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 14l3-3 3 2 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Valor total por transferencia</h4><p>Cada recepción, entrega o traslado muestra su valor de costo en la lista y en la cabecera.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M9 4v16" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Costo por línea</h4><p>Costo unitario y subtotal en cada línea de la operación, junto a la cantidad.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Filtro por valor</h4><p>Un filtro «Con valor &gt; 0» aísla las transferencias con productos valorados.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 21h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Exportable y agrupable</h4><p>El valor se almacena en la base, listo para exportar a Excel o agrupar en reportes.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cantidad según el estado</h4><p>Usa la cantidad ejecutada si la transferencia está hecha, o la demanda si está pendiente.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V5a2 2 0 012-2h12a2 2 0 012 2v2M4 7h16M4 7v12a2 2 0 002 2h12a2 2 0 002-2V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cero configuración</h4><p>Se instala y funciona: solo requiere que los productos tengan su costo definido.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo 19</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Querés ver el valor real de tu inventario en cada movimiento?</h3>
+      <p>Adapto el cálculo a tu método de costo y lo integro con tus reportes de inventario.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Costos en Transferencias de Inventario</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
