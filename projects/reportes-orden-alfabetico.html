@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reportes Ordenados Alfabéticamente — Soto B.</title>
+<meta name="description" content="Ordena alfabéticamente los productos en los PDF de recolección y de ventas en Odoo." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Inventario</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo · Inventario y Ventas</span>
+      </div>
+      <h1 class="proj-hero__title">Reportes <span class="grad">Ordenados Alfabéticamente</span></h1>
+      <p class="proj-hero__pitch">Imprime tus listas de productos siempre en orden alfabético. Las órdenes de recolección salen ordenadas de forma automática y, en las cotizaciones, cada pedido decide con un solo interruptor si el PDF respeta el orden ingresado o se ordena de la A a la Z.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo</span><span>Inventario</span><span>Ventas</span><span>Reportes PDF</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Reportes Ordenados Alfabéticamente">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/reportes-orden-alfabetico/1.png" alt="Interruptor en la orden"><figcaption>01. Interruptor «Ordenar PDF Alfabéticamente» por pedido</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/reportes-orden-alfabetico/2.png" alt="PDF orden ingresado"><figcaption>02. PDF de venta respetando el orden ingresado</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/reportes-orden-alfabetico/3.png" alt="PDF alfabético"><figcaption>03. El mismo pedido, ahora en orden alfabético</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/reportes-orden-alfabetico/4.png" alt="Reporte de picking"><figcaption>04. Operaciones de recolección siempre ordenadas</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/reportes-orden-alfabetico/5.png" alt="Líneas del pedido"><figcaption>05. Control por pedido, sin cambiar los datos</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Listas de productos difíciles de seguir en bodega</h3>
+        <p>Cuando una orden de recolección o una cotización trae muchos productos en el orden en que se digitaron, quien alista el pedido pierde tiempo buscando cada artículo por toda la bodega y aumenta el riesgo de errores.</p>
+        <p>Este módulo ordena los productos alfabéticamente al imprimir: el picking siempre sale ordenado y, en las ventas, un interruptor por pedido decide si se ordena o se respeta el orden original. No cambia ningún dato: solo mejora cómo se presenta el PDF.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h10M4 12h7M4 18h13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17 5l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Picking siempre ordenado</h4><p>Las operaciones de recolección se imprimen en orden alfabético automáticamente, sin configurar nada.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10h8M8 14h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Interruptor por cotización</h4><p>Cada orden de venta decide si su PDF sale ordenado alfabéticamente o respeta el orden ingresado.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M6 9l6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Flexible para licitaciones</h4><p>Deje el orden del cartel de licitación cuando lo necesite; ordene alfabéticamente cuando alista en bodega.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>No altera los datos</h4><p>Solo cambia la presentación del PDF: los montos, totales y el pedido quedan intactos.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Odoo 19</span>
+          <span class="chip">Inventario</span>
+          <span class="chip">Ventas</span>
+          <span class="chip">Reportes QWeb</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu bodega necesita listas fáciles de seguir?</h3>
+      <p>Adapto el orden y los reportes de tu operación de inventario y ventas.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Reportes Ordenados Alfabéticamente</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
