@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Control de Límite de Crédito en Punto de Venta — Soto B.</title>
+<meta name="description" content="Verificación del crédito del cliente al cobrar en el Punto de Venta de Odoo, con modos informativo/advertencia/estricto y autorización por PIN de supervisor." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · POS</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Punto de Venta · control de crédito</span>
+      </div>
+      <h1 class="proj-hero__title">Control de Límite de Crédito en <span class="grad">Punto de Venta</span></h1>
+      <p class="proj-hero__pitch">Lleva el control de crédito de tus clientes directo a la caja. Al cobrar, el Punto de Venta revisa en tiempo real el límite disponible y las facturas vencidas del cliente, y actúa según la política de cada tienda: informa, advierte o bloquea la venta hasta que un supervisor la autorice con su PIN. Cada autorización queda registrada para auditoría.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo</span><span>Punto de Venta</span><span>Crédito</span><span>OWL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Control de Límite de Crédito en Punto de Venta">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/control-credito-pos/1.png" alt="Configuración del control de crédito"><figcaption>01. Tres modos de control por punto de venta</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/control-credito-pos/2.png" alt="PIN de supervisor"><figcaption>02. PIN de supervisor en la ficha del empleado</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/control-credito-pos/3.png" alt="Estado de crédito en la lista de clientes"><figcaption>03. Estado y crédito del cliente en la caja</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/control-credito-pos/4.png" alt="Venta bloqueada por crédito"><figcaption>04. Bloqueo con autorización por PIN</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/control-credito-pos/5.png" alt="Registro de autorizaciones"><figcaption>05. Bitácora de autorizaciones para auditoría</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Vender a crédito en caja sin perder el control</h3>
+        <p>En una tienda con clientes a crédito, el cajero rara vez sabe si el cliente ya llegó a su límite o tiene facturas vencidas. El resultado son ventas que no debieron autorizarse y una cartera que crece sin control.</p>
+        <p>Este módulo pone la información de crédito en la pantalla de cobro: verifica al cliente en el momento, muestra su estado de un vistazo y —según lo que decida cada tienda— solo informa, pide confirmación o bloquea la venta hasta que un supervisor la autorice con su PIN. Cada autorización queda registrada para auditoría.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8h9a3 3 0 010 6H7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Verificación en tiempo real</h4><p>Al cobrar, revisa el límite, el crédito usado y las facturas vencidas del cliente con datos en vivo.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Tres modos de control</h4><p>Informativo, Advertencia o Estricto, configurables de forma independiente por cada punto de venta.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Autorización por PIN</h4><p>En modo estricto, solo un supervisor con PIN puede desbloquear la venta a un cliente en riesgo.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Indicadores visuales</h4><p>Semáforo de color y columnas de límite, usado, disponible y vencido en la lista de clientes.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4zM4 9h16M9 5v14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Bitácora de autorizaciones</h4><p>Cada venta autorizada queda registrada con cliente, cajero, supervisor, motivo y monto.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Configurable por tienda</h4><p>Cada punto de venta define su modo y qué datos de crédito mostrar; compatible con multi-compañía.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Odoo 19</span>
+          <span class="chip">Punto de Venta</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">OWL</span>
+          <span class="chip">Python</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu tienda vende a crédito sin visibilidad en caja?</h3>
+      <p>Adapto los modos de control y la autorización a tu política de crédito, e integro con tu gestión de límites y cartera.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Control de Límite de Crédito en Punto de Venta</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
