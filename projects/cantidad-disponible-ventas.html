@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cantidad Disponible en Ventas — Soto B.</title>
+<meta name="description" content="Existencia disponible en las líneas de venta y en la tienda en línea de Odoo, con semáforo de color." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Ventas</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · Ventas + eCommerce</span>
+      </div>
+      <h1 class="proj-hero__title">Cantidad <span class="grad">Disponible en Ventas</span></h1>
+      <p class="proj-hero__pitch">Muestra la existencia disponible de cada producto justo donde se decide la venta: en las líneas de la orden y en la ficha de la tienda en línea, con un semáforo de color que evita comprometer lo que no hay.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>JavaScript</span><span>OWL</span><span>XML</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Cantidad Disponible en Ventas">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/cantidad-disponible-ventas/1.png" alt="Producto almacenable"><figcaption>01. Aplica a bienes con seguimiento de inventario</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/cantidad-disponible-ventas/2.png" alt="Columna en la orden de venta"><figcaption>02. Cantidad disponible en la línea, en verde</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/cantidad-disponible-ventas/3.png" alt="Detalle de la línea"><figcaption>03. Se recalcula al cambiar el producto</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/cantidad-disponible-ventas/4.png" alt="Ficha de la tienda"><figcaption>04. Aviso de disponibilidad en la tienda web</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/cantidad-disponible-ventas/5.png" alt="Aviso de disponibilidad"><figcaption>05. «Disponible» / «Disponible bajo pedido»</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Vender sin saber si hay existencias cuesta caro</h3>
+        <p>El vendedor arma la cotización sin ver de inmediato cuánto hay en bodega, y el cliente en línea agrega productos al carrito sin saber si están disponibles. El resultado son promesas que el inventario no puede cumplir y compras que terminan en reclamo.</p>
+        <p>Este módulo pone la existencia disponible justo donde se decide la venta: una columna con semáforo de color en las líneas de la orden y un aviso de disponibilidad en la ficha de la tienda, que se actualiza al cambiar de variante. Todo sin salir de la pantalla ni abrir el módulo de inventario.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Columna en la orden</h4><p>La cantidad disponible aparece en cada línea de la cotización u orden de venta.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Semáforo de color</h4><p>Verde cuando hay existencias, rojo cuando no. Señal inmediata para el vendedor.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-6 9 6v9a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Aviso en la tienda</h4><p>La ficha de producto muestra «Disponible» o «Disponible bajo pedido» al comprador.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4v6h6M20 20v-6h-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 10a8 8 0 0114-3M20 14a8 8 0 01-14 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Actualización por variante</h4><p>En la tienda, el aviso se recalcula solo al elegir otra variante, sin recargar la página.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v6c0 4-3 6-8 8-5-2-8-4-8-8V7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cálculo protegido</h4><p>Solo aplica a bienes almacenables y muestra cero ante cualquier inconveniente, sin bloquear la pantalla.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">XML</span>
+          <span class="chip">OWL</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu equipo vende sin ver el inventario?</h3>
+      <p>Integro la disponibilidad de existencias en tus ventas y tu tienda en línea, adaptada a tu operación.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Cantidad Disponible en Ventas</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
