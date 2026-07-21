@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Conector MaintainX para Odoo — Soto B.</title>
+<meta name="description" content="Sincronización bidireccional entre Odoo 19 y MaintainX (CMMS): órdenes de trabajo, activos, repuestos y medidores." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Mantenimiento</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// integración CMMS · sincronización bidireccional</span>
+      </div>
+      <h1 class="proj-hero__title">Conector <span class="grad">MaintainX</span></h1>
+      <p class="proj-hero__pitch">Sincroniza en tiempo real el mantenimiento de tu operación entre Odoo y MaintainX: las órdenes de trabajo, los activos, los repuestos y los medidores viven alineados en ambas plataformas, sin doble digitación.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo 19</span><span>MaintainX</span><span>CMMS</span><span>Inventario</span><span>Integración</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Conector MaintainX para Odoo">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 06</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/maintainx-connector/1.png" alt="Orden de trabajo"><figcaption>01. Orden de trabajo con pestañas y acciones de MaintainX</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/maintainx-connector/2.png" alt="Ubicaciones"><figcaption>02. Ubicaciones sincronizadas con las bodegas</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/maintainx-connector/3.png" alt="Partes"><figcaption>03. Catálogo de repuestos con stock por ubicación</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/maintainx-connector/4.png" alt="Medidores"><figcaption>04. Medidores (horómetros, manómetros, tacómetros)</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/maintainx-connector/5.png" alt="Fabricantes"><figcaption>05. Fabricantes y modelos de equipo</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/maintainx-connector/6.png" alt="Bitácora"><figcaption>06. Bitácora de sincronización para diagnóstico</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Tu equipo de mantenimiento y tu administración no hablan el mismo idioma</h3>
+        <p>El personal de taller prefiere MaintainX por su app móvil pensada para el campo, mientras que la gerencia necesita el inventario, las compras y los costos dentro de Odoo. Sin integración, la misma orden se digita dos veces y los datos terminan desalineados.</p>
+        <p>Este conector mantiene ambas plataformas sincronizadas de forma automática y bidireccional: cada orden de trabajo, activo, repuesto, medidor y ubicación se refleja en los dos lados, con una bitácora que deja ver exactamente qué se sincronizó y cuándo.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Sincronización bidireccional</h4><p>Órdenes de trabajo, activos, partes, medidores y ubicaciones alineados entre Odoo y MaintainX.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Consumo de repuestos con control de stock</h4><p>El técnico documenta las partes usadas y Operaciones confirma el consumo, que descuenta el inventario real.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v9l6 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Webhooks y tareas programadas</h4><p>Eventos entrantes en tiempo real y una cola de salida con reintentos automáticos.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Bitácora y diagnóstico</h4><p>Cada llamada queda registrada con su estado, para saber al instante por qué algo no se sincronizó.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M4 7h16l-1 13H5L4 7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Integración con Soporte al Cliente</h4><p>Desde un ticket de Helpdesk se genera con un clic una orden de mantenimiento, con trazabilidad de ida y vuelta.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l3 3v17H6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 13h6M9 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Reporte estilo MaintainX</h4><p>Imprime la orden de trabajo con el mismo formato del CMMS directamente desde Odoo.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo 19</span>
+          <span class="chip">MaintainX API</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">XML</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu taller usa MaintainX y tu administración usa Odoo?</h3>
+      <p>Integro ambas plataformas para que dejes de digitar dos veces y tengas el inventario y los costos siempre al día.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Conector MaintainX para Odoo</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
