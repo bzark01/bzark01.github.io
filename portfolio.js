@@ -7,19 +7,21 @@
 
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var CAT_LABELS = [
-    { key: 'all', label: 'Todos' },
-    { key: 'nomina', label: 'Nómina CR' },
-    { key: 'ventas', label: 'Ventas' },
-    { key: 'pos', label: 'POS' },
-    { key: 'contabilidad', label: 'Contabilidad' },
-    { key: 'compras', label: 'Compras' },
-    { key: 'inventario', label: 'Inventario' },
-    { key: 'ia', label: 'IA' },
-    { key: 'productividad', label: 'Productividad' },
-    { key: 'infra', label: 'Infra' }
+    { key: 'all', label: 'Todos', label_en: 'All' },
+    { key: 'nomina', label: 'Nómina CR', label_en: 'CR Payroll' },
+    { key: 'ventas', label: 'Ventas', label_en: 'Sales' },
+    { key: 'pos', label: 'POS', label_en: 'POS' },
+    { key: 'contabilidad', label: 'Contabilidad', label_en: 'Accounting' },
+    { key: 'compras', label: 'Compras', label_en: 'Purchasing' },
+    { key: 'inventario', label: 'Inventario', label_en: 'Inventory' },
+    { key: 'ia', label: 'IA', label_en: 'AI' },
+    { key: 'productividad', label: 'Productividad', label_en: 'Productivity' },
+    { key: 'infra', label: 'Infra', label_en: 'Infra' }
   ];
   var COLLAPSE_LIMIT = 12;
-  var LOADING_WORDS = ['Construyo', 'Diseño', 'Escalo'];
+  var LOADING_WORDS_ALL = { es: ['Construyo', 'Diseño', 'Escalo'], en: ['I build', 'I design', 'I scale'] };
+  function curSiteLang() { try { return localStorage.getItem('site_lang') || 'es'; } catch (e) { return 'es'; } }
+  var LOADING_WORDS = LOADING_WORDS_ALL[curSiteLang()] || LOADING_WORDS_ALL.es;
 
   /* ---------- Loading ---------- */
   var LOAD_META = ['boot', 'init', 'load', 'link', 'ready'];
@@ -231,7 +233,7 @@
       btn.type = 'button';
       btn.className = 'filter' + (c.key === 'all' ? ' active' : '');
       btn.setAttribute('data-filter', c.key);
-      btn.innerHTML = c.label + ' <span class="c">' + count + '</span>';
+      btn.innerHTML = '<span data-en="' + (c.label_en || c.label) + '">' + c.label + '</span> <span class="c">' + count + '</span>';
       btn.addEventListener('click', function () {
         activeFilter = c.key;
         expanded = false;
@@ -242,6 +244,7 @@
       });
       filtersWrap.appendChild(btn);
     });
+    if (window.__applyLang) window.__applyLang();  // traducir filtros recién generados
 
     function render() {
       var matching = rows.filter(function (r) {

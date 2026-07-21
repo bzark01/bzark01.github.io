@@ -16,8 +16,14 @@
     document.documentElement.setAttribute('lang', lang);
     try { localStorage.setItem(KEY, lang); } catch (e) {}
   }
-  var saved = 'es';
-  try { saved = localStorage.getItem(KEY) || 'es'; } catch (e) {}
+  function currentLang() {
+    var l = 'es';
+    try { l = localStorage.getItem(KEY) || 'es'; } catch (e) {}
+    return l;
+  }
+  // reaplica el idioma actual (para elementos generados por JS después del load)
+  window.__applyLang = function () { apply(currentLang()); };
+  var saved = currentLang();
   function init() {
     apply(saved);
     var btns = document.querySelectorAll('[data-lang-toggle]');
