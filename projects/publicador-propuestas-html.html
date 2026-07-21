@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Publicador de Propuestas HTML — Soto B.</title>
+<meta name="description" content="Publica propuestas y cotizaciones en una URL pública, con historial de versiones e integración con Ventas en Odoo." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Ventas</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · propuestas + ventas</span>
+      </div>
+      <h1 class="proj-hero__title">Publicador de <span class="grad">Propuestas HTML</span></h1>
+      <p class="proj-hero__pitch">Publica propuestas y cotizaciones en HTML y compártelas con un enlace propio, siempre actualizado. Se integra con Ventas para vincular la propuesta a la orden, generar la cotización en PDF y enviarla por correo.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Odoo</span><span>Ventas</span><span>Website</span><span>PDF</span><span>Python</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Publicador de Propuestas HTML">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/publicador-propuestas-html/1.png" alt="Lista de propuestas"><figcaption>01. Propuestas en Ventas → Órdenes</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/publicador-propuestas-html/2.png" alt="Formulario de propuesta"><figcaption>02. Nombre, slug de URL y archivo HTML</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/publicador-propuestas-html/3.png" alt="Propuesta publicada"><figcaption>03. Publicada, con URL pública lista para copiar</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/publicador-propuestas-html/4.png" alt="Integración con la orden"><figcaption>04. Campo Propuestas y botón PDF Profesional</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/publicador-propuestas-html/5.png" alt="Nueva propuesta"><figcaption>05. Crear una propuesta desde cero</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>Enviar propuestas por correo con adjuntos pesados es lento y se desactualiza</h3>
+        <p>Compartir una propuesta comercial por correo obliga a adjuntar archivos pesados y, cuando el documento cambia, hay que reenviarlo y el cliente nunca sabe cuál es la versión buena.</p>
+        <p>Este módulo publica la propuesta en una dirección web propia y corta. El cliente entra por el enlace y siempre ve la versión vigente; si la propuesta se actualiza, el enlace no cambia. Además queda vinculada a la orden de venta, con su cotización en PDF y su correo listo para enviar.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Propuesta en una URL pública</h4><p>Cada propuesta tiene un enlace propio y corto para compartir con el cliente.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Historial de versiones</h4><p>Cada actualización guarda la versión anterior y se puede restaurar cuando haga falta.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Borrador y Publicado</h4><p>La propuesta se prepara en privado y solo es accesible cuando se publica.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Integración con Ventas</h4><p>Vincula la propuesta a la orden de venta y suma botones de PDF y correo.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13H7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Cotización en PDF profesional</h4><p>Genera la cotización con encabezado de empresa, productos, totales y propuestas.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Correo con la propuesta</h4><p>Envía la cotización con una plantilla que incluye los enlaces a las propuestas.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">ReportLab</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Querés compartir tus propuestas con un enlace siempre al día?</h3>
+      <p>Adapto el módulo a tu proceso comercial e integro la publicación con tus órdenes de venta.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Publicador de Propuestas HTML</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
