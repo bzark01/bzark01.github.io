@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Factura Electrónica POS Costa Rica — Bryan Soto B.</title>
-<meta name="description" content="Facturación electrónica de Costa Rica dentro del Punto de Venta de Odoo: tiquetes y facturas electrónicas en tiempo real, consulta a Hacienda, multimoneda, sucursales y cobro de facturas pendientes." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
+<meta content="Facturación electrónica de Costa Rica dentro del Punto de Venta de Odoo: tiquetes y facturas electrónicas en tiempo real, consulta a Hacienda, multimoneda, sucursales y cobro de facturas pendientes." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
 <style>
   .suite-band{display:flex;flex-wrap:wrap;gap:18px;margin:8px 0 40px;}
   .suite-stat{background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
@@ -53,176 +54,162 @@
   .mv-lb__nav:hover{background:var(--accent,#4ade80);color:#06281a;}
   .mv-lb__prev{left:22px;} .mv-lb__next{right:22px;}
 </style>
-</head>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#destacados"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="factura-electronica.html" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver a Factura Electrónica
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Punto de Venta · CR</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// suite POS · 5 módulos</span>
-      </div>
-      <h1 class="proj-hero__title">Factura Electrónica <span class="grad">POS</span></h1>
-      <p class="proj-hero__pitch">La facturación electrónica de Costa Rica llevada al mostrador: emite tiquetes y facturas electrónicas desde el Punto de Venta de Odoo con envío a Hacienda en tiempo real, consulta del padrón al asignar cliente, pagos multimoneda, control por sucursales y cobro de facturas pendientes — sin salir de la caja.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-        <a href="factura-electronica.html" class="btn btn--ghost">Ver Factura Electrónica</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Odoo POS</span><span>OWL / JS</span><span>XML v4.4</span><span>API Hacienda</span><span>Multimoneda</span><span>Localización CR</span>
-      </div>
-    </header>
-
-    <div class="suite-band"><div class="suite-stat"><span class="suite-stat__n">5</span><span class="suite-stat__l">módulos POS</span></div><div class="suite-stat"><span class="suite-stat__n">tiempo real</span><span class="suite-stat__l">envío a Hacienda</span></div><div class="suite-stat"><span class="suite-stat__n">FE · TE · NC</span><span class="suite-stat__l">comprobantes desde caja</span></div><div class="suite-stat"><span class="suite-stat__n">multi</span><span class="suite-stat__l">moneda y sucursal</span></div></div>
-
-    <p class="pos-note">Todos estos módulos operan <strong>dentro de la sesión del Punto de Venta</strong> (interfaz OWL/JS de Odoo). Se apoyan en el núcleo de <a href="factura-electronica.html">Factura Electrónica Costa Rica</a> para la firma y el envío a Hacienda.</p>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// módulo 01</span>
-        <h3>Facturación electrónica en el Punto de Venta</h3>
-        <p>El módulo central: convierte cada venta del POS en un comprobante electrónico válido. Genera Facturas Electrónicas (FE), Tiquetes Electrónicos (TE) y Notas de Crédito (NC), los firma y los envía a Hacienda en tiempo real, mostrando el estado sin interrumpir el flujo de la caja.</p>
-        <p>Resuelve además los casos propios del POS costarricense: usar el crédito de una NC como forma de pago, redistribuir los descuentos globales entre las líneas para cumplir la estructura v4.4, y seleccionar la actividad económica que corresponde a cada venta.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">Facturación en el POS</span></div>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_1.png" alt="Venta en el POS"><figcaption>Venta en curso con varios productos, impuestos y total calculado</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_2.png" alt="Pago en el POS"><figcaption>Pantalla de pago: efectivo, tarjeta y crédito de NC como forma de pago</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_3.png" alt="Cobro con factura electrónica"><figcaption>Cobro en efectivo con el interruptor «Factura» activo: se emitirá factura electrónica</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_4.png" alt="Método de pago Crédito de Cliente"><figcaption>Método de pago «Crédito de Cliente (NC)» para aplicar notas de crédito en caja</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_5.png" alt="Elección de factura o tiquete"><figcaption>Al cobrar, el POS pregunta: ¿Factura Electrónica (FE) o Tiquete Electrónico (TE)?</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_6.png" alt="Enviando a Hacienda"><figcaption>Envío en tiempo real al Ministerio de Hacienda, con el progreso a la vista del cajero</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p1_7.png" alt="Aceptado por Hacienda"><figcaption>«Aceptado por Hacienda»: consecutivo, clave numérica y descarga de la respuesta oficial</figcaption></figure>
-      </div>
-      <ul class="pos-feats">
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 2v5h5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><div><h4>FE, TE y NC desde caja</h4><p>El cajero emite factura, tiquete o nota de crédito electrónica directamente en la pantalla del POS.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Envío en tiempo real</h4><p>Firma y transmisión a Hacienda al cerrar la orden, con el estado visible en el recibo.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/></svg></span><div><h4>NC como forma de pago</h4><p>El crédito de una nota de crédito se aplica como medio de pago en una nueva venta.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M20 12H4M12 4v16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg></span><div><h4>Descuentos globales v4.4</h4><p>Redistribuye el descuento global entre líneas para cumplir la estructura exigida por Hacienda.</p></div></li>
-      </ul>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// módulo 02</span>
-        <h3>Consulta a Hacienda dentro del POS</h3>
-        <p>Módulo puente que lleva la consulta del padrón del Ministerio de Hacienda a la pantalla del Punto de Venta. Al asignar un cliente por su cédula, trae automáticamente su nombre y tipo de identificación para emitir la factura electrónica con los datos correctos.</p>
-        <p>Se instala automáticamente cuando conviven la consulta de Hacienda y el POS, sin configuración adicional.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">Consulta a Hacienda en POS</span></div>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p2_1.png" alt="Selección de cliente en el POS"><figcaption>Selección de cliente desde la caja, con su saldo adeudado a la vista</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p2_2.png" alt="Crear cliente con consulta a Hacienda"><figcaption>Alta de cliente en el POS con «Consultar Actividad Económica en Hacienda» y datos fiscales</figcaption></figure>
-      </div>
-      <ul class="pos-feats">
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Padrón al instante</h4><p>Digitás la cédula del cliente y el nombre llega desde Hacienda, sin salir de la caja.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 10-8 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="7" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M4 21a8 8 0 0116 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Cliente correcto</h4><p>Evita facturas rechazadas por nombre o identificación mal digitados en el mostrador.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Instalación automática</h4><p>Se activa solo cuando el POS y la consulta de Hacienda están presentes.</p></div></li>
-      </ul>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// módulo 03</span>
-        <h3>Punto de Venta multimoneda</h3>
-        <p>Por defecto Odoo maneja una sola moneda en el POS. Este módulo habilita listas de precios en distintas divisas: al elegir una lista con otra moneda, el precio y la moneda se ajustan automáticamente y el recibo puede imprimirse en la moneda de la venta.</p>
-        <p>Permite recibir pagos en diferentes monedas con su tipo de cambio, generar la factura electrónica multimoneda correspondiente y presentar reportes en varias divisas. Compatible con el POS de Odoo y con la identificación de cajero por empleado.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">POS Multimoneda</span></div>
-      </div>
-      <ul class="pos-feats">
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M9.5 9.5a2.5 2.5 0 015 .5c0 2-3 1.5-3 3.5a2.5 2.5 0 005 .5M12 6v1M12 17v1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Listas de precio por moneda</h4><p>Cambiar de lista ajusta precio y moneda automáticamente en pantalla.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h13l-2-2M20 17H7l2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Pagos en varias divisas</h4><p>Recibe efectivo o tarjeta en distintas monedas con su tipo de cambio.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 8h18M7 21h10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Recibos y FE multimoneda</h4><p>Imprime el recibo y emite la factura electrónica en la moneda de la venta.</p></div></li>
-      </ul>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// módulo 04</span>
-        <h3>Gestión de sucursales PDV</h3>
-        <p>Agrupa los puntos de venta por sucursal y controla qué usuarios pueden operar cada una, sin afectar la facturación ni el inventario. Un cajero asignado a una sucursal solo ve las cajas, sesiones y órdenes de la sucursal que le corresponde.</p>
-        <p>Ideal para cadenas y operaciones con varios locales que necesitan aislar la operación de caja por punto físico manteniendo una sola base de datos.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">Sucursales PDV</span></div>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p4_1.png" alt="Sucursales PDV"><figcaption>Sucursales del Punto de Venta con su responsable y cantidad de cajas asignadas</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p4_2.png" alt="Ficha de sucursal"><figcaption>Ficha de la sucursal: cajas, sesiones activas, usuarios asignados y estadísticas</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/factura-electronica-pos/p4_3.png" alt="Caja asignada a sucursal"><figcaption>La caja «Caja Principal PATITOS» asignada a su sucursal</figcaption></figure>
-      </div>
-      <ul class="pos-feats">
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21V9l9-6 9 6v12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><div><h4>PDV por sucursal</h4><p>Agrupa cajas y sesiones bajo la sucursal física a la que pertenecen.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Acceso restringido</h4><p>Cada usuario solo ve las cajas, sesiones y órdenes de sus sucursales asignadas.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg></span><div><h4>Sin tocar contabilidad</h4><p>El control es de acceso operativo; la facturación y el inventario siguen centralizados.</p></div></li>
-      </ul>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// módulo 05</span>
-        <h3>Cobro de facturas pendientes en caja</h3>
-        <p>Extiende la función «Saldar deuda» del POS: al cobrar la deuda de un cliente, muestra un popup con sus facturas pendientes para que el cajero elija exactamente cuál factura está pagando, en lugar de aplicar el pago de forma genérica.</p>
-        <p>Muestra número, total y saldo de cada factura, aplica el pago a la seleccionada y permite reimprimir el recibo — trazabilidad limpia entre el cobro de caja y la cuenta por cobrar.</p>
-        <div class="suite-sec__mods"><span class="suite-mod">Cobro de facturas en POS</span></div>
-      </div>
-      <ul class="pos-feats">
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><div><h4>Selección de factura</h4><p>Popup con las facturas pendientes del cliente: el cajero elige cuál pagar.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Saldo a la vista</h4><p>Número, total y saldo pendiente de cada factura antes de aplicar el pago.</p></div></li>
-        <li class="pos-feat"><span class="pos-feat__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9V4h12v5M6 18h12v3H6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><rect x="4" y="9" width="16" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg></span><div><h4>Reimpresión de recibo</h4><p>Vuelve a imprimir el comprobante del cobro cuando el cliente lo necesita.</p></div></li>
-      </ul>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del POS</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo POS</span>
-          <span class="chip">OWL / JavaScript</span>
-          <span class="chip">XML v4.4</span>
-          <span class="chip">API Hacienda</span>
-          <span class="chip">Multimoneda</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">QWeb / Recibos</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Facturás electrónicamente desde el Punto de Venta?</h3>
-      <p>Implemento la facturación electrónica CR en tu POS de Odoo: tiquetes y facturas en tiempo real, multimoneda, sucursales y cobro de pendientes. ¿Buscás la facturación de escritorio? Mirá <a href="factura-electronica.html">Factura Electrónica Costa Rica</a>.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#destacados" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Factura Electrónica POS Costa Rica</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#destacados"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="factura-electronica.html">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Return to Electronic Invoice">Volver a Factura Electrónica</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Point of Sale · CR">Odoo · Punto de Venta · CR</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// POS suite · 5 modules">// suite POS · 5 módulos</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Electronic Invoice">Factura Electrónica</span> <span class="grad"><span data-en="POS">POS</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Costa Rica's electronic invoicing brought to the counter: issues tickets and electronic invoices from the Odoo Point of Sale with delivery to the Treasury in real time, consultation of the registry when assigning clients, multi-currency payments, control by branches and collection of pending invoices — without leaving the cashier.">La facturación electrónica de Costa Rica llevada al mostrador: emite tiquetes y facturas electrónicas desde el Punto de Venta de Odoo con envío a Hacienda en tiempo real, consulta del padrón al asignar cliente, pagos multimoneda, control por sucursales y cobro de facturas pendientes — sin salir de la caja.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="factura-electronica.html"><span data-en="See Electronic Invoice">Ver Factura Electrónica</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Odoo POS</span><span>OWL / JS</span><span>XML v4.4</span><span>API Hacienda</span><span>Multimoneda</span><span>Localización CR</span>
+</div>
+</header>
+<div class="suite-band"><div class="suite-stat"><span class="suite-stat__n">5</span><span class="suite-stat__l"><span data-en="POS modules">módulos POS</span></span></div><div class="suite-stat"><span class="suite-stat__n"><span data-en="real time">tiempo real</span></span><span class="suite-stat__l"><span data-en="shipping to Treasury">envío a Hacienda</span></span></div><div class="suite-stat"><span class="suite-stat__n"><span data-en="FE · TE · NC">FE · TE · NC</span></span><span class="suite-stat__l"><span data-en="receipts from cash">comprobantes desde caja</span></span></div><div class="suite-stat"><span class="suite-stat__n"><span data-en="multi">multi</span></span><span class="suite-stat__l"><span data-en="currency and branch">moneda y sucursal</span></span></div></div>
+<p class="pos-note"><span data-en="All these modules operate">Todos estos módulos operan</span> <strong><span data-en="within the Point of Sale session">dentro de la sesión del Punto de Venta</span></strong> <span data-en="(Odoo OWL/JS interface). They rely on the core of">(interfaz OWL/JS de Odoo). Se apoyan en el núcleo de</span> <a href="factura-electronica.html"><span data-en="Costa Rica Electronic Invoice">Factura Electrónica Costa Rica</span></a> <span data-en="for signature and sending to the Treasury.">para la firma y el envío a Hacienda.</span></p>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// module 01">// módulo 01</span></span>
+<h3><span data-en="Electronic billing at the Point of Sale">Facturación electrónica en el Punto de Venta</span></h3>
+<p><span data-en="The core module: converts each POS sale into a valid electronic receipt. It generates Electronic Invoices (FE), Electronic Tickets (TE) and Credit Notes (NC), signs them and sends them to the Treasury in real time, showing the status without interrupting the cash flow.">El módulo central: convierte cada venta del POS en un comprobante electrónico válido. Genera Facturas Electrónicas (FE), Tiquetes Electrónicos (TE) y Notas de Crédito (NC), los firma y los envía a Hacienda en tiempo real, mostrando el estado sin interrumpir el flujo de la caja.</span></p>
+<p><span data-en="It also resolves the cases typical of the Costa Rican POS: using NC credit as a form of payment, redistributing global discounts between lines to comply with the v4.4 structure, and selecting the economic activity that corresponds to each sale.">Resuelve además los casos propios del POS costarricense: usar el crédito de una NC como forma de pago, redistribuir los descuentos globales entre las líneas para cumplir la estructura v4.4, y seleccionar la actividad económica que corresponde a cada venta.</span></p>
+<div class="suite-sec__mods"><span class="suite-mod"><span data-en="Billing at the POS">Facturación en el POS</span></span></div>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Venta en el POS" loading="lazy" src="../images/projects/factura-electronica-pos/p1_1.png"/><figcaption><span data-en="Sale in progress with multiple products, taxes and calculated total">Venta en curso con varios productos, impuestos y total calculado</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Pago en el POS" loading="lazy" src="../images/projects/factura-electronica-pos/p1_2.png"/><figcaption><span data-en="Payment screen: cash, card and NC credit as payment method">Pantalla de pago: efectivo, tarjeta y crédito de NC como forma de pago</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Cobro con factura electrónica" loading="lazy" src="../images/projects/factura-electronica-pos/p1_3.png"/><figcaption><span data-en="Cash collection with the “Invoice” switch active: electronic invoice will be issued">Cobro en efectivo con el interruptor «Factura» activo: se emitirá factura electrónica</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Método de pago Crédito de Cliente" loading="lazy" src="../images/projects/factura-electronica-pos/p1_4.png"/><figcaption><span data-en="“Customer Credit (NC)” payment method to apply credit notes at checkout">Método de pago «Crédito de Cliente (NC)» para aplicar notas de crédito en caja</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Elección de factura o tiquete" loading="lazy" src="../images/projects/factura-electronica-pos/p1_5.png"/><figcaption><span data-en="When collecting, the POS asks: Electronic Invoice (FE) or Electronic Ticket (TE)?">Al cobrar, el POS pregunta: ¿Factura Electrónica (FE) o Tiquete Electrónico (TE)?</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Enviando a Hacienda" loading="lazy" src="../images/projects/factura-electronica-pos/p1_6.png"/><figcaption><span data-en="Sending in real time to the Ministry of Finance, with the progress visible to the cashier">Envío en tiempo real al Ministerio de Hacienda, con el progreso a la vista del cajero</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Aceptado por Hacienda" loading="lazy" src="../images/projects/factura-electronica-pos/p1_7.png"/><figcaption><span data-en='"Accepted by the Treasury": consecutive, numerical code and download of the official response'>«Aceptado por Hacienda»: consecutivo, clave numérica y descarga de la respuesta oficial</span></figcaption></figure>
+</div>
+<ul class="pos-feats">
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M14 2v5h5" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="FE, TE and NC from the box">FE, TE y NC desde caja</span></h4><p><span data-en="The cashier issues an invoice, ticket or electronic credit note directly on the POS screen.">El cajero emite factura, tiquete o nota de crédito electrónica directamente en la pantalla del POS.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M22 2L11 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path><path d="M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Real-time shipping">Envío en tiempo real</span></h4><p><span data-en="Signature and transmission to the Treasury when closing the order, with the status visible on the receipt.">Firma y transmisión a Hacienda al cerrar la orden, con el estado visible en el recibo.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path><rect height="14" rx="2" stroke="currentColor" stroke-width="1.7" width="18" x="3" y="5"></rect></svg></span><div><h4><span data-en="NC as payment method">NC como forma de pago</span></h4><p><span data-en="The credit of a credit note is applied as a means of payment in a new sale.">El crédito de una nota de crédito se aplica como medio de pago en una nueva venta.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M20 12H4M12 4v16" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"></circle></svg></span><div><h4><span data-en="Global Discounts v4.4">Descuentos globales v4.4</span></h4><p><span data-en="Redistributes the global discount between lines to comply with the structure required by the Treasury.">Redistribuye el descuento global entre líneas para cumplir la estructura exigida por Hacienda.</span></p></div></li>
+</ul>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// module 02">// módulo 02</span></span>
+<h3><span data-en="Consult the Treasury within the POS">Consulta a Hacienda dentro del POS</span></h3>
+<p><span data-en="Bridge module that takes the consultation of the Ministry of Finance register to the Point of Sale screen. When assigning a client by ID, it automatically brings their name and type of identification to issue the electronic invoice with the correct data.">Módulo puente que lleva la consulta del padrón del Ministerio de Hacienda a la pantalla del Punto de Venta. Al asignar un cliente por su cédula, trae automáticamente su nombre y tipo de identificación para emitir la factura electrónica con los datos correctos.</span></p>
+<p><span data-en="It is installed automatically when the Treasury consultation and the POS coexist, without additional configuration.">Se instala automáticamente cuando conviven la consulta de Hacienda y el POS, sin configuración adicional.</span></p>
+<div class="suite-sec__mods"><span class="suite-mod"><span data-en="Consult the Treasury at POS">Consulta a Hacienda en POS</span></span></div>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Selección de cliente en el POS" loading="lazy" src="../images/projects/factura-electronica-pos/p2_1.png"/><figcaption><span data-en="Customer selection from the checkout, with their outstanding balance visible">Selección de cliente desde la caja, con su saldo adeudado a la vista</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Crear cliente con consulta a Hacienda" loading="lazy" src="../images/projects/factura-electronica-pos/p2_2.png"/><figcaption><span data-en="Customer registration in the POS with “Check Economic Activity in the Treasury” and tax data">Alta de cliente en el POS con «Consultar Actividad Económica en Hacienda» y datos fiscales</span></figcaption></figure>
+</div>
+<ul class="pos-feats">
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"></circle><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Instant registration">Padrón al instante</span></h4><p><span data-en="You enter the customer's ID and the name arrives from the Treasury, without leaving the box.">Digitás la cédula del cliente y el nombre llega desde Hacienda, sin salir de la caja.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M16 11a4 4 0 10-8 0" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path><circle cx="12" cy="7" r="3" stroke="currentColor" stroke-width="1.7"></circle><path d="M4 21a8 8 0 0116 0" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Correct customer">Cliente correcto</span></h4><p><span data-en="Avoid invoices rejected due to incorrectly typed name or identification at the counter.">Evita facturas rechazadas por nombre o identificación mal digitados en el mostrador.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Automatic installation">Instalación automática</span></h4><p><span data-en="It is activated only when the POS and the Treasury consultation are present.">Se activa solo cuando el POS y la consulta de Hacienda están presentes.</span></p></div></li>
+</ul>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// module 03">// módulo 03</span></span>
+<h3><span data-en="Multicurrency Point of Sale">Punto de Venta multimoneda</span></h3>
+<p><span data-en="By default Odoo handles a single currency in the POS. This module enables price lists in different currencies: when you choose a list with another currency, the price and currency are automatically adjusted and the receipt can be printed in the currency of the sale.">Por defecto Odoo maneja una sola moneda en el POS. Este módulo habilita listas de precios en distintas divisas: al elegir una lista con otra moneda, el precio y la moneda se ajustan automáticamente y el recibo puede imprimirse en la moneda de la venta.</span></p>
+<p><span data-en="It allows you to receive payments in different currencies with your exchange rate, generate the corresponding multi-currency electronic invoice and present reports in several currencies. Compatible with Odoo POS and cashier identification per employee.">Permite recibir pagos en diferentes monedas con su tipo de cambio, generar la factura electrónica multimoneda correspondiente y presentar reportes en varias divisas. Compatible con el POS de Odoo y con la identificación de cajero por empleado.</span></p>
+<div class="suite-sec__mods"><span class="suite-mod"><span data-en="Multicurrency POS">POS Multimoneda</span></span></div>
+</div>
+<ul class="pos-feats">
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"></circle><path d="M9.5 9.5a2.5 2.5 0 015 .5c0 2-3 1.5-3 3.5a2.5 2.5 0 005 .5M12 6v1M12 17v1" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Price lists by currency">Listas de precio por moneda</span></h4><p><span data-en="Switching between lists adjusts price and currency automatically on the screen.">Cambiar de lista ajusta precio y moneda automáticamente en pantalla.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M4 7h13l-2-2M20 17H7l2 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Payments in multiple currencies">Pagos en varias divisas</span></h4><p><span data-en="Receive cash or card in different currencies with your exchange rate.">Recibe efectivo o tarjeta en distintas monedas con su tipo de cambio.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.7" width="18" x="3" y="4"></rect><path d="M3 8h18M7 21h10" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Receipts and multi-currency FE">Recibos y FE multimoneda</span></h4><p><span data-en="Print the receipt and issue the electronic invoice in the currency of the sale.">Imprime el recibo y emite la factura electrónica en la moneda de la venta.</span></p></div></li>
+</ul>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// module 04">// módulo 04</span></span>
+<h3><span data-en="POS branch management">Gestión de sucursales PDV</span></h3>
+<p><span data-en="Group points of sale by branch and control which users can operate each one, without affecting billing or inventory. A cashier assigned to a branch only sees the tills, sessions and orders of the branch to which he or she corresponds.">Agrupa los puntos de venta por sucursal y controla qué usuarios pueden operar cada una, sin afectar la facturación ni el inventario. Un cajero asignado a una sucursal solo ve las cajas, sesiones y órdenes de la sucursal que le corresponde.</span></p>
+<p><span data-en="Ideal for chains and operations with several locations that need to isolate the cashier operation by physical point while maintaining a single database.">Ideal para cadenas y operaciones con varios locales que necesitan aislar la operación de caja por punto físico manteniendo una sola base de datos.</span></p>
+<div class="suite-sec__mods"><span class="suite-mod"><span data-en="PDV Branches">Sucursales PDV</span></span></div>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Sucursales PDV" loading="lazy" src="../images/projects/factura-electronica-pos/p4_1.png"/><figcaption><span data-en="Point of Sale branches with their manager and number of assigned boxes">Sucursales del Punto de Venta con su responsable y cantidad de cajas asignadas</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Ficha de sucursal" loading="lazy" src="../images/projects/factura-electronica-pos/p4_2.png"/><figcaption><span data-en="Branch file: cash registers, active sessions, assigned users and statistics">Ficha de la sucursal: cajas, sesiones activas, usuarios asignados y estadísticas</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Caja asignada a sucursal" loading="lazy" src="../images/projects/factura-electronica-pos/p4_3.png"/><figcaption><span data-en="The “Caja Principal PATITOS” box assigned to your branch">La caja «Caja Principal PATITOS» asignada a su sucursal</span></figcaption></figure>
+</div>
+<ul class="pos-feats">
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M9 21v-6h6v6" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="POS per branch">PDV por sucursal</span></h4><p><span data-en="Groups boxes and sessions under the physical branch to which they belong.">Agrupa cajas y sesiones bajo la sucursal física a la que pertenecen.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><rect height="10" rx="2" stroke="currentColor" stroke-width="1.7" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Restricted access">Acceso restringido</span></h4><p><span data-en="Each user only sees the boxes, sessions and orders from their assigned branches.">Cada usuario solo ve las cajas, sesiones y órdenes de sus sucursales asignadas.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"></circle></svg></span><div><h4><span data-en="Without touching accounting">Sin tocar contabilidad</span></h4><p><span data-en="The control is operational access; billing and inventory remain centralized.">El control es de acceso operativo; la facturación y el inventario siguen centralizados.</span></p></div></li>
+</ul>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// module 05">// módulo 05</span></span>
+<h3><span data-en="Collection of pending invoices at the cash desk">Cobro de facturas pendientes en caja</span></h3>
+<p><span data-en="Extends the “Pay Debt” function of the POS: when collecting a customer's debt, it shows a popup with their outstanding invoices so that the cashier can choose exactly which invoice they are paying, instead of applying the payment in a generic way.">Extiende la función «Saldar deuda» del POS: al cobrar la deuda de un cliente, muestra un popup con sus facturas pendientes para que el cajero elija exactamente cuál factura está pagando, en lugar de aplicar el pago de forma genérica.</span></p>
+<p><span data-en="Shows number, total and balance of each invoice, applies the payment to the selected one and allows you to reprint the receipt — clean traceability between cash collection and accounts receivable.">Muestra número, total y saldo de cada factura, aplica el pago a la seleccionada y permite reimprimir el recibo — trazabilidad limpia entre el cobro de caja y la cuenta por cobrar.</span></p>
+<div class="suite-sec__mods"><span class="suite-mod"><span data-en="Bill collection in POS">Cobro de facturas en POS</span></span></div>
+</div>
+<ul class="pos-feats">
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><rect height="16" rx="2" stroke="currentColor" stroke-width="1.7" width="16" x="4" y="4"></rect><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="Invoice selection">Selección de factura</span></h4><p><span data-en="Popup with the customer's pending invoices: the cashier chooses which one to pay.">Popup con las facturas pendientes del cliente: el cajero elige cuál pagar.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><h4><span data-en="balance at sight">Saldo a la vista</span></h4><p><span data-en="Number, total and outstanding balance of each invoice before applying payment.">Número, total y saldo pendiente de cada factura antes de aplicar el pago.</span></p></div></li>
+<li class="pos-feat"><span class="pos-feat__ic"><svg fill="none" viewbox="0 0 24 24"><path d="M6 9V4h12v5M6 18h12v3H6z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.7" width="16" x="4" y="9"></rect></svg></span><div><h4><span data-en="Receipt reprint">Reimpresión de recibo</span></h4><p><span data-en="Reprint the receipt of payment when the customer needs it.">Vuelve a imprimir el comprobante del cobro cuando el cliente lo necesita.</span></p></div></li>
+</ul>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind POS">Tecnología detrás del POS</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo POS</span>
+<span class="chip">OWL / JavaScript</span>
+<span class="chip">XML v4.4</span>
+<span class="chip">API Hacienda</span>
+<span class="chip">Multimoneda</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">QWeb / Recibos</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Do you invoice electronically from the Point of Sale?">¿Facturás electrónicamente desde el Punto de Venta?</span></h3>
+<p><span data-en="I implement CR electronic invoicing in your Odoo POS: tickets and invoices in real time, multi-currency, branches and pending collection. Looking for desktop billing? Look">Implemento la facturación electrónica CR en tu POS de Odoo: tiquetes y facturas en tiempo real, multimoneda, sucursales y cobro de pendientes. ¿Buscás la facturación de escritorio? Mirá</span> <a href="factura-electronica.html"><span data-en="Costa Rica Electronic Invoice">Factura Electrónica Costa Rica</span></a>.</p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#destacados"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · POS Electronic Invoice Costa Rica">caso · Factura Electrónica POS Costa Rica</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
 <script>
 (function(){
@@ -244,5 +231,5 @@
   document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return; if(e.key==='Escape')close(); else if(e.key==='ArrowLeft')show(idx-1); else if(e.key==='ArrowRight')show(idx+1);});
 })();
 </script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

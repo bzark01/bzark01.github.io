@@ -1,145 +1,137 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>CasaShare — Bryan Soto B.</title>
-<meta name="description" content="App móvil cross-platform para gestionar gastos compartidos del hogar." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="App móvil cross-platform para gestionar gastos compartidos del hogar." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <!-- Hero -->
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Móvil · Flutter</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// 2025 — en producción</span>
-      </div>
-      <h1 class="proj-hero__title">CasaShare <span class="grad">— gastos compartidos</span></h1>
-      <p class="proj-hero__pitch">App móvil cross-platform para gestionar los gastos del hogar entre parejas o roommates. Sincronización en tiempo real, categorías inteligentes, recordatorios automáticos y reportes de consumo mensual.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar info</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Flutter</span><span>Dart</span><span>Python</span><span>Docker</span><span>PostgreSQL</span>
-      </div>
-    </header>
-
-    <!-- Carrusel -->
-    <section class="carousel" aria-label="Capturas de CasaShare">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/casashare/1.png" alt="Vista principal de CasaShare"><figcaption>01. Dashboard principal</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/casashare/2.png" alt="Registro de gasto"><figcaption>02. Registro de gasto con categoría</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/casashare/3.png" alt="Reportes mensuales"><figcaption>03. Reportes y gráficos de consumo</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/casashare/4.png" alt="Recordatorios"><figcaption>04. Recordatorios de pagos recurrentes</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/casashare/5.png" alt="Configuración"><figcaption>05. Mascot Cody y configuración</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <!-- Detalle -->
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Gestionar gastos compartidos sin pelearse</h3>
-        <p>Las parejas y roommates suelen perder rastro de los gastos del hogar: quién pagó qué, cuánto debe cada uno, qué pagos recurrentes vienen este mes. Las apps existentes son genéricas o pesadas.</p>
-        <p>CasaShare resuelve esto con un enfoque <strong>minimalista y emocional</strong>: notas, categorías visuales, sincronización en tiempo real y una mascota (Cody) que hace la experiencia divertida.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l9 9-9 9-9-9 9-9z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Sincronización en tiempo real</h4><p>Ambos miembros ven los cambios al instante sin recargar.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Categorías inteligentes</h4><p>Comida, transporte, suscripciones, hogar — con iconos y colores.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Recordatorios programables</h4><p>Para pagos recurrentes: alquiler, servicios, suscripciones.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Reportes mensuales con gráficos</h4><p>Visualiza consumo por categoría y tendencias en el tiempo.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Flutter</span>
-          <span class="chip">Dart</span>
-          <span class="chip">Python</span>
-          <span class="chip">Docker</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">REST API</span>
-          <span class="chip">WebSockets</span>
-          <span class="chip">Lottie</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="proj-cta">
-      <h3>¿Te interesa una app como esta?</h3>
-      <p>Desarrollo apps móviles cross-platform con Flutter para pequeños negocios y startups. Hablemos sobre tu idea.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Escríbeme</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · CasaShare</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+ <span data-en="hero">Hero</span> 
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Mobile Flutter">Móvil · Flutter</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// 2025 — in production">// 2025 — en producción</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="HomeShare">CasaShare</span> <span class="grad"><span data-en="— shared expenses">— gastos compartidos</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Cross-platform mobile app to manage household expenses between couples or roommates. Real-time synchronization, smart categories, automatic reminders and monthly consumption reports.">App móvil cross-platform para gestionar los gastos del hogar entre parejas o roommates. Sincronización en tiempo real, categorías inteligentes, recordatorios automáticos y reportes de consumo mensual.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request info">Solicitar info</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Flutter</span><span>Dart</span><span>Python</span><span>Docker</span><span>PostgreSQL</span>
+</div>
+</header>
+ <span data-en="Carousel">Carrusel</span> 
+<section aria-label="Capturas de CasaShare" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Vista principal de CasaShare" src="../images/projects/casashare/1.png"/><figcaption><span data-en="01. Main Dashboard">01. Dashboard principal</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Registro de gasto" src="../images/projects/casashare/2.png"/><figcaption><span data-en="02. Expense record with category">02. Registro de gasto con categoría</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Reportes mensuales" src="../images/projects/casashare/3.png"/><figcaption><span data-en="03. Consumption reports and graphs">03. Reportes y gráficos de consumo</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Recordatorios" src="../images/projects/casashare/4.png"/><figcaption><span data-en="04. Recurring payment reminders">04. Recordatorios de pagos recurrentes</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Configuración" src="../images/projects/casashare/5.png"/><figcaption><span data-en="05. Mascot Cody and settings">05. Mascot Cody y configuración</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+ <span data-en="Detail">Detalle</span> 
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Manage shared expenses without fighting">Gestionar gastos compartidos sin pelearse</span></h3>
+<p><span data-en="Couples and roommates often lose track of household expenses: who paid for what, how much each owes, what recurring payments are coming up this month. The existing apps are generic or heavy.">Las parejas y roommates suelen perder rastro de los gastos del hogar: quién pagó qué, cuánto debe cada uno, qué pagos recurrentes vienen este mes. Las apps existentes son genéricas o pesadas.</span></p>
+<p><span data-en="CasaShare solves this with an approach">CasaShare resuelve esto con un enfoque</span> <strong><span data-en="minimalist and emotional">minimalista y emocional</span></strong><span data-en=": notes, visual categories, real-time synchronization and a pet (Cody) that makes the experience fun.">: notas, categorías visuales, sincronización en tiempo real y una mascota (Cody) que hace la experiencia divertida.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3l9 9-9 9-9-9 9-9z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Real time synchronization">Sincronización en tiempo real</span></h4><p><span data-en="Both members see the changes instantly without reloading.">Ambos miembros ven los cambios al instante sin recargar.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="16" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="4"></rect><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Smart categories">Categorías inteligentes</span></h4><p><span data-en="Food, transportation, subscriptions, home — with icons and colors.">Comida, transporte, suscripciones, hogar — con iconos y colores.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Programmable reminders">Recordatorios programables</span></h4><p><span data-en="For recurring payments: rent, services, subscriptions.">Para pagos recurrentes: alquiler, servicios, suscripciones.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Monthly reports with graphs">Reportes mensuales con gráficos</span></h4><p><span data-en="View consumption by category and trends over time.">Visualiza consumo por categoría y tendencias en el tiempo.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Flutter</span>
+<span class="chip">Dart</span>
+<span class="chip">Python</span>
+<span class="chip">Docker</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">REST API</span>
+<span class="chip">WebSockets</span>
+<span class="chip">Lottie</span>
+</div>
+</div>
+</section>
+ <span data-en="CTA">CTA</span> 
+<section class="proj-cta">
+<h3><span data-en="Are you interested in an app like this?">¿Te interesa una app como esta?</span></h3>
+<p><span data-en="I develop cross-platform mobile apps with Flutter for small businesses and startups. Let's talk about your idea.">Desarrollo apps móviles cross-platform con Flutter para pequeños negocios y startups. Hablemos sobre tu idea.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="write to me">Escríbeme</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · CasaShare">caso · CasaShare</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

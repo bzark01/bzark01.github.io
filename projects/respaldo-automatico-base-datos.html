@@ -1,142 +1,134 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Respaldo Automático de Base de Datos para Odoo — Soto B.</title>
-<meta name="description" content="Copias de seguridad automáticas de Odoo a local, servidor remoto o la nube, con retención y alertas." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Copias de seguridad automáticas de Odoo a local, servidor remoto o la nube, con retención y alertas." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · DevOps</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// utilidad de administración · 8 destinos de respaldo</span>
-      </div>
-      <h1 class="proj-hero__title">Respaldo Automático de <span class="grad">Base de Datos</span></h1>
-      <p class="proj-hero__pitch">Automatiza las copias de seguridad de tu base de datos Odoo y guárdalas solas, todos los días, en el servidor o en la nube. Sin descargas manuales, con retención y alertas por correo.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>PostgreSQL</span><span>Cloud</span><span>XML</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Respaldo Automático de Base de Datos">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/respaldo-automatico-base-datos/1.png" alt="Lista de configuraciones de respaldo"><figcaption>01. Configuraciones de respaldo</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/respaldo-automatico-base-datos/2.png" alt="Formulario de respaldo"><figcaption>02. Datos del respaldo</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/respaldo-automatico-base-datos/3.png" alt="Selección del destino"><figcaption>03. Destino del respaldo</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/respaldo-automatico-base-datos/4.png" alt="Ruta local del respaldo"><figcaption>04. Ruta de almacenamiento</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/respaldo-automatico-base-datos/5.png" alt="Configuración guardada y activa"><figcaption>05. Respaldo activo</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Perder la base de datos no debería ser una posibilidad</h3>
-        <p>Los respaldos manuales se olvidan, se hacen a destiempo y a menudo quedan en el mismo servidor que la base: si el disco falla, se pierden la copia y el original a la vez.</p>
-        <p>Este módulo programa las copias de seguridad para que se generen solas cada día y se guarden en el destino que elijas —local, servidor remoto o la nube—, con borrado automático de las copias viejas y aviso por correo si algo falla.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Respaldos programados</h4><p>Una tarea diaria genera las copias solas, sin intervención manual.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l4-4m-4 4l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>8 destinos</h4><p>Local, FTP, SFTP, Google Drive, Dropbox, OneDrive, Nextcloud y Amazon S3.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Retención automática</h4><p>Borra las copias más viejas según los días que definas.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Alertas por correo</h4><p>Notifica al responsable cuando un respaldo se genera o falla.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h9l5 5v11a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 4v5h5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Zip o Dump</h4><p>Copia completa con adjuntos, o solo la base de datos más liviana.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">XML</span>
-          <span class="chip">Cloud API</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu base de datos está respaldada de verdad?</h3>
-      <p>Configuro respaldos automáticos a la nube o a tu servidor, con retención y alertas, para que nunca dependas de una copia manual.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Respaldo Automático de Base de Datos</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · DevOps">Odoo · DevOps</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// administration utility · 8 backup destinations">// utilidad de administración · 8 destinos de respaldo</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Automatic Backup">Respaldo Automático de</span> <span class="grad"><span data-en="Database">Base de Datos</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Automate backups of your Odoo database and save them alone, every day, on the server or in the cloud. No manual downloads, with retention and email alerts.">Automatiza las copias de seguridad de tu base de datos Odoo y guárdalas solas, todos los días, en el servidor o en la nube. Sin descargas manuales, con retención y alertas por correo.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>PostgreSQL</span><span>Cloud</span><span>XML</span>
+</div>
+</header>
+<section aria-label="Capturas de Respaldo Automático de Base de Datos" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Lista de configuraciones de respaldo" src="../images/projects/respaldo-automatico-base-datos/1.png"/><figcaption><span data-en="01. Backup settings">01. Configuraciones de respaldo</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Formulario de respaldo" src="../images/projects/respaldo-automatico-base-datos/2.png"/><figcaption><span data-en="02. Backup data">02. Datos del respaldo</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Selección del destino" src="../images/projects/respaldo-automatico-base-datos/3.png"/><figcaption><span data-en="03. Backup destination">03. Destino del respaldo</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Ruta local del respaldo" src="../images/projects/respaldo-automatico-base-datos/4.png"/><figcaption><span data-en="04. Storage path">04. Ruta de almacenamiento</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Configuración guardada y activa" src="../images/projects/respaldo-automatico-base-datos/5.png"/><figcaption><span data-en="05. Active backup">05. Respaldo activo</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Losing the database should not be a possibility">Perder la base de datos no debería ser una posibilidad</span></h3>
+<p><span data-en="Manual backups are forgotten, done at the wrong time and often remain on the same server as the database: if the disk fails, the copy and the original are lost at the same time.">Los respaldos manuales se olvidan, se hacen a destiempo y a menudo quedan en el mismo servidor que la base: si el disco falla, se pierden la copia y el original a la vez.</span></p>
+<p><span data-en="This module schedules backup copies so that they generate themselves every day and are saved in the destination you choose - local, remote server or the cloud -, with automatic deletion of old copies and notification by email if something fails.">Este módulo programa las copias de seguridad para que se generen solas cada día y se guarden en el destino que elijas —local, servidor remoto o la nube—, con borrado automático de las copias viejas y aviso por correo si algo falla.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Scheduled backups">Respaldos programados</span></h4><p><span data-en="A daily task generates the copies by itself, without manual intervention.">Una tarea diaria genera las copias solas, sin intervención manual.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v12m0 0l4-4m-4 4l-4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="8 destinations">8 destinos</span></h4><p><span data-en="Local, FTP, SFTP, Google Drive, Dropbox, OneDrive, Nextcloud and Amazon S3.">Local, FTP, SFTP, Google Drive, Dropbox, OneDrive, Nextcloud y Amazon S3.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 7v5l3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Automatic hold">Retención automática</span></h4><p><span data-en="Delete the oldest copies based on the days you define.">Borra las copias más viejas según los días que definas.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Email alerts">Alertas por correo</span></h4><p><span data-en="Notifies the person responsible when a backup is generated or fails.">Notifica al responsable cuando un respaldo se genera o falla.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M6 4h9l5 5v11a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M14 4v5h5" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Zip or Dump">Zip o Dump</span></h4><p><span data-en="Full copy with attachments, or just the lighter database.">Copia completa con adjuntos, o solo la base de datos más liviana.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">XML</span>
+<span class="chip">Cloud API</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Is your database really backed up?">¿Tu base de datos está respaldada de verdad?</span></h3>
+<p><span data-en="I set up automatic backups to the cloud or your server, with retention and alerts, so you never depend on a manual copy.">Configuro respaldos automáticos a la nube o a tu servidor, con retención y alertas, para que nunca dependas de una copia manual.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Soto B. — Made with code and coffee.">© 2026 Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Automatic Database Backup">caso · Respaldo Automático de Base de Datos</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

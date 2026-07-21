@@ -1,146 +1,138 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Límite de Crédito Avanzado para Odoo — Bryan Soto B.</title>
-<meta name="description" content="Control de crédito con bloqueos y aprobaciones para pedidos y facturas en Odoo." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Control de crédito con bloqueos y aprobaciones para pedidos y facturas en Odoo." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Ventas</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · control de riesgo comercial</span>
-      </div>
-      <h1 class="proj-hero__title">Límite de <span class="grad">Crédito Avanzado</span></h1>
-      <p class="proj-hero__pitch">Controla el crédito de cada cliente antes de vender. Bloquea pedidos y facturas cuando el cliente excede su cupo o arrastra facturas vencidas, y exige una aprobación justificada para cualquier excepción.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Odoo</span><span>Ventas</span><span>Contabilidad</span><span>Control de crédito</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Límite de Crédito Avanzado">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/limite-credito-avanzado/1.png" alt="Ajustes de control de crédito"><figcaption>01. Configuración del control de crédito</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/limite-credito-avanzado/2.png" alt="Pestaña Crédito del cliente"><figcaption>02. Límite y estado por cliente</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/limite-credito-avanzado/3.png" alt="Alerta de crédito en el pedido"><figcaption>03. Bloqueo al exceder el límite</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/limite-credito-avanzado/4.png" alt="Solicitud de aprobación"><figcaption>04. Aprobación de excepciones</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/limite-credito-avanzado/5.png" alt="Historial de aprobaciones"><figcaption>05. Historial de aprobaciones</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Vender a quien no paga es la fuga de caja más silenciosa</h3>
-        <p>Cuando el equipo comercial cierra ventas sin ver el saldo real del cliente, la empresa termina financiando a quien ya debe de más o no paga lo vencido. El descubrimiento llega tarde: en la cobranza, no en la venta.</p>
-        <p>Este módulo pone el control en el momento de vender. Cada pedido y cada factura se evalúan contra el cupo y las facturas vencidas del cliente; si hay riesgo, la operación se detiene y solo avanza con una aprobación justificada que queda registrada.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18M8 15h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Límite por cliente</h4><p>Cada cliente con su cupo, sus días de gracia y sus aprobadores propios.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l9 4v5c0 5-3.8 8-9 9-5.2-1-9-4-9-9V7l9-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Bloqueo automático</h4><p>Detiene pedidos y facturas si el cliente excede su límite o tiene vencidas.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Aprobaciones con rastro</h4><p>Toda excepción se solicita, se justifica y se aprueba con firma y fecha.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Días de gracia</h4><p>Margen configurable tras el vencimiento antes de penalizar al cliente.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Semáforo de crédito</h4><p>Estado Normal, Advertencia o Bloqueado, actualizado a diario por cliente.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Segregación de funciones</h4><p>Quien vende no autoriza el riesgo; el aprobador es un rol aparte.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Odoo</span>
-          <span class="chip">Ventas</span>
-          <span class="chip">Contabilidad</span>
-          <span class="chip">Aprobaciones</span>
-          <span class="chip">Multicompañía</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu cartera financia a clientes que no deberían?</h3>
-      <p>Adapto el control de crédito a tu política de riesgo: cupos, aprobadores, días de gracia y bloqueos a la medida de tu operación.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Límite de Crédito Avanzado</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Sales">Odoo · Ventas</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// enterprise module · commercial risk control">// módulo enterprise · control de riesgo comercial</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Limit">Límite de</span> <span class="grad"><span data-en="Advanced Credit">Crédito Avanzado</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Check each customer's credit before selling. Block orders and invoices when the customer exceeds their quota or carries overdue invoices, and requires justified approval for any exceptions.">Controla el crédito de cada cliente antes de vender. Bloquea pedidos y facturas cuando el cliente excede su cupo o arrastra facturas vencidas, y exige una aprobación justificada para cualquier excepción.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Odoo</span><span>Ventas</span><span>Contabilidad</span><span>Control de crédito</span>
+</div>
+</header>
+<section aria-label="Capturas de Límite de Crédito Avanzado" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Ajustes de control de crédito" src="../images/projects/limite-credito-avanzado/1.png"/><figcaption><span data-en="01. Credit control configuration">01. Configuración del control de crédito</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Pestaña Crédito del cliente" src="../images/projects/limite-credito-avanzado/2.png"/><figcaption><span data-en="02. Limit and status per client">02. Límite y estado por cliente</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Alerta de crédito en el pedido" src="../images/projects/limite-credito-avanzado/3.png"/><figcaption><span data-en="03. Blocking when exceeding the limit">03. Bloqueo al exceder el límite</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Solicitud de aprobación" src="../images/projects/limite-credito-avanzado/4.png"/><figcaption><span data-en="04. Approval of exceptions">04. Aprobación de excepciones</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Historial de aprobaciones" src="../images/projects/limite-credito-avanzado/5.png"/><figcaption><span data-en="05. Approval history">05. Historial de aprobaciones</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Selling to someone who doesn't pay is the quietest cash leak">Vender a quien no paga es la fuga de caja más silenciosa</span></h3>
+<p><span data-en="When the sales team closes sales without seeing the client's real balance, the company ends up financing those who already owe more or do not pay what is due. The discovery comes late: in collection, not in sale.">Cuando el equipo comercial cierra ventas sin ver el saldo real del cliente, la empresa termina financiando a quien ya debe de más o no paga lo vencido. El descubrimiento llega tarde: en la cobranza, no en la venta.</span></p>
+<p><span data-en="This module puts control at the time of selling. Each order and invoice is evaluated against the customer's quota and overdue invoices; If there is a risk, the operation stops and only proceeds with a justified approval that is recorded.">Este módulo pone el control en el momento de vender. Cada pedido y cada factura se evalúan contra el cupo y las facturas vencidas del cliente; si hay riesgo, la operación se detiene y solo avanza con una aprobación justificada que queda registrada.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="16" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="4"></rect><path d="M3 10h18M8 15h5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Limit per client">Límite por cliente</span></h4><p><span data-en="Each client with their quota, their grace days and their own approvers.">Cada cliente con su cupo, sus días de gracia y sus aprobadores propios.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3l9 4v5c0 5-3.8 8-9 9-5.2-1-9-4-9-9V7l9-4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Auto lock">Bloqueo automático</span></h4><p><span data-en="Stops orders and invoices if the customer exceeds their limit or is overdue.">Detiene pedidos y facturas si el cliente excede su límite o tiene vencidas.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Approvals with trace">Aprobaciones con rastro</span></h4><p><span data-en="Any exception is requested, justified and approved with signature and date.">Toda excepción se solicita, se justifica y se aprueba con firma y fecha.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 7v5l3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="days of grace">Días de gracia</span></h4><p><span data-en="Configurable margin after expiration before penalizing the client.">Margen configurable tras el vencimiento antes de penalizar al cliente.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 4-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Credit traffic light">Semáforo de crédito</span></h4><p><span data-en="Normal, Warning or Blocked Status, updated daily by client.">Estado Normal, Advertencia o Bloqueado, actualizado a diario por cliente.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"></circle></svg></div>
+<div class="feat-list__body"><h4><span data-en="Segregation of duties">Segregación de funciones</span></h4><p><span data-en="Whoever sells does not authorize the risk; the approver is a separate role.">Quien vende no autoriza el riesgo; el aprobador es un rol aparte.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Odoo</span>
+<span class="chip">Ventas</span>
+<span class="chip">Contabilidad</span>
+<span class="chip">Aprobaciones</span>
+<span class="chip">Multicompañía</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your portfolio finance clients that shouldn't?">¿Tu cartera financia a clientes que no deberían?</span></h3>
+<p><span data-en="I adapt credit control to your risk policy: quotas, approvers, grace days and blocks tailored to your operation.">Adapto el control de crédito a tu política de riesgo: cupos, aprobadores, días de gracia y bloqueos a la medida de tu operación.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Advanced Credit Limit">caso · Límite de Crédito Avanzado</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

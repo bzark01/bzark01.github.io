@@ -1,147 +1,139 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chatter Plus — Comunicación avanzada en Odoo — Bryan Soto B.</title>
-<meta name="description" content="Búsqueda, filtros, fijar, etiquetas, reenvío, grupos por documento, línea de tiempo del cliente y acuse de lectura para el chatter de Odoo 18." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Búsqueda, filtros, fijar, etiquetas, reenvío, grupos por documento, línea de tiempo del cliente y acuse de lectura para el chatter de Odoo 18." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Productividad</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 18 · chatter extendido</span>
-      </div>
-      <h1 class="proj-hero__title">Chatter <span class="grad">Plus</span></h1>
-      <p class="proj-hero__pitch">Convierte el chatter de Odoo en una herramienta de comunicación profesional: buscar, filtrar, fijar, etiquetar, reenviar, agrupar conversaciones por documento, ver toda la relación con un cliente en una línea de tiempo y saber cuándo abrieron tus correos.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Odoo 18</span><span>OWL</span><span>JavaScript</span><span>Python</span><span>SCSS</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Chatter Plus — Comunicación avanzada en el chatter">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/chatter-plus/1.png" alt="Búsqueda"><figcaption>01. Búsqueda en vivo dentro de la conversación</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/chatter-plus/2.png" alt="Filtros"><figcaption>02. Filtros por categoría, etiqueta, autor y fecha</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/chatter-plus/3.png" alt="Fijados"><figcaption>03. Mensajes fijados con acceso rápido</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/chatter-plus/4.png" alt="Grupos"><figcaption>04. Grupos de comunicación por documento</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/chatter-plus/5.png" alt="Acuse"><figcaption>05. Acuse de lectura por destinatario</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>La comunicación en Odoo se pierde y se fragmenta documento por documento</h3>
-        <p>Cuando un pedido, una factura o un proyecto acumula decenas de mensajes, encontrar lo importante se vuelve una tarea de scroll interminable, y la conversación con un mismo cliente queda repartida entre su contacto, sus órdenes y sus facturas.</p>
-        <p>Chatter Plus convierte esa bandeja desordenada en una herramienta de trabajo: busca y filtra en segundos, fija lo clave, organiza con etiquetas y grupos por documento, reúne toda la relación con el cliente en una sola línea de tiempo y te dice cuándo el cliente abrió tu correo — todo sin salir de Odoo.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Búsqueda y filtros</h4><p>Buscar texto con resaltado y filtrar por categoría, etiqueta, autor o fecha; guardar filtros frecuentes.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v9m0 0l3-3m-3 3L9 9M5 14v5a2 2 0 002 2h10a2 2 0 002-2v-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Fijar y etiquetar</h4><p>Destacar mensajes clave en un panel de acceso rápido y clasificarlos con etiquetas propias.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h12m0 0l-4-4m4 4l-4 4M20 5v14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Reenviar mensajes</h4><p>Enviar un mensaje con sus adjuntos a otro documento (orden, factura, contacto, tarea), con trazabilidad.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="7" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M3 20a6 6 0 0112 0M16 11a3 3 0 100-6M21 20a6 6 0 00-5-5.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Grupos por documento</h4><p>Crear grupos (Ventas, Nómina, Inventario) dentro de un registro; cada mensaje llega solo a sus miembros.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Línea de tiempo del cliente</h4><p>Toda la comunicación con un cliente, a través de todos sus documentos, en un solo hilo cronológico.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Acuse de lectura</h4><p>Saber cuándo y quién de los destinatarios abrió el correo, con detalle por persona.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Odoo 18</span>
-          <span class="chip">OWL</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">Python</span>
-          <span class="chip">SCSS</span>
-          <span class="chip">PostgreSQL</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu equipo pierde tiempo buscando en el chatter de Odoo?</h3>
-      <p>Implemento Chatter Plus en tu instancia y lo adapto a tu forma de trabajar.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Chatter Plus — Comunicación avanzada en el chatter</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Productivity">Odoo · Productividad</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// Odoo 18 module · extended chatter">// módulo Odoo 18 · chatter extendido</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Chatter">Chatter</span> <span class="grad"><span data-en="Plus">Plus</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Turn Odoo chatter into a professional communication tool: search, filter, pin, tag, forward, group conversations by document, see the entire relationship with a client on a timeline and know when they opened your emails.">Convierte el chatter de Odoo en una herramienta de comunicación profesional: buscar, filtrar, fijar, etiquetar, reenviar, agrupar conversaciones por documento, ver toda la relación con un cliente en una línea de tiempo y saber cuándo abrieron tus correos.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Odoo 18</span><span>OWL</span><span>JavaScript</span><span>Python</span><span>SCSS</span>
+</div>
+</header>
+<section aria-label="Capturas de Chatter Plus — Comunicación avanzada en el chatter" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Búsqueda" src="../images/projects/chatter-plus/1.png"/><figcaption><span data-en="01. Live search within the conversation">01. Búsqueda en vivo dentro de la conversación</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Filtros" src="../images/projects/chatter-plus/2.png"/><figcaption><span data-en="02. Filters by category, tag, author and date">02. Filtros por categoría, etiqueta, autor y fecha</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Fijados" src="../images/projects/chatter-plus/3.png"/><figcaption><span data-en="03. Pinned messages with quick access">03. Mensajes fijados con acceso rápido</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Grupos" src="../images/projects/chatter-plus/4.png"/><figcaption><span data-en="04. Communication groups per document">04. Grupos de comunicación por documento</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Acuse" src="../images/projects/chatter-plus/5.png"/><figcaption><span data-en="05. Reading acknowledgment by recipient">05. Acuse de lectura por destinatario</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Communication in Odoo is lost and fragmented document by document">La comunicación en Odoo se pierde y se fragmenta documento por documento</span></h3>
+<p><span data-en="When an order, an invoice or a project accumulates dozens of messages, finding what is important becomes a task of endless scrolling, and the conversation with the same client is divided between their contact, their orders and their invoices.">Cuando un pedido, una factura o un proyecto acumula decenas de mensajes, encontrar lo importante se vuelve una tarea de scroll interminable, y la conversación con un mismo cliente queda repartida entre su contacto, sus órdenes y sus facturas.</span></p>
+<p><span data-en="Chatter Plus turns that messy tray into a work tool: search and filter in seconds, pinpoint what's key, organize with tags and groups by document, bring the entire customer relationship together in a single timeline, and tell you when the customer opened your email — all without leaving Odoo.">Chatter Plus convierte esa bandeja desordenada en una herramienta de trabajo: busca y filtra en segundos, fija lo clave, organiza con etiquetas y grupos por documento, reúne toda la relación con el cliente en una sola línea de tiempo y te dice cuándo el cliente abrió tu correo — todo sin salir de Odoo.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"></circle><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Search and filters">Búsqueda y filtros</span></h4><p><span data-en="Search text with highlighting and filter by category, tag, author or date; save frequent filters.">Buscar texto con resaltado y filtrar por categoría, etiqueta, autor o fecha; guardar filtros frecuentes.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v9m0 0l3-3m-3 3L9 9M5 14v5a2 2 0 002 2h10a2 2 0 002-2v-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Pin and label">Fijar y etiquetar</span></h4><p><span data-en="Highlight key messages in a quick access panel and classify them with your own tags.">Destacar mensajes clave en un panel de acceso rápido y clasificarlos con etiquetas propias.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 12h12m0 0l-4-4m4 4l-4 4M20 5v14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Forward messages">Reenviar mensajes</span></h4><p><span data-en="Send a message with its attachments to another document (order, invoice, contact, task), with traceability.">Enviar un mensaje con sus adjuntos a otro documento (orden, factura, contacto, tarea), con trazabilidad.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="9" cy="7" r="3" stroke="currentColor" stroke-width="1.8"></circle><path d="M3 20a6 6 0 0112 0M16 11a3 3 0 100-6M21 20a6 6 0 00-5-5.9" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Groups by document">Grupos por documento</span></h4><p><span data-en="Create groups (Sales, Payroll, Inventory) within a record; each message reaches only its members.">Crear grupos (Ventas, Nómina, Inventario) dentro de un registro; cada mensaje llega solo a sus miembros.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 8v4l3 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle></svg></div>
+<div class="feat-list__body"><h4><span data-en="Customer timeline">Línea de tiempo del cliente</span></h4><p><span data-en="All communication with a client, through all their documents, in a single chronological thread.">Toda la comunicación con un cliente, a través de todos sus documentos, en un solo hilo cronológico.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="1.8"></path><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"></circle></svg></div>
+<div class="feat-list__body"><h4><span data-en="Reading Acknowledgment">Acuse de lectura</span></h4><p><span data-en="Know when and who of the recipients opened the email, with details per person.">Saber cuándo y quién de los destinatarios abrió el correo, con detalle por persona.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Odoo 18</span>
+<span class="chip">OWL</span>
+<span class="chip">JavaScript</span>
+<span class="chip">Python</span>
+<span class="chip">SCSS</span>
+<span class="chip">PostgreSQL</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your team waste time searching the Odoo chatter?">¿Tu equipo pierde tiempo buscando en el chatter de Odoo?</span></h3>
+<p><span data-en="I implement Chatter Plus in your instance and adapt it to your way of working.">Implemento Chatter Plus en tu instancia y lo adapto a tu forma de trabajar.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Chatter Plus — Advanced communication in the chatter">caso · Chatter Plus — Comunicación avanzada en el chatter</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

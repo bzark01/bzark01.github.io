@@ -1,148 +1,140 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Gestión de Comisiones de Ventas — Bryan Soto B.</title>
-<meta name="description" content="Cálculo automático de comisiones de ventas multimoneda para Odoo." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Cálculo automático de comisiones de ventas multimoneda para Odoo." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Ventas</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · 27+ modelos</span>
-      </div>
-      <h1 class="proj-hero__title">Gestión de <span class="grad">Comisiones de Ventas</span></h1>
-      <p class="proj-hero__pitch">Cálculo automático de comisiones con soporte multimoneda, reglas configurables por vendedor, producto o categoría, aprobaciones multinivel y reportes detallados. Pensado para equipos comerciales medianos y grandes que manejan estructuras complejas de pago.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>JavaScript</span><span>XML</span><span>PostgreSQL</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Comisiones de Ventas">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/comisiones-ventas/1.png" alt="Reglas de comisiones"><figcaption>01. Configurador de reglas</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/comisiones-ventas/2.png" alt="Cálculo automático"><figcaption>02. Cálculo automático por vendedor</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/comisiones-ventas/3.png" alt="Aprobaciones"><figcaption>03. Flujo de aprobaciones multinivel</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/comisiones-ventas/4.png" alt="Reportes"><figcaption>04. Reportes por período y producto</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/comisiones-ventas/5.png" alt="Multimoneda"><figcaption>05. Conversión multimoneda</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Las reglas de comisión rara vez caben en una hoja de cálculo</h3>
-        <p>Cada empresa tiene su propia política: por meta cumplida, por producto, por margen, por cliente nuevo vs recurrente. Calcularlas a mano en Excel genera errores y demoras de pago — lo que afecta directamente la motivación del equipo comercial.</p>
-        <p>Este módulo modela <strong>cualquier estructura de comisiones</strong> dentro de Odoo y la calcula automáticamente con base en las facturas, integrando los pagos con la nómina.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12l4 4 14-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Reglas configurables</h4><p>Por vendedor, producto, categoría, cliente o combinación.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8a4 4 0 014-4h6a4 4 0 010 8H9a4 4 0 000 8h6a4 4 0 004-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Soporte multimoneda</h4><p>Conversión automática con tasas del día.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="7" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="7" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="13" cy="17" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M9 10v4M17 10v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Aprobaciones multinivel</h4><p>Flujo configurable antes del pago.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Reportes detallados</h4><p>Por vendedor, período, producto y zona.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Integración con nómina</h4><p>Las comisiones aprobadas pasan directo a la planilla.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Cálculo sobre cobrado</h4><p>Comisión solo cuando la factura está pagada.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">XML</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">OWL</span>
-          <span class="chip">QWeb (PDF)</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu equipo de ventas merece comisiones bien calculadas?</h3>
-      <p>Adapto este módulo a tu política comercial específica e integro el cálculo con tu nómina.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Comisiones de Ventas</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Sales">Odoo · Ventas</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// enterprise module · 27+ models">// módulo enterprise · 27+ modelos</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Management">Gestión de</span> <span class="grad"><span data-en="Sales Commissions">Comisiones de Ventas</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Automatic commission calculation with multi-currency support, configurable rules by seller, product or category, multi-level approvals and detailed reports. Designed for medium and large commercial teams that manage complex payment structures.">Cálculo automático de comisiones con soporte multimoneda, reglas configurables por vendedor, producto o categoría, aprobaciones multinivel y reportes detallados. Pensado para equipos comerciales medianos y grandes que manejan estructuras complejas de pago.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>JavaScript</span><span>XML</span><span>PostgreSQL</span>
+</div>
+</header>
+<section aria-label="Capturas de Comisiones de Ventas" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Reglas de comisiones" src="../images/projects/comisiones-ventas/1.png"/><figcaption><span data-en="01. Rules Configurator">01. Configurador de reglas</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Cálculo automático" src="../images/projects/comisiones-ventas/2.png"/><figcaption><span data-en="02. Automatic calculation by seller">02. Cálculo automático por vendedor</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Aprobaciones" src="../images/projects/comisiones-ventas/3.png"/><figcaption><span data-en="03. Multilevel approval flow">03. Flujo de aprobaciones multinivel</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Reportes" src="../images/projects/comisiones-ventas/4.png"/><figcaption><span data-en="04. Reports by period and product">04. Reportes por período y producto</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Multimoneda" src="../images/projects/comisiones-ventas/5.png"/><figcaption><span data-en="05. Multi-currency conversion">05. Conversión multimoneda</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Commission rules rarely fit on a spreadsheet">Las reglas de comisión rara vez caben en una hoja de cálculo</span></h3>
+<p><span data-en="Each company has its own policy: per goal met, per product, per margin, per new vs recurring customer. Calculating them by hand in Excel generates errors and payment delays — which directly affects the motivation of the sales team.">Cada empresa tiene su propia política: por meta cumplida, por producto, por margen, por cliente nuevo vs recurrente. Calcularlas a mano en Excel genera errores y demoras de pago — lo que afecta directamente la motivación del equipo comercial.</span></p>
+<p><span data-en="This module models">Este módulo modela</span> <strong><span data-en="any commission structure">cualquier estructura de comisiones</span></strong> <span data-en="within Odoo and automatically calculates it based on invoices, integrating payments with payroll.">dentro de Odoo y la calcula automáticamente con base en las facturas, integrando los pagos con la nómina.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 12l4 4 14-10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Configurable rules">Reglas configurables</span></h4><p><span data-en="By seller, product, category, customer or combination.">Por vendedor, producto, categoría, cliente o combinación.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v18M5 8a4 4 0 014-4h6a4 4 0 010 8H9a4 4 0 000 8h6a4 4 0 004-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Multi-currency support">Soporte multimoneda</span></h4><p><span data-en="Automatic conversion with current rates.">Conversión automática con tasas del día.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="9" cy="7" r="3" stroke="currentColor" stroke-width="1.8"></circle><circle cx="17" cy="7" r="3" stroke="currentColor" stroke-width="1.8"></circle><circle cx="13" cy="17" r="3" stroke="currentColor" stroke-width="1.8"></circle><path d="M9 10v4M17 10v4" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Multi-level approvals">Aprobaciones multinivel</span></h4><p><span data-en="Configurable flow before payment.">Flujo configurable antes del pago.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Detailed reports">Reportes detallados</span></h4><p><span data-en="By seller, period, product and area.">Por vendedor, período, producto y zona.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h12" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Integration with payroll">Integración con nómina</span></h4><p><span data-en="The approved commissions go directly to the payroll.">Las comisiones aprobadas pasan directo a la planilla.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 7v5l3 2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Calculation of overcharge">Cálculo sobre cobrado</span></h4><p><span data-en="Commission only when the invoice is paid.">Comisión solo cuando la factura está pagada.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">JavaScript</span>
+<span class="chip">XML</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">OWL</span>
+<span class="chip">QWeb (PDF)</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your sales team deserve well-calculated commissions?">¿Tu equipo de ventas merece comisiones bien calculadas?</span></h3>
+<p><span data-en="I adapt this module to your specific commercial policy and integrate the calculation with your payroll.">Adapto este módulo a tu política comercial específica e integro el cálculo con tu nómina.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Sales Commissions">caso · Comisiones de Ventas</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

@@ -1,147 +1,139 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Control de Permisos de Cierre de Caja POS — Soto B.</title>
-<meta name="description" content="Control de qué información financiera ve cada rol en el cierre de caja del Punto de Venta de Odoo, con bloqueo de faltantes y autorización por supervisor." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Control de qué información financiera ve cada rol en el cierre de caja del Punto de Venta de Odoo, con bloqueo de faltantes y autorización por supervisor." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · POS</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Punto de Venta · control de efectivo</span>
-      </div>
-      <h1 class="proj-hero__title">Control de Permisos de <span class="grad">Cierre de Caja</span></h1>
-      <p class="proj-hero__pitch">Protege el cierre de caja del Punto de Venta: oculta el efectivo esperado y las diferencias a los cajeros sin autorización, bloquea el cierre cuando hay faltante y permite que un supervisor lo apruebe con su código, dejando todo registrado para auditoría.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Odoo</span><span>Punto de Venta</span><span>Control de efectivo</span><span>Seguridad</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Control de Permisos de Cierre de Caja POS">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 07</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/pos-cash-control-permissions/1.png" alt="Permiso de caja"><figcaption>01. Permiso “Ver Detalles de Efectivo en Cierre”</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pos-cash-control-permissions/2.png" alt="Código de supervisor"><figcaption>02. Código de supervisor en la ficha del empleado</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pos-cash-control-permissions/3.png" alt="Punto de Venta"><figcaption>03. Punto de Venta en operación</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pos-cash-control-permissions/4.png" alt="Cierre sin permiso"><figcaption>04. Cierre sin permiso: detalles ocultos</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pos-cash-control-permissions/5.png" alt="Menú de cierre"><figcaption>05. Menú de cierre de caja</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pos-cash-control-permissions/6.png" alt="Cierre con permiso"><figcaption>06. Cierre con permiso: detalles y diferencias visibles</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pos-cash-control-permissions/7.png" alt="Auditoría de la sesión"><figcaption>07. Registro de auditoría en la sesión</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>¿Quién debería ver cuánto efectivo espera la caja?</h3>
-        <p>En muchos comercios, la pantalla de cierre del Punto de Venta muestra a cualquier cajero el efectivo esperado y la diferencia con lo contado. Con esa información a la vista, es fácil ‘cuadrar’ el conteo al monto que el sistema espera y disimular un faltante.</p>
-        <p>Este módulo separa lo que ve cada rol: el cajero solo ingresa su conteo real, mientras que el efectivo esperado y las diferencias quedan reservados para los responsables. Si al cerrar hay un faltante, el sistema bloquea la operación y exige la autorización de un supervisor, que la aprueba con su código sin compartir su usuario. Cada cierre con diferencia queda registrado para auditoría.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Vista limitada por rol</h4><p>El cajero sin permiso solo ve el campo de conteo; el efectivo esperado y las diferencias quedan ocultos.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M8 6h10v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Bloqueo ante faltante</h4><p>Si el conteo es menor al esperado, el cierre se bloquea con un aviso genérico, sin revelar el monto.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v6m0 0l3-3m-3 3L9 5M4 12h16v8H4z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Autorización por supervisor</h4><p>Un supervisor aprueba el cierre con faltante ingresando su código, sin cerrar la sesión del cajero.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Registro para auditoría</h4><p>Cada cierre con diferencia, sobrante o autorización queda anotado en el historial de la sesión.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Sobrantes sin fricción</h4><p>Si el cajero cuenta de más, la caja cierra con normalidad y el sobrante queda registrado.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Umbral configurable</h4><p>Las diferencias pequeñas dentro del umbral autorizado del Punto de Venta cierran automáticamente.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Odoo</span>
-          <span class="chip">Punto de Venta</span>
-          <span class="chip">Seguridad</span>
-          <span class="chip">Control de efectivo</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu caja del Punto de Venta cierra sin controles?</h3>
-      <p>Adapto el control de permisos de cierre a la política de tu comercio e integro la autorización de supervisores.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Control de Permisos de Cierre de Caja POS</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · POS">Odoo · POS</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// Point of Sale module · cash control">// módulo Punto de Venta · control de efectivo</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Permission Control">Control de Permisos de</span> <span class="grad"><span data-en="Cash Closing">Cierre de Caja</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Protects the POS cash closing: hides the expected cash and differences from unauthorized cashiers, blocks the closing when there is a shortage and allows a supervisor to approve it with his code, leaving everything recorded for audit.">Protege el cierre de caja del Punto de Venta: oculta el efectivo esperado y las diferencias a los cajeros sin autorización, bloquea el cierre cuando hay faltante y permite que un supervisor lo apruebe con su código, dejando todo registrado para auditoría.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Odoo</span><span>Punto de Venta</span><span>Control de efectivo</span><span>Seguridad</span>
+</div>
+</header>
+<section aria-label="Capturas de Control de Permisos de Cierre de Caja POS" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 07</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Permiso de caja" src="../images/projects/pos-cash-control-permissions/1.png"/><figcaption><span data-en="01. “View Closing Cash Details” Permission">01. Permiso “Ver Detalles de Efectivo en Cierre”</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Código de supervisor" src="../images/projects/pos-cash-control-permissions/2.png"/><figcaption><span data-en="02. Supervisor code in the employee file">02. Código de supervisor en la ficha del empleado</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Punto de Venta" src="../images/projects/pos-cash-control-permissions/3.png"/><figcaption><span data-en="03. Point of Sale in operation">03. Punto de Venta en operación</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Cierre sin permiso" src="../images/projects/pos-cash-control-permissions/4.png"/><figcaption><span data-en="04. Closing without permission: hidden details">04. Cierre sin permiso: detalles ocultos</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Menú de cierre" src="../images/projects/pos-cash-control-permissions/5.png"/><figcaption><span data-en="05. Cash closing menu">05. Menú de cierre de caja</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Cierre con permiso" src="../images/projects/pos-cash-control-permissions/6.png"/><figcaption><span data-en="06. Closing with permission: details and visible differences">06. Cierre con permiso: detalles y diferencias visibles</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Auditoría de la sesión" src="../images/projects/pos-cash-control-permissions/7.png"/><figcaption><span data-en="07. Audit log in session">07. Registro de auditoría en la sesión</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Who should see how much cash is waiting for the till?">¿Quién debería ver cuánto efectivo espera la caja?</span></h3>
+<p><span data-en="In many stores, the Point of Sale closing screen shows any cashier the expected cash and the difference with what was counted. With this information in view, it is easy to 'square' the count to the amount that the system expects and hide a shortage.">En muchos comercios, la pantalla de cierre del Punto de Venta muestra a cualquier cajero el efectivo esperado y la diferencia con lo contado. Con esa información a la vista, es fácil ‘cuadrar’ el conteo al monto que el sistema espera y disimular un faltante.</span></p>
+<p><span data-en="This module separates what each role sees: the cashier only enters their actual count, while the expected cash and differences are reserved for those responsible. If there is a shortage when closing, the system blocks the operation and requires authorization from a supervisor, who approves it with his code without sharing his username. Each closing with a difference is recorded for audit.">Este módulo separa lo que ve cada rol: el cajero solo ingresa su conteo real, mientras que el efectivo esperado y las diferencias quedan reservados para los responsables. Si al cerrar hay un faltante, el sistema bloquea la operación y exige la autorización de un supervisor, que la aprueba con su código sin compartir su usuario. Cada cierre con diferencia queda registrado para auditoría.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7l7-4z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Limited view by role">Vista limitada por rol</span></h4><p><span data-en="The unauthorized cashier sees only the counting field; the expected cash and differences are hidden.">El cajero sin permiso solo ve el campo de conteo; el efectivo esperado y las diferencias quedan ocultos.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M6 18L18 6M8 6h10v10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Blocking in the event of a shortage">Bloqueo ante faltante</span></h4><p><span data-en="If the count is less than expected, the closing is blocked with a generic notice, without revealing the amount.">Si el conteo es menor al esperado, el cierre se bloquea con un aviso genérico, sin revelar el monto.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 2v6m0 0l3-3m-3 3L9 5M4 12h16v8H4z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Authorization by supervisor">Autorización por supervisor</span></h4><p><span data-en="A supervisor approves the closing with a shortage by entering his code, without logging out of the cashier.">Un supervisor aprueba el cierre con faltante ingresando su código, sin cerrar la sesión del cajero.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Audit log">Registro para auditoría</span></h4><p><span data-en="Each closing with a difference, surplus or authorization is noted in the session history.">Cada cierre con diferencia, sobrante o autorización queda anotado en el historial de la sesión.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Frictionless leftovers">Sobrantes sin fricción</span></h4><p><span data-en="If the cashier counts more, the till closes normally and the surplus is recorded.">Si el cajero cuenta de más, la caja cierra con normalidad y el sobrante queda registrado.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 6v6l4 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle></svg></div>
+<div class="feat-list__body"><h4><span data-en="Configurable threshold">Umbral configurable</span></h4><p><span data-en="Small differences within the authorized threshold of the Point of Sale close automatically.">Las diferencias pequeñas dentro del umbral autorizado del Punto de Venta cierran automáticamente.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Odoo</span>
+<span class="chip">Punto de Venta</span>
+<span class="chip">Seguridad</span>
+<span class="chip">Control de efectivo</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your Point of Sale cashier close without controls?">¿Tu caja del Punto de Venta cierra sin controles?</span></h3>
+<p><span data-en="I adapt the control of closing permits to the policy of your business and integrate the authorization of supervisors.">Adapto el control de permisos de cierre a la política de tu comercio e integro la autorización de supervisores.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Soto B. — Made with code and coffee.">© 2026 Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Control of POS Cash Closing Permissions">caso · Control de Permisos de Cierre de Caja POS</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

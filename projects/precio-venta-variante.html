@@ -1,137 +1,129 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Precio de Venta por Variante — Bryan Soto B.</title>
-<meta name="description" content="Precio de venta fijo e independiente por cada variante de producto en Odoo." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Precio de venta fijo e independiente por cada variante de producto en Odoo." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Ventas</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo · catálogo de productos</span>
-      </div>
-      <h1 class="proj-hero__title">Precio de Venta por <span class="grad">Variante</span></h1>
-      <p class="proj-hero__pitch">Asigná un precio de venta fijo e independiente a cada variante de un producto. Ideal para catálogos donde la talla, el color o la presentación cambian el precio sin seguir una regla lineal.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Odoo</span><span>Ventas</span><span>Productos</span><span>Variantes</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Precio de Venta por Variante">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/precio-venta-variante/1.png" alt="Precio en la plantilla"><figcaption>01. Precio de venta y aviso de propagación a variantes</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/precio-venta-variante/2.png" alt="Lista de variantes"><figcaption>02. Todas las variantes con su precio</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/precio-venta-variante/3.png" alt="Precio editable por variante"><figcaption>03. Precio de venta editable en cada variante</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/precio-venta-variante/4.png" alt="Captura 4"><figcaption>04.</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/precio-venta-variante/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Cuando cada variante necesita su propio precio</h3>
-        <p>En un catálogo con variantes —tallas, colores, presentaciones— el precio no siempre sigue una fórmula. Odoo estándar obliga a un precio base en el producto más recargos por atributo, lo que se vuelve incómodo cuando los precios no son lineales.</p>
-        <p>Este módulo permite definir el precio de venta directamente en cada variante. Ese precio se respeta en cotizaciones, ventas y listas de precios, y los recargos por atributo quedan ocultos para evitar confusiones.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12l4 4 14-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Precio fijo por variante</h4><p>Cada variante con su propio precio de venta editable.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Lista de variantes clara</h4><p>Revisá y ajustá el precio de cada talla o presentación en un solo lugar.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Propagación desde la plantilla</h4><p>Fijá un precio común para todas las variantes con un solo cambio.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Se respeta en ventas</h4><p>El precio de la variante es el que toma cada cotización y orden de venta.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Odoo</span>
-          <span class="chip">Ventas</span>
-          <span class="chip">Productos</span>
-          <span class="chip">Variantes</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu catálogo necesita precios distintos por variante?</h3>
-      <p>Adapto el manejo de precios de tus productos con variantes a tu política comercial.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Precio de Venta por Variante</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Sales">Odoo · Ventas</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// Odoo module · product catalog">// módulo Odoo · catálogo de productos</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Sale Price for">Precio de Venta por</span> <span class="grad"><span data-en="Variant">Variante</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Assign a fixed and independent sales price to each variant of a product. Ideal for catalogs where size, color or presentation changes the price without following a linear rule.">Asigná un precio de venta fijo e independiente a cada variante de un producto. Ideal para catálogos donde la talla, el color o la presentación cambian el precio sin seguir una regla lineal.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Odoo</span><span>Ventas</span><span>Productos</span><span>Variantes</span>
+</div>
+</header>
+<section aria-label="Capturas de Precio de Venta por Variante" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Precio en la plantilla" src="../images/projects/precio-venta-variante/1.png"/><figcaption><span data-en="01. Sale price and notice of propagation to variants">01. Precio de venta y aviso de propagación a variantes</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Lista de variantes" src="../images/projects/precio-venta-variante/2.png"/><figcaption><span data-en="02. All variants with their price">02. Todas las variantes con su precio</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Precio editable por variante" src="../images/projects/precio-venta-variante/3.png"/><figcaption><span data-en="03. Editable sales price in each variant">03. Precio de venta editable en cada variante</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Captura 4" src="../images/projects/precio-venta-variante/4.png"/><figcaption>04.</figcaption></figure>
+<figure class="carousel__slide"><img alt="Captura 5" src="../images/projects/precio-venta-variante/5.png"/><figcaption>05.</figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="When each variant needs its own price">Cuando cada variante necesita su propio precio</span></h3>
+<p><span data-en="In a catalog with variants—sizes, colors, presentations—the price does not always follow a formula. Standard Odoo forces a base price on the product plus surcharges per attribute, which becomes awkward when prices are non-linear.">En un catálogo con variantes —tallas, colores, presentaciones— el precio no siempre sigue una fórmula. Odoo estándar obliga a un precio base en el producto más recargos por atributo, lo que se vuelve incómodo cuando los precios no son lineales.</span></p>
+<p><span data-en="This module allows you to define the sales price directly in each variant. That price is respected in quotes, sales and price lists, and attribute surcharges are hidden to avoid confusion.">Este módulo permite definir el precio de venta directamente en cada variante. Ese precio se respeta en cotizaciones, ventas y listas de precios, y los recargos por atributo quedan ocultos para evitar confusiones.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 12l4 4 14-10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Fixed price per variant">Precio fijo por variante</span></h4><p><span data-en="Each variant with its own editable sales price.">Cada variante con su propio precio de venta editable.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Clear variant list">Lista de variantes clara</span></h4><p><span data-en="Review and adjust the price of each size or presentation in one place.">Revisá y ajustá el precio de cada talla o presentación en un solo lugar.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Propagation from template">Propagación desde la plantilla</span></h4><p><span data-en="Set a common price for all variants with a single change.">Fijá un precio común para todas las variantes con un solo cambio.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Respected in sales">Se respeta en ventas</span></h4><p><span data-en="The price of the variant is the one taken by each quote and sales order.">El precio de la variante es el que toma cada cotización y orden de venta.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Odoo</span>
+<span class="chip">Ventas</span>
+<span class="chip">Productos</span>
+<span class="chip">Variantes</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your catalog need different prices per variant?">¿Tu catálogo necesita precios distintos por variante?</span></h3>
+<p><span data-en="I adapt the price management of your products with variants to your commercial policy.">Adapto el manejo de precios de tus productos con variantes a tu política comercial.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Sale Price by Variant">caso · Precio de Venta por Variante</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

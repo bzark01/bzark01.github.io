@@ -1,147 +1,139 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Estación de Consulta de Precios — Bryan Soto B.</title>
-<meta name="description" content="Kiosko de autoconsulta de precios con lector de código de barras para tiendas físicas en Odoo 18." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Kiosko de autoconsulta de precios con lector de código de barras para tiendas físicas en Odoo 18." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Retail</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · kiosko web</span>
-      </div>
-      <h1 class="proj-hero__title">Estación de Consulta de <span class="grad">Precios</span></h1>
-      <p class="proj-hero__pitch">Convierte cualquier pantalla con un lector de código de barras en un punto de autoconsulta de precios para tiendas físicas en Odoo 18. El cliente escanea un producto y ve al instante su nombre, precio, imagen y existencias. Sin login, sin caja y sin depender de Punto de Venta ni Sitio Web.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>JavaScript</span><span>SCSS</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Estación de Consulta de Precios">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/kiosko-consulta-precios/1.png" alt="Pantalla de inicio del kiosko"><figcaption>01. Pantalla de inicio: invita al cliente a escanear su producto</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/kiosko-consulta-precios/2.png" alt="Resultado de la consulta"><figcaption>02. Resultado al instante: imagen, nombre y precio en grande</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/kiosko-consulta-precios/3.png" alt="Producto no encontrado"><figcaption>03. Si el código no existe, avisa y vuelve sola al inicio</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/kiosko-consulta-precios/4.png" alt="Configuración del kiosko"><figcaption>04. Configuración: tarifa, imagen y stock, sin tocar código</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/kiosko-consulta-precios/5.png" alt="Códigos no encontrados"><figcaption>05. Reporte de códigos escaneados sin producto, para corregir el catálogo</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>El cliente toma un producto, no ve el precio y se va sin comprar</h3>
-        <p>En una tienda física, cada vez que un cliente no encuentra el precio de un producto tiene que buscar a un colaborador o dejarlo. Eso cuesta ventas y satura al personal de piso con la pregunta más repetida del día: ¿cuánto cuesta esto?</p>
-        <p>Esta estación resuelve esa fricción: el cliente pasa el código de barras por el lector y la pantalla muestra de inmediato el nombre, el precio en grande, la imagen y —si se desea— las existencias. Funciona en cualquier tablet o mini PC con navegador, no necesita Punto de Venta ni Sitio Web, y registra los códigos que nadie encontró para depurar el catálogo.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 9v6M10 9v6M13 9v6M16 9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Escaneo instantáneo</h4><p>Con un lector USB-HID: el cliente escanea y ve el resultado al instante, sin login ni caja.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 7v12a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7M3 7l2-3h14l2 3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Precio, imagen y stock</h4><p>Muestra nombre, precio en grande, imagen del producto y, opcionalmente, existencias.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Independiente del POS</h4><p>No instala Punto de Venta ni Sitio Web: corre solo, en cualquier navegador moderno.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-5h6v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Multi-sucursal</h4><p>Cada estación muestra el stock de su propio almacén con un parámetro en la dirección.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M11 4h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 7l3 3 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Detecta huecos del catálogo</h4><p>Registra los códigos escaneados sin producto, para saber qué falta etiquetar.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M11 18h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Responsive y modo cámara</h4><p>Se adapta a pantalla, tablet o celular, con opción de escanear usando la cámara.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">SCSS</span>
-          <span class="chip">HTML5</span>
-          <span class="chip">QWeb</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Cuántas ventas pierdes porque el cliente no ve el precio?</h3>
-      <p>Monto la estación de precios en tu tienda y la adapto a tu catálogo, tarifas y sucursales.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Estación de Consulta de Precios</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo Retail">Odoo · Retail</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// enterprise module · web kiosk">// módulo enterprise · kiosko web</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Consultation Station">Estación de Consulta de</span> <span class="grad"><span data-en="Prices">Precios</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Turn any screen with a barcode reader into a self-checking price point for physical stores in Odoo 18. The customer scans a product and instantly sees its name, price, image and stock. Without login, without cashier and without depending on Point of Sale or Website.">Convierte cualquier pantalla con un lector de código de barras en un punto de autoconsulta de precios para tiendas físicas en Odoo 18. El cliente escanea un producto y ve al instante su nombre, precio, imagen y existencias. Sin login, sin caja y sin depender de Punto de Venta ni Sitio Web.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>JavaScript</span><span>SCSS</span>
+</div>
+</header>
+<section aria-label="Capturas de Estación de Consulta de Precios" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Pantalla de inicio del kiosko" src="../images/projects/kiosko-consulta-precios/1.png"/><figcaption><span data-en="01. Home screen: invite the customer to scan your product">01. Pantalla de inicio: invita al cliente a escanear su producto</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Resultado de la consulta" src="../images/projects/kiosko-consulta-precios/2.png"/><figcaption><span data-en="02. Instant result: large image, name and price">02. Resultado al instante: imagen, nombre y precio en grande</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Producto no encontrado" src="../images/projects/kiosko-consulta-precios/3.png"/><figcaption><span data-en="03. If the code does not exist, let us know and return to the beginning alone">03. Si el código no existe, avisa y vuelve sola al inicio</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Configuración del kiosko" src="../images/projects/kiosko-consulta-precios/4.png"/><figcaption><span data-en="04. Configuration: rate, image and stock, without touching code">04. Configuración: tarifa, imagen y stock, sin tocar código</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Códigos no encontrados" src="../images/projects/kiosko-consulta-precios/5.png"/><figcaption><span data-en="05. Report of scanned codes without product, to correct the catalog">05. Reporte de códigos escaneados sin producto, para corregir el catálogo</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="The customer takes a product, does not see the price and leaves without purchasing">El cliente toma un producto, no ve el precio y se va sin comprar</span></h3>
+<p><span data-en="In a physical store, every time a customer cannot find the price of a product they have to find a collaborator or leave. That costs sales and saturates the floor staff with the most repeated question of the day: how much does this cost?">En una tienda física, cada vez que un cliente no encuentra el precio de un producto tiene que buscar a un colaborador o dejarlo. Eso cuesta ventas y satura al personal de piso con la pregunta más repetida del día: ¿cuánto cuesta esto?</span></p>
+<p><span data-en="This station solves that friction: the customer passes the barcode through the reader and the screen immediately shows the name, the large price, the image and — if desired — the stock. It works on any tablet or mini PC with a browser, it does not need a Point of Sale or a Website, and it records the codes that no one found to debug the catalog.">Esta estación resuelve esa fricción: el cliente pasa el código de barras por el lector y la pantalla muestra de inmediato el nombre, el precio en grande, la imagen y —si se desea— las existencias. Funciona en cualquier tablet o mini PC con navegador, no necesita Punto de Venta ni Sitio Web, y registra los códigos que nadie encontró para depurar el catálogo.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M7 9v6M10 9v6M13 9v6M16 9v6" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Instant Scan">Escaneo instantáneo</span></h4><p><span data-en="With a USB-HID reader: the client scans and sees the result instantly, without login or checkout.">Con un lector USB-HID: el cliente escanea y ve el resultado al instante, sin login ni caja.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 7h18M3 7v12a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7M3 7l2-3h14l2 3" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M12 11v5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Price, image and stock">Precio, imagen y stock</span></h4><p><span data-en="Shows name, large price, product image and, optionally, stock.">Muestra nombre, precio en grande, imagen del producto y, opcionalmente, existencias.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle></svg></div>
+<div class="feat-list__body"><h4><span data-en="POS independent">Independiente del POS</span></h4><p><span data-en="It does not install Point of Sale or Website: it runs alone, in any modern browser.">No instala Punto de Venta ni Sitio Web: corre solo, en cualquier navegador moderno.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-5h6v5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Multi-branch">Multi-sucursal</span></h4><p><span data-en="Each station displays the stock of its own warehouse with a parameter in the address.">Cada estación muestra el stock de su propio almacén con un parámetro en la dirección.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M11 4h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M3 7l3 3 5-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Detects gaps in the catalog">Detecta huecos del catálogo</span></h4><p><span data-en="Record the scanned codes without product, to know what needs to be labeled.">Registra los códigos escaneados sin producto, para saber qué falta etiquetar.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="20" rx="2" stroke="currentColor" stroke-width="1.8" width="10" x="7" y="2"></rect><path d="M11 18h2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Responsive and camera mode">Responsive y modo cámara</span></h4><p><span data-en="It adapts to a screen, tablet or cell phone, with the option to scan using the camera.">Se adapta a pantalla, tablet o celular, con opción de escanear usando la cámara.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">JavaScript</span>
+<span class="chip">SCSS</span>
+<span class="chip">HTML5</span>
+<span class="chip">QWeb</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="How many sales do you lose because the customer doesn't see the price?">¿Cuántas ventas pierdes porque el cliente no ve el precio?</span></h3>
+<p><span data-en="I set up the pricing station in your store and adapt it to your catalog, rates and branches.">Monto la estación de precios en tu tienda y la adapto a tu catálogo, tarifas y sucursales.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Price Inquiry Station">caso · Estación de Consulta de Precios</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

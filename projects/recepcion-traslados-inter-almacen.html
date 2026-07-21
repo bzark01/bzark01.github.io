@@ -1,142 +1,134 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Recepción de Traslados Inter-almacén — Soto B.</title>
-<meta name="description" content="Control de recepción entre bodegas para Odoo: el inventario solo se actualiza cuando el almacén destino confirma físicamente lo recibido." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Control de recepción entre bodegas para Odoo: el inventario solo se actualiza cuando el almacén destino confirma físicamente lo recibido." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Inventario</span>
-      </div>
-      <h1 class="proj-hero__title">Recepción de <span class="grad">Traslados Inter-almacén</span></h1>
-      <p class="proj-hero__pitch">Cuando una bodega envía mercadería a otra, el sistema espera la confirmación física del destino antes de mover el inventario. Así se elimina el descuadre entre lo que una sucursal cree tener y lo que realmente llegó.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Inventario</span><span>Multi-almacén</span><span>Trazabilidad</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Recepción de Traslados Inter-almacén">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/recepcion-traslados-inter-almacen/1.png" alt="Tablero de Inventario por almacén"><figcaption>01. Cada almacén tiene su propio tablero de recepciones y traslados.</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/recepcion-traslados-inter-almacen/2.png" alt="Lista de almacenes de la compañía"><figcaption>02. Los almacenes se configuran de forma independiente entre sí.</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/recepcion-traslados-inter-almacen/3.png" alt="Configuración de picking previo por almacén"><figcaption>03. El control físico previo al envío se activa solo donde se necesita.</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/recepcion-traslados-inter-almacen/4.png" alt="Lista de traslados internos entre almacenes"><figcaption>04. El traslado queda visible en «Esperando Recepción» hasta que el destino confirma.</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/recepcion-traslados-inter-almacen/5.png" alt="Detalle de un traslado esperando recepción"><figcaption>05. Trazabilidad completa entre el traslado de origen y la recepción en destino.</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>El inventario se movía antes de que la mercadería llegara</h3>
-        <p>En una operación con varias bodegas o sucursales, un traslado interno entre almacenes se registraba como completado en el instante en que salía del origen, sin que nadie en el destino confirmara haberlo recibido.</p>
-        <p>Eso generaba un problema silencioso pero costoso: el sistema mostraba stock disponible en una sucursal que, en la realidad, todavía no había recibido la mercadería, o la había recibido incompleta o dañada. Cada diferencia terminaba resuelta a mano, con ajustes de inventario y tiempo perdido reconciliando bodegas.</p>
-        <p>La solución agrega un punto de control real: el traslado queda en espera hasta que el almacén destino confirma físicamente lo recibido, y solo entonces el inventario se actualiza.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Recepción con confirmación obligatoria</h4><p>Al enviar mercadería entre almacenes, el sistema no la da por recibida automáticamente: crea un documento de recepción en destino que debe validarse a mano.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h10M4 18h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Recepciones parciales sin perder trazabilidad</h4><p>Si llega menos de lo enviado, se registra la cantidad real y el sistema genera automáticamente el traslado pendiente para el resto, sin intervención manual adicional.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Control físico opcional antes del envío</h4><p>Las bodegas de mayor movimiento pueden exigir una etapa previa de recolección física antes de que la mercadería salga rumbo a otro almacén, sin imponer ese paso a las demás.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 6l4 4M4 6l4-4M20 18H4M20 18l-4 4M20 18l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Trazabilidad completa entre bodegas</h4><p>Cada traslado queda enlazado a su recepción y viceversa, así que en cualquier momento se puede saber qué salió, qué llegó y qué falta, sin perder el hilo entre sucursales.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5v14M8 5v14M11 5v14M15 5v14M18 5v14M21 5v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Doble código de barras en el documento</h4><p>El PDF de la operación imprime tanto el código de salida como el de ingreso, para que en la bodega destino se escanee directo la recepción sin buscarla manualmente.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">XML</span>
-          <span class="chip">QWeb</span>
-          <span class="chip">PostgreSQL</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu operación mueve mercadería entre bodegas?</h3>
-      <p>Lo adapto a la cantidad de almacenes y al flujo de recepción que ya usa tu operación.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Recepción de Traslados Inter-almacén</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Inventory">Odoo · Inventario</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Reception of">Recepción de</span> <span class="grad"><span data-en="Inter-warehouse transfers">Traslados Inter-almacén</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="When one warehouse sends merchandise to another, the system waits for physical confirmation of the destination before moving the inventory. This eliminates the gap between what a branch believes it has and what it actually arrived.">Cuando una bodega envía mercadería a otra, el sistema espera la confirmación física del destino antes de mover el inventario. Así se elimina el descuadre entre lo que una sucursal cree tener y lo que realmente llegó.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Inventario</span><span>Multi-almacén</span><span>Trazabilidad</span>
+</div>
+</header>
+<section aria-label="Capturas de Recepción de Traslados Inter-almacén" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Tablero de Inventario por almacén" src="../images/projects/recepcion-traslados-inter-almacen/1.png"/><figcaption><span data-en="01. Each warehouse has its own reception and transfer board.">01. Cada almacén tiene su propio tablero de recepciones y traslados.</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Lista de almacenes de la compañía" src="../images/projects/recepcion-traslados-inter-almacen/2.png"/><figcaption><span data-en="02. Warehouses are configured independently of each other.">02. Los almacenes se configuran de forma independiente entre sí.</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Configuración de picking previo por almacén" src="../images/projects/recepcion-traslados-inter-almacen/3.png"/><figcaption><span data-en="03. Pre-shipment physical control is activated only where it is needed.">03. El control físico previo al envío se activa solo donde se necesita.</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Lista de traslados internos entre almacenes" src="../images/projects/recepcion-traslados-inter-almacen/4.png"/><figcaption><span data-en="04. The transfer remains visible in “Waiting for Reception” until the destination confirms.">04. El traslado queda visible en «Esperando Recepción» hasta que el destino confirma.</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Detalle de un traslado esperando recepción" src="../images/projects/recepcion-traslados-inter-almacen/5.png"/><figcaption><span data-en="05. Complete traceability between the transfer from origin and reception at destination.">05. Trazabilidad completa entre el traslado de origen y la recepción en destino.</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Inventory moved before merchandise arrived">El inventario se movía antes de que la mercadería llegara</span></h3>
+<p><span data-en="In an operation with several warehouses or branches, an internal transfer between warehouses was recorded as completed the instant it left the origin, without anyone at the destination confirming that it had been received.">En una operación con varias bodegas o sucursales, un traslado interno entre almacenes se registraba como completado en el instante en que salía del origen, sin que nadie en el destino confirmara haberlo recibido.</span></p>
+<p><span data-en="This generated a silent but costly problem: the system showed available stock in a branch that, in reality, had not yet received the merchandise, or had received it incomplete or damaged. Each difference ended up being resolved by hand, with inventory adjustments and time lost reconciling warehouses.">Eso generaba un problema silencioso pero costoso: el sistema mostraba stock disponible en una sucursal que, en la realidad, todavía no había recibido la mercadería, o la había recibido incompleta o dañada. Cada diferencia terminaba resuelta a mano, con ajustes de inventario y tiempo perdido reconciliando bodegas.</span></p>
+<p><span data-en="The solution adds a real checkpoint: the transfer is put on hold until the destination warehouse physically confirms what has been received, and only then is the inventory updated.">La solución agrega un punto de control real: el traslado queda en espera hasta que el almacén destino confirma físicamente lo recibido, y solo entonces el inventario se actualiza.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle></svg></div>
+<div class="feat-list__body"><h4><span data-en="Reception with mandatory confirmation">Recepción con confirmación obligatoria</span></h4><p><span data-en="When sending merchandise between warehouses, the system does not automatically consider it received: it creates a receipt document at destination that must be validated by hand.">Al enviar mercadería entre almacenes, el sistema no la da por recibida automáticamente: crea un documento de recepción en destino que debe validarse a mano.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 12h16M4 6h10M4 18h7" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Partial receptions without losing traceability">Recepciones parciales sin perder trazabilidad</span></h4><p><span data-en="If less arrives than shipped, the actual quantity is recorded and the system automatically generates the pending transfer for the remainder, without additional manual intervention.">Si llega menos de lo enviado, se registra la cantidad real y el sistema genera automáticamente el traslado pendiente para el resto, sin intervención manual adicional.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Optional physical check before shipment">Control físico opcional antes del envío</span></h4><p><span data-en="Warehouses with greater movement may require a prior physical collection stage before the merchandise leaves for another warehouse, without imposing this step on the others.">Las bodegas de mayor movimiento pueden exigir una etapa previa de recolección física antes de que la mercadería salga rumbo a otro almacén, sin imponer ese paso a las demás.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 6h16M4 6l4 4M4 6l4-4M20 18H4M20 18l-4 4M20 18l-4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Complete traceability between wineries">Trazabilidad completa entre bodegas</span></h4><p><span data-en="Each transfer is linked to its reception and vice versa, so at any time you can know what left, what arrived and what is missing, without losing the thread between branches.">Cada traslado queda enlazado a su recepción y viceversa, así que en cualquier momento se puede saber qué salió, qué llegó y qué falta, sin perder el hilo entre sucursales.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 5v14M8 5v14M11 5v14M15 5v14M18 5v14M21 5v14" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Double barcode on the document">Doble código de barras en el documento</span></h4><p><span data-en="The PDF of the operation prints both the exit and entry code, so that the receipt is scanned directly at the destination warehouse without searching for it manually.">El PDF de la operación imprime tanto el código de salida como el de ingreso, para que en la bodega destino se escanee directo la recepción sin buscarla manualmente.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">XML</span>
+<span class="chip">QWeb</span>
+<span class="chip">PostgreSQL</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your operation move merchandise between warehouses?">¿Tu operación mueve mercadería entre bodegas?</span></h3>
+<p><span data-en="I adapt it to the number of warehouses and the receiving flow that your operation already uses.">Lo adapto a la cantidad de almacenes y al flujo de recepción que ya usa tu operación.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Soto B. — Made with code and coffee.">© 2026 Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Reception of Inter-warehouse Transfers">caso · Recepción de Traslados Inter-almacén</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

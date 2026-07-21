@@ -1,147 +1,139 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Estados de Cuenta CR — Importación y Conciliación — Bryan Soto B.</title>
-<meta name="description" content="Importación de estados de cuenta bancarios de Costa Rica en PDF y conciliación automática para Odoo 18." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Importación de estados de cuenta bancarios de Costa Rica en PDF y conciliación automática para Odoo 18." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Contabilidad</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · conciliación bancaria</span>
-      </div>
-      <h1 class="proj-hero__title">Importación y Conciliación de <span class="grad">Estados de Cuenta</span></h1>
-      <p class="proj-hero__pitch">Carga los estados de cuenta bancarios de Costa Rica en PDF directamente al diario de Odoo 18 y los concilia automáticamente contra facturas y pagos abiertos. Primer banco soportado: BAC Credomatic, con un diseño que permite sumar más bancos sin cambiar el flujo.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>pdfplumber</span><span>PostgreSQL</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Estados de Cuenta CR — Importación y Conciliación">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/conciliacion-bancaria-cr/1.png" alt="Configuración del diario bancario"><figcaption>01. Configuración: se elige el banco CR en el diario y su número de cuenta</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/conciliacion-bancaria-cr/2.png" alt="Estado de cuenta importado"><figcaption>02. Estado de cuenta importado desde el PDF, con balance inicial y final</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/conciliacion-bancaria-cr/3.png" alt="Conciliación bancaria"><figcaption>03. Conciliación: cada línea se cruza con la factura o el pago correspondiente</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/conciliacion-bancaria-cr/4.png" alt="Factura conciliada"><figcaption>04. La factura del cliente queda marcada como Pagada al conciliar</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/conciliacion-bancaria-cr/5.png" alt="Reporte por banco"><figcaption>05. Reporte de conciliaciones por banco con porcentaje de avance</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Conciliar el banco a mano, línea por línea, cada fin de mes</h3>
-        <p>Conciliar manualmente el estado de cuenta contra las facturas y pagos es una de las tareas más lentas del cierre contable: digitar cada movimiento, buscar a qué factura corresponde y registrar aparte las comisiones e impuestos del banco.</p>
-        <p>Este módulo lee el PDF del banco, crea las líneas del extracto en Odoo y concilia automáticamente las que coinciden con facturas o pagos abiertos. Detecta al cliente por la cédula o el número de cuenta de la glosa, propone los asientos de comisiones e impuestos, y evita duplicados si se vuelve a cargar el mismo archivo. El contador solo revisa las excepciones.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2h9l4 4v16H6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 2v5h5M9 13l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Importa el PDF del banco</h4><p>Lee el estado de cuenta en PDF de texto y crea las líneas del extracto. Primer banco: BAC.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h12M4 8l3-3M4 8l3 3M20 16H8M20 16l-3-3M20 16l-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Conciliación automática</h4><p>Cruza cada movimiento contra facturas y pagos abiertos por referencia y monto.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Detección del cliente</h4><p>Identifica al cliente por la cédula o el número de cuenta que aparece en la glosa.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Comisiones, impuestos y SINPE</h4><p>Sugiere el asiento de gasto para comisiones bancarias, impuestos y cargos SINPE.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M5 9l7-5 7 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 20h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Sin duplicados</h4><p>Si se vuelve a cargar el mismo PDF, las líneas ya importadas se omiten automáticamente.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Dashboard y reporte por banco</h4><p>Tablero de avance por banco y mes, y reporte de conciliaciones en PDF y Excel.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">pdfplumber</span>
-          <span class="chip">XML</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">QWeb</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Cuántas horas pierde tu contador conciliando el banco a mano?</h3>
-      <p>Calibro el lector de PDF a tu banco e integro la conciliación automática con tu contabilidad.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Estados de Cuenta CR — Importación y Conciliación</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Accounting">Odoo · Contabilidad</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// enterprise module · bank reconciliation">// módulo enterprise · conciliación bancaria</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Import and Reconciliation of">Importación y Conciliación de</span> <span class="grad"><span data-en="Account Statements">Estados de Cuenta</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Upload Costa Rica bank statements in PDF directly to the Odoo 18 journal and automatically reconcile them against invoices and open payments. First bank supported: BAC Credomatic, with a design that allows adding more banks without changing the flow.">Carga los estados de cuenta bancarios de Costa Rica en PDF directamente al diario de Odoo 18 y los concilia automáticamente contra facturas y pagos abiertos. Primer banco soportado: BAC Credomatic, con un diseño que permite sumar más bancos sin cambiar el flujo.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>pdfplumber</span><span>PostgreSQL</span>
+</div>
+</header>
+<section aria-label="Capturas de Estados de Cuenta CR — Importación y Conciliación" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Configuración del diario bancario" src="../images/projects/conciliacion-bancaria-cr/1.png"/><figcaption><span data-en="01. Configuration: choose the CR bank in the journal and its account number">01. Configuración: se elige el banco CR en el diario y su número de cuenta</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Estado de cuenta importado" src="../images/projects/conciliacion-bancaria-cr/2.png"/><figcaption><span data-en="02. Account statement imported from PDF, with initial and final balance">02. Estado de cuenta importado desde el PDF, con balance inicial y final</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Conciliación bancaria" src="../images/projects/conciliacion-bancaria-cr/3.png"/><figcaption><span data-en="03. Reconciliation: each line is crossed with the corresponding invoice or payment">03. Conciliación: cada línea se cruza con la factura o el pago correspondiente</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Factura conciliada" src="../images/projects/conciliacion-bancaria-cr/4.png"/><figcaption><span data-en="04. The customer's invoice is marked as Paid when reconciling">04. La factura del cliente queda marcada como Pagada al conciliar</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Reporte por banco" src="../images/projects/conciliacion-bancaria-cr/5.png"/><figcaption><span data-en="05. Reconciliation report by bank with percentage of progress">05. Reporte de conciliaciones por banco con porcentaje de avance</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Reconcile the bank by hand, line by line, every end of the month">Conciliar el banco a mano, línea por línea, cada fin de mes</span></h3>
+<p><span data-en="Manually reconciling the account statement against the invoices and payments is one of the most time-consuming tasks of accounting closing: typing each transaction, looking for which invoice it corresponds to, and separately recording the bank's commissions and taxes.">Conciliar manualmente el estado de cuenta contra las facturas y pagos es una de las tareas más lentas del cierre contable: digitar cada movimiento, buscar a qué factura corresponde y registrar aparte las comisiones e impuestos del banco.</span></p>
+<p><span data-en="This module reads the bank's PDF, creates the statement lines in Odoo, and automatically reconciles those that match open invoices or payments. Detects the client by ID or account number in the glossary, proposes commission and tax entries, and avoids duplicates if the same file is uploaded again. The accountant only reviews exceptions.">Este módulo lee el PDF del banco, crea las líneas del extracto en Odoo y concilia automáticamente las que coinciden con facturas o pagos abiertos. Detecta al cliente por la cédula o el número de cuenta de la glosa, propone los asientos de comisiones e impuestos, y evita duplicados si se vuelve a cargar el mismo archivo. El contador solo revisa las excepciones.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M6 2h9l4 4v16H6z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M14 2v5h5M9 13l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Import the bank PDF">Importa el PDF del banco</span></h4><p><span data-en="Read the text PDF statement and create the statement lines. First bank: BAC.">Lee el estado de cuenta en PDF de texto y crea las líneas del extracto. Primer banco: BAC.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 8h12M4 8l3-3M4 8l3 3M20 16H8M20 16l-3-3M20 16l-3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Automatic reconciliation">Conciliación automática</span></h4><p><span data-en="Cross-check each movement against open invoices and payments by reference and amount.">Cruza cada movimiento contra facturas y pagos abiertos por referencia y monto.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"></circle><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Customer discovery">Detección del cliente</span></h4><p><span data-en="Identifies the client by the ID or account number that appears in the glossary.">Identifica al cliente por la cédula o el número de cuenta que aparece en la glosa.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Commissions, taxes and SINPE">Comisiones, impuestos y SINPE</span></h4><p><span data-en="Suggests the expense entry for bank commissions, taxes and SINPE charges.">Sugiere el asiento de gasto para comisiones bancarias, impuestos y cargos SINPE.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 4v16M5 9l7-5 7 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M5 20h14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="No duplicates">Sin duplicados</span></h4><p><span data-en="If the same PDF is uploaded again, the lines already imported are automatically skipped.">Si se vuelve a cargar el mismo PDF, las líneas ya importadas se omiten automáticamente.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Dashboard and report by bank">Dashboard y reporte por banco</span></h4><p><span data-en="Progress dashboard by bank and month, and reconciliation report in PDF and Excel.">Tablero de avance por banco y mes, y reporte de conciliaciones en PDF y Excel.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">pdfplumber</span>
+<span class="chip">XML</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">QWeb</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="How many hours does your accountant waste reconciling the bank by hand?">¿Cuántas horas pierde tu contador conciliando el banco a mano?</span></h3>
+<p><span data-en="I calibrate the PDF reader to your bank and integrate automatic reconciliation with your accounting.">Calibro el lector de PDF a tu banco e integro la conciliación automática con tu contabilidad.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · CR Account Statements — Import and Reconciliation">caso · Estados de Cuenta CR — Importación y Conciliación</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

@@ -1,147 +1,139 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Control de Pendientes y Bloqueos en Proyectos — Bryan Soto B.</title>
-<meta name="description" content="Checklist de pendientes y bloqueos con semáforo de criticidad y tablero unificado para Odoo 18." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Checklist de pendientes y bloqueos con semáforo de criticidad y tablero unificado para Odoo 18." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Proyectos</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · gestión de proyectos</span>
-      </div>
-      <h1 class="proj-hero__title">Control de Pendientes y <span class="grad">Bloqueos</span></h1>
-      <p class="proj-hero__pitch">Agrega un checklist independiente de pendientes y bloqueos dentro de cada tarea y subtarea de proyectos en Odoo 18, con un semáforo de criticidad que cambia de color solo y un tablero gerencial que consolida los pendientes de todos los proyectos. Pensado para separar los compromisos del cliente del cronograma operativo del equipo.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Control de Pendientes y Bloqueos en Proyectos">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/pendientes-bloqueos-proyectos/1.png" alt="Tablero unificado de pendientes"><figcaption>01. Tablero unificado: todos los pendientes de todos los proyectos en una pantalla</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pendientes-bloqueos-proyectos/2.png" alt="Pestaña Pendientes en la tarea"><figcaption>02. Checklist de pendientes dentro de la tarea, con semáforo de alerta</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pendientes-bloqueos-proyectos/3.png" alt="Tablero kanban por proyecto"><figcaption>03. Vista kanban agrupada por proyecto y fecha límite</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pendientes-bloqueos-proyectos/4.png" alt="Tabla dinámica de pendientes"><figcaption>04. Tabla dinámica: pendientes por estado y por proyecto</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/pendientes-bloqueos-proyectos/5.png" alt="Configuración del semáforo"><figcaption>05. Umbral del semáforo configurable desde Ajustes de Proyecto</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Los bloqueos del cliente se pierden entre las subtareas del equipo</h3>
-        <p>En un proyecto, los compromisos que dependen del cliente —entregar un catálogo, definir aprobaciones, dar accesos— suelen anotarse como subtareas más. Eso ensucia el cronograma del equipo, distorsiona la reportería de tiempos y, peor, hace que esos bloqueos pasen desapercibidos hasta que ya causaron atraso.</p>
-        <p>Este módulo les da su propio espacio: un checklist de pendientes con fecha límite y un semáforo que pasa de verde a amarillo a rojo automáticamente. El gerente ve todos los pendientes de todos los proyectos en un tablero unificado, filtra los atrasados y prioriza, mientras el equipo técnico mantiene sus subtareas operativas limpias.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 11l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Checklist por tarea y subtarea</h4><p>Una pestaña de pendientes editable en línea, separada de las subtareas operativas del equipo.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="7" r="1.4" fill="currentColor"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/><circle cx="12" cy="17" r="1.4" fill="currentColor"/></svg></div>
-            <div class="feat-list__body"><h4>Semáforo automático</h4><p>A tiempo, En demora, Atrasado o Resuelto: el color se calcula solo por la fecha límite.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Tablero gerencial unificado</h4><p>Lista jerárquica, kanban, tabla dinámica y gráfico con todos los pendientes y filtros rápidos.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 21a2 2 0 0 1-3.4 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Aviso de atrasados</h4><p>Notifica en el chatter al responsable de seguimiento cuando un pendiente queda vencido.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Alerta en la lista de tareas</h4><p>Resalta en rojo las tareas que tienen pendientes atrasados, visible de un vistazo.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Umbral configurable</h4><p>El margen del semáforo se ajusta desde Ajustes y se recalcula cada noche de forma automática.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">XML</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">project</span>
-          <span class="chip">Cron</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Los bloqueos del cliente te están atrasando los proyectos?</h3>
-      <p>Adapto el checklist de pendientes y el semáforo a tu metodología de proyectos e implementación.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Control de Pendientes y Bloqueos en Proyectos</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Projects">Odoo · Proyectos</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// enterprise module · project management">// módulo enterprise · gestión de proyectos</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Slope Control and">Control de Pendientes y</span> <span class="grad"><span data-en="Locks">Bloqueos</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Add an independent checklist of pending items and blocks within each project task and subtask in Odoo 18, with a criticality traffic light that changes color on its own and a management dashboard that consolidates the pending items of all projects. Designed to separate client commitments from the team's operational schedule.">Agrega un checklist independiente de pendientes y bloqueos dentro de cada tarea y subtarea de proyectos en Odoo 18, con un semáforo de criticidad que cambia de color solo y un tablero gerencial que consolida los pendientes de todos los proyectos. Pensado para separar los compromisos del cliente del cronograma operativo del equipo.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
+</div>
+</header>
+<section aria-label="Capturas de Control de Pendientes y Bloqueos en Proyectos" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Tablero unificado de pendientes" src="../images/projects/pendientes-bloqueos-proyectos/1.png"/><figcaption><span data-en="01. Unified dashboard: all pending items for all projects on one screen">01. Tablero unificado: todos los pendientes de todos los proyectos en una pantalla</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Pestaña Pendientes en la tarea" src="../images/projects/pendientes-bloqueos-proyectos/2.png"/><figcaption><span data-en="02. Checklist of pending tasks within the task, with alert traffic light">02. Checklist de pendientes dentro de la tarea, con semáforo de alerta</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Tablero kanban por proyecto" src="../images/projects/pendientes-bloqueos-proyectos/3.png"/><figcaption><span data-en="03. Kanban view grouped by project and deadline">03. Vista kanban agrupada por proyecto y fecha límite</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Tabla dinámica de pendientes" src="../images/projects/pendientes-bloqueos-proyectos/4.png"/><figcaption><span data-en="04. Dynamic table: pending by status and by project">04. Tabla dinámica: pendientes por estado y por proyecto</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Configuración del semáforo" src="../images/projects/pendientes-bloqueos-proyectos/5.png"/><figcaption><span data-en="05. Traffic light threshold configurable from Project Settings">05. Umbral del semáforo configurable desde Ajustes de Proyecto</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Client locks get lost between team subtasks">Los bloqueos del cliente se pierden entre las subtareas del equipo</span></h3>
+<p><span data-en="In a project, commitments that depend on the client—delivering a catalog, defining approvals, granting access—are usually noted as another subtask. That messes up the team's schedule, distorts time reporting and, worse, causes those blockages to go unnoticed until they have already caused a delay.">En un proyecto, los compromisos que dependen del cliente —entregar un catálogo, definir aprobaciones, dar accesos— suelen anotarse como subtareas más. Eso ensucia el cronograma del equipo, distorsiona la reportería de tiempos y, peor, hace que esos bloqueos pasen desapercibidos hasta que ya causaron atraso.</span></p>
+<p><span data-en="This module gives them their own space: a to-do checklist with a deadline and a traffic light that goes from green to yellow to red automatically. The manager sees all backlogs for all projects on a unified dashboard, filters backlogs and prioritizes, while the technical team keeps their operational subtasks clean.">Este módulo les da su propio espacio: un checklist de pendientes con fecha límite y un semáforo que pasa de verde a amarillo a rojo automáticamente. El gerente ve todos los pendientes de todos los proyectos en un tablero unificado, filtra los atrasados y prioriza, mientras el equipo técnico mantiene sus subtareas operativas limpias.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M9 11l2 2 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect height="16" rx="2" stroke="currentColor" stroke-width="1.8" width="16" x="4" y="4"></rect></svg></div>
+<div class="feat-list__body"><h4><span data-en="Checklist by task and subtask">Checklist por tarea y subtarea</span></h4><p><span data-en="An editable online to-do tab, separate from the team's operational subtasks.">Una pestaña de pendientes editable en línea, separada de las subtareas operativas del equipo.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><circle cx="12" cy="7" fill="currentColor" r="1.4"></circle><circle cx="12" cy="12" fill="currentColor" r="1.4"></circle><circle cx="12" cy="17" fill="currentColor" r="1.4"></circle></svg></div>
+<div class="feat-list__body"><h4><span data-en="Automatic traffic light">Semáforo automático</span></h4><p><span data-en="On Time, On Delay, Late, or Resolved: Color is calculated by deadline only.">A tiempo, En demora, Atrasado o Resuelto: el color se calcula solo por la fecha límite.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Unified management dashboard">Tablero gerencial unificado</span></h4><p><span data-en="Hierarchical list, kanban, pivot table and chart with all to-dos and quick filters.">Lista jerárquica, kanban, tabla dinámica y gráfico con todos los pendientes y filtros rápidos.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M13.7 21a2 2 0 0 1-3.4 0" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Overdue notice">Aviso de atrasados</span></h4><p><span data-en="Notify the follow-up manager in the chatter when a pending item is overdue.">Notifica en el chatter al responsable de seguimiento cuando un pendiente queda vencido.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="18" rx="2" stroke="currentColor" stroke-width="1.8" width="16" x="4" y="3"></rect><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Alert in task list">Alerta en la lista de tareas</span></h4><p><span data-en="Highlights in red the tasks that are pending overdue, visible at a glance.">Resalta en rojo las tareas que tienen pendientes atrasados, visible de un vistazo.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Configurable threshold">Umbral configurable</span></h4><p><span data-en="The traffic light margin is adjusted from Settings and is automatically recalculated every night.">El margen del semáforo se ajusta desde Ajustes y se recalcula cada noche de forma automática.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">XML</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">project</span>
+<span class="chip">Cron</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Are client blockages delaying your projects?">¿Los bloqueos del cliente te están atrasando los proyectos?</span></h3>
+<p><span data-en="I adapt the pending checklist and the traffic light to your project and implementation methodology.">Adapto el checklist de pendientes y el semáforo a tu metodología de proyectos e implementación.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Control of Pending and Blockages in Projects">caso · Control de Pendientes y Bloqueos en Proyectos</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

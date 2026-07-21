@@ -1,146 +1,138 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Integración con Google Gemini AI — Soto B.</title>
-<meta name="description" content="Base de infraestructura para conectar Odoo con Google Gemini: configuración central y análisis multimodal de texto, imágenes, videos y PDF." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Base de infraestructura para conectar Odoo con Google Gemini: configuración central y análisis multimodal de texto, imágenes, videos y PDF." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · IA</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo base de infraestructura · IA multimodal</span>
-      </div>
-      <h1 class="proj-hero__title">Integración con <span class="grad">Google Gemini AI</span></h1>
-      <p class="proj-hero__pitch">Conecta Odoo con la Inteligencia Artificial de Google Gemini desde un solo lugar. Una configuración central de clave y modelo que habilita el análisis de texto, imágenes, videos y documentos para cualquier módulo de la empresa.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>Google Gemini</span><span>IA</span><span>XML</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Integración con Google Gemini AI">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/integracion-gemini-ai/1.png" alt="Configuración de Gemini en Ajustes"><figcaption>01. Configuración central de Gemini AI</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/integracion-gemini-ai/2.png" alt="API Key configurada"><figcaption>02. Clave de acceso enmascarada</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/integracion-gemini-ai/3.png" alt="Modelos de Gemini disponibles"><figcaption>03. Selección del modelo según necesidad</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/integracion-gemini-ai/4.png" alt="Opciones de análisis"><figcaption>04. Análisis automático y de archivos adjuntos</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/integracion-gemini-ai/5.png" alt="Prueba de conexión"><figcaption>05. Prueba de conexión integrada</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>La IA generativa es poderosa, pero integrarla módulo por módulo es caótico</h3>
-        <p>Cada equipo quiere aprovechar la Inteligencia Artificial —analizar tickets, redactar correos, interpretar imágenes y documentos— pero conectar cada módulo por separado significa repetir la configuración, duplicar la clave de acceso y multiplicar los puntos de mantenimiento.</p>
-        <p>Este módulo resuelve la base: centraliza la clave y el modelo de Google Gemini en un único lugar y expone un servicio reutilizable de análisis multimodal. Así, cualquier módulo de la empresa habilita la IA sin volver a configurar nada, con una sola clave y un solo punto de control.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Configuración central de IA</h4><p>Una sola pantalla guarda la clave de acceso y el modelo de Gemini para toda la empresa.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 15l5-4 4 3 3-2 6 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Análisis multimodal</h4><p>Interpreta no solo texto, sino también imágenes, videos y archivos PDF.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Modelo a la medida</h4><p>Elige entre modelos rápidos y económicos o de máxima capacidad, según cada necesidad.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Prueba de conexión</h4><p>Valida en el momento que la clave y el modelo funcionan, antes de usarlos en producción.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Base reutilizable</h4><p>Otros módulos (soporte, correos) usan la misma IA sin repetir configuración.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 0116 0M4 12a8 8 0 0016 0" stroke="currentColor" stroke-width="1.8"/><path d="M9 9h.01M15 9h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Interruptores de IA</h4><p>Activa o desactiva el análisis automático y la lectura de adjuntos según convenga.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">Google Gemini</span>
-          <span class="chip">XML</span>
-          <span class="chip">PostgreSQL</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Querés llevar la IA de Google a tu Odoo?</h3>
-      <p>Integro Gemini como base y lo conecto con tus procesos: soporte, correos, análisis de documentos y más.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Integración con Google Gemini AI</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · AI">Odoo · IA</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// infrastructure base module · Multimodal AI">// módulo base de infraestructura · IA multimodal</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Integration with">Integración con</span> <span class="grad"><span data-en="Google Gemini AI">Google Gemini AI</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Connect Odoo with Google Gemini Artificial Intelligence from one place. A central key and model configuration that enables analysis of text, images, videos and documents for any module in the enterprise.">Conecta Odoo con la Inteligencia Artificial de Google Gemini desde un solo lugar. Una configuración central de clave y modelo que habilita el análisis de texto, imágenes, videos y documentos para cualquier módulo de la empresa.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>Google Gemini</span><span>IA</span><span>XML</span>
+</div>
+</header>
+<section aria-label="Capturas de Integración con Google Gemini AI" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Configuración de Gemini en Ajustes" src="../images/projects/integracion-gemini-ai/1.png"/><figcaption><span data-en="01. Gemini AI core configuration">01. Configuración central de Gemini AI</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="API Key configurada" src="../images/projects/integracion-gemini-ai/2.png"/><figcaption><span data-en="02. Masked access key">02. Clave de acceso enmascarada</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Modelos de Gemini disponibles" src="../images/projects/integracion-gemini-ai/3.png"/><figcaption><span data-en="03. Selection of the model according to need">03. Selección del modelo según necesidad</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Opciones de análisis" src="../images/projects/integracion-gemini-ai/4.png"/><figcaption><span data-en="04. Automatic and attachment scanning">04. Análisis automático y de archivos adjuntos</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Prueba de conexión" src="../images/projects/integracion-gemini-ai/5.png"/><figcaption><span data-en="05. Integrated connection test">05. Prueba de conexión integrada</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Generative AI is powerful, but integrating it module by module is chaotic">La IA generativa es poderosa, pero integrarla módulo por módulo es caótico</span></h3>
+<p><span data-en="Every team wants to take advantage of Artificial Intelligence—analyze tickets, write emails, interpret images and documents—but connecting each module separately means repeating the configuration, duplicating the access code and multiplying maintenance points.">Cada equipo quiere aprovechar la Inteligencia Artificial —analizar tickets, redactar correos, interpretar imágenes y documentos— pero conectar cada módulo por separado significa repetir la configuración, duplicar la clave de acceso y multiplicar los puntos de mantenimiento.</span></p>
+<p><span data-en="This module solves the basics: it centralizes the Google Gemini key and model in a single place and exposes a reusable multimodal analysis service. Thus, any module in the company enables AI without reconfiguring anything, with a single key and a single control point.">Este módulo resuelve la base: centraliza la clave y el modelo de Google Gemini en un único lugar y expone un servicio reutilizable de análisis multimodal. Así, cualquier módulo de la empresa habilita la IA sin volver a configurar nada, con una sola clave y un solo punto de control.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="AI Core Settings">Configuración central de IA</span></h4><p><span data-en="A single screen stores the access code and Gemini model for the entire company.">Una sola pantalla guarda la clave de acceso y el modelo de Gemini para toda la empresa.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="4"></rect><path d="M3 15l5-4 4 3 3-2 6 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Multimodal analysis">Análisis multimodal</span></h4><p><span data-en="It interprets not only text, but also images, videos and PDF files.">Interpreta no solo texto, sino también imágenes, videos y archivos PDF.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Custom model">Modelo a la medida</span></h4><p><span data-en="Choose between fast and economical models or maximum capacity, according to each need.">Elige entre modelos rápidos y económicos o de máxima capacidad, según cada necesidad.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Connection test">Prueba de conexión</span></h4><p><span data-en="Validate immediately that the key and model work, before using them in production.">Valida en el momento que la clave y el modelo funcionan, antes de usarlos en producción.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Reusable base">Base reutilizable</span></h4><p><span data-en="Other modules (support, emails) use the same AI without repeating configuration.">Otros módulos (soporte, correos) usan la misma IA sin repetir configuración.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 12a8 8 0 0116 0M4 12a8 8 0 0016 0" stroke="currentColor" stroke-width="1.8"></path><path d="M9 9h.01M15 9h.01" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="AI switches">Interruptores de IA</span></h4><p><span data-en="Enable or disable automatic scanning and reading of attachments as appropriate.">Activa o desactiva el análisis automático y la lectura de adjuntos según convenga.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">Google Gemini</span>
+<span class="chip">XML</span>
+<span class="chip">PostgreSQL</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Do you want to bring Google AI to your Odoo?">¿Querés llevar la IA de Google a tu Odoo?</span></h3>
+<p><span data-en="I integrate Gemini as a base and connect it with your processes: support, emails, document analysis and more.">Integro Gemini como base y lo conecto con tus procesos: soporte, correos, análisis de documentos y más.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Soto B. — Made with code and coffee.">© 2026 Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Integration with Google Gemini AI">caso · Integración con Google Gemini AI</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

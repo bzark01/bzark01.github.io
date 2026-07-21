@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Sistema de Gestión de Taller Automotriz — Bryan Soto B.</title>
-<meta name="description" content="Suite Odoo para talleres automotrices: recepción 3D, bahías, citas, requisiciones, garantías y dashboard operativo." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
+<meta content="Suite Odoo para talleres automotrices: recepción 3D, bahías, citas, requisiciones, garantías y dashboard operativo." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
 <style>
   .suite-band{display:flex;flex-wrap:wrap;gap:18px;margin:8px 0 40px;}
   .suite-stat{background:var(--surface,#11161f);border:1px solid var(--border-strong,#222c3a);
@@ -46,169 +47,154 @@
   .suite-fig img{cursor:zoom-in;}
 
 </style>
-</head>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Taller</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// suite · 7 módulos integrados</span>
-      </div>
-      <h1 class="proj-hero__title">Gestión de <span class="grad">Taller Automotriz</span></h1>
-      <p class="proj-hero__pitch">Sistema integral para talleres automotrices en Odoo: recepción de vehículos con visor 3D, bahías, citas, requisiciones, garantías y un dashboard operativo. Siete módulos que cubren el servicio de punta a punta, integrados con ventas e inventario.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar info</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>OWL</span><span>Three.js</span><span>Chart.js</span><span>PostgreSQL</span>
-      </div>
-    </header>
-
-    <div class="suite-band"><div class="suite-stat"><span class="suite-stat__n">7</span><span class="suite-stat__l">módulos integrados</span></div><div class="suite-stat"><span class="suite-stat__n">3D</span><span class="suite-stat__l">recepción de vehículos</span></div><div class="suite-stat"><span class="suite-stat__n">100%</span><span class="suite-stat__l">trazabilidad del servicio</span></div><div class="suite-stat"><span class="suite-stat__n">XLSX</span><span class="suite-stat__l">reportes multitipo</span></div></div>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// bloque 01</span>
-        <h3>Configuración y núcleo del taller</h3>
-        <p>Definí marcas de vehículos y tipos de reparación con su plantilla de servicios, repuestos y garantía por defecto. Cada tipo de reparación se reutiliza al crear citas, recepciones y requisiciones.</p><p>Activás por interruptor solo los módulos que tu taller necesita; las dependencias se instalan solas, así crecés desde una recepción simple hasta el sistema completo sin reconfigurar nada.</p>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s1_1.png" alt="Configuración y núcleo del taller 1"><figcaption>Activación modular del sistema</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s1_2.png" alt="Configuración y núcleo del taller 2"><figcaption>Tipo de reparación con plantilla y garantía</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s1_3.png" alt="Configuración y núcleo del taller 3"><figcaption>Catálogo de tipos de reparación</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// bloque 02</span>
-        <h3>Recepción de vehículos con visor 3D</h3>
-        <p>Recibí cada vehículo con un visor 3D para marcar daños sobre la carrocería, checklist de inventario, galería de fotos y firma digital del cliente directamente en pantalla.</p><p>Todo el flujo —de borrador a inspección, firma y cierre— queda documentado y genera el reporte PDF de recepción, con catálogo de zonas de daño configurable.</p>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s2_1.png" alt="Recepción de vehículos con visor 3D 1"><figcaption>Ficha de recepción con estado del vehículo</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s2_2.png" alt="Recepción de vehículos con visor 3D 2"><figcaption>Recepción en proceso de inspección</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s2_5.png" alt="Recepción de vehículos con visor 3D 5"><figcaption>Visor 3D con el modelo real del vehículo cargado</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s2_6.png" alt="Recepción de vehículos con visor 3D 6"><figcaption>Inspección 3D: rotación del vehículo para marcar daños</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s2_3.png" alt="Recepción de vehículos con visor 3D 3"><figcaption>Zonas de daño configurables</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s2_4.png" alt="Recepción de vehículos con visor 3D 4"><figcaption>Listado de entradas al taller</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// bloque 03</span>
-        <h3>Gestión visual de bahías</h3>
-        <p>Un panel kanban en tiempo real muestra cada bahía libre, ocupada, reservada o en mantenimiento, con temporizadores, badges de estado y asignación directa desde la recepción del vehículo.</p>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s3_1.png" alt="Gestión visual de bahías 1"><figcaption>Panel de bahías en tiempo real</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// bloque 04</span>
-        <h3>Citas y calendario</h3>
-        <p>Agendá citas en un calendario con asignación de bahía y técnico, recordatorios automáticos y conversión de la cita en recepción al llegar el vehículo.</p><p>Cancelaciones y reprogramaciones quedan registradas con su motivo, manteniendo la trazabilidad de cada agenda.</p>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s4_1.png" alt="Citas y calendario 1"><figcaption>Calendario de citas del taller</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s4_2.png" alt="Citas y calendario 2"><figcaption>Detalle y estado de la cita</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// bloque 05</span>
-        <h3>Requisiciones y órdenes de servicio</h3>
-        <p>Cada requisición reúne los repuestos y servicios del trabajo, pasa por un flujo de aprobación y se convierte en pedido de venta listo para facturar.</p><p>El total del servicio se consolida y se factura por completo, integrado con el módulo de ventas de Odoo.</p>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s5_1.png" alt="Requisiciones y órdenes de servicio 1"><figcaption>Requisición con repuestos y servicios</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s5_2.png" alt="Requisiciones y órdenes de servicio 2"><figcaption>Listado de requisiciones del taller</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s5_3.png" alt="Requisiciones y órdenes de servicio 3"><figcaption>Órdenes de taller facturadas</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// bloque 06</span>
-        <h3>Garantías y reclamaciones</h3>
-        <p>Al cerrar el servicio se genera la póliza de garantía con su período, cobertura y términos. Las reclamaciones del cliente se gestionan con su propio flujo, desde la revisión hasta la resolución.</p>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s6_1.png" alt="Garantías y reclamaciones 1"><figcaption>Póliza de garantía activa</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s6_2.png" alt="Garantías y reclamaciones 2"><figcaption>Listado de garantías del taller</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="suite-sec">
-      <div class="suite-sec__head">
-        <span class="eyebrow mono">// bloque 07</span>
-        <h3>Portal del cliente, dashboard y reportes</h3>
-        <p>Un dashboard con indicadores —vehículos en taller, bahías disponibles, requisiciones pendientes e ingresos— da la foto operativa del día, con portal para que el cliente siga el estado de su vehículo.</p><p>Generá reportes en PDF y XLSX por recepciones, bahías, citas, requisiciones, garantías o KPIs, con filtros por período, cliente y vehículo.</p>
-      </div>
-      <div class="suite-gal">
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s7_1.png" alt="Portal del cliente, dashboard y reportes 1"><figcaption>Dashboard operativo con KPIs</figcaption></figure>
-        <figure class="suite-fig"><img loading="lazy" src="../images/projects/taller-automotriz/s7_2.png" alt="Portal del cliente, dashboard y reportes 2"><figcaption>Generador de reportes multitipo</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás de la suite</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">OWL</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">Three.js</span>
-          <span class="chip">Chart.js</span>
-          <span class="chip">QWeb</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">SCSS</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Necesitás la planilla de Costa Rica en Odoo?</h3>
-      <p>Implemento la suite completa y la adapto a la operación de tu taller, desde la recepción hasta la facturación.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Sistema de Gestión de Taller Automotriz</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Workshop">Odoo · Taller</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// suite · 7 integrated modules">// suite · 7 módulos integrados</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Management">Gestión de</span> <span class="grad"><span data-en="Automotive Workshop">Taller Automotriz</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Comprehensive system for automotive workshops in Odoo: vehicle reception with 3D viewer, bays, appointments, requisitions, guarantees and an operational dashboard. Seven modules covering end-to-end service, integrated with sales and inventory.">Sistema integral para talleres automotrices en Odoo: recepción de vehículos con visor 3D, bahías, citas, requisiciones, garantías y un dashboard operativo. Siete módulos que cubren el servicio de punta a punta, integrados con ventas e inventario.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request info">Solicitar info</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>OWL</span><span>Three.js</span><span>Chart.js</span><span>PostgreSQL</span>
+</div>
+</header>
+<div class="suite-band"><div class="suite-stat"><span class="suite-stat__n">7</span><span class="suite-stat__l"><span data-en="integrated modules">módulos integrados</span></span></div><div class="suite-stat"><span class="suite-stat__n"><span data-en="3D">3D</span></span><span class="suite-stat__l"><span data-en="vehicle reception">recepción de vehículos</span></span></div><div class="suite-stat"><span class="suite-stat__n">100%</span><span class="suite-stat__l"><span data-en="service traceability">trazabilidad del servicio</span></span></div><div class="suite-stat"><span class="suite-stat__n"><span data-en="XLSX">XLSX</span></span><span class="suite-stat__l"><span data-en="multitype reports">reportes multitipo</span></span></div></div>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// block 01">// bloque 01</span></span>
+<h3><span data-en="Workshop configuration and core">Configuración y núcleo del taller</span></h3>
+<p><span data-en="I defined vehicle brands and types of repair with their template of services, spare parts and default warranty. Each repair type is reused when creating appointments, receipts, and requisitions.">Definí marcas de vehículos y tipos de reparación con su plantilla de servicios, repuestos y garantía por defecto. Cada tipo de reparación se reutiliza al crear citas, recepciones y requisiciones.</span></p><p><span data-en="You activate by switch only the modules that your workshop needs; The dependencies install themselves, so you grow from a simple reception to the complete system without reconfiguring anything.">Activás por interruptor solo los módulos que tu taller necesita; las dependencias se instalan solas, así crecés desde una recepción simple hasta el sistema completo sin reconfigurar nada.</span></p>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Configuración y núcleo del taller 1" loading="lazy" src="../images/projects/taller-automotriz/s1_1.png"/><figcaption><span data-en="Modular system activation">Activación modular del sistema</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Configuración y núcleo del taller 2" loading="lazy" src="../images/projects/taller-automotriz/s1_2.png"/><figcaption><span data-en="Type of repair with template and warranty">Tipo de reparación con plantilla y garantía</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Configuración y núcleo del taller 3" loading="lazy" src="../images/projects/taller-automotriz/s1_3.png"/><figcaption><span data-en="Catalog of repair types">Catálogo de tipos de reparación</span></figcaption></figure>
+</div>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// block 02">// bloque 02</span></span>
+<h3><span data-en="Vehicle reception with 3D viewer">Recepción de vehículos con visor 3D</span></h3>
+<p><span data-en="I received each vehicle with a 3D viewer to mark damage on the body, inventory checklist, photo gallery and digital signature of the client directly on the screen.">Recibí cada vehículo con un visor 3D para marcar daños sobre la carrocería, checklist de inventario, galería de fotos y firma digital del cliente directamente en pantalla.</span></p><p><span data-en="The entire flow—from draft to inspection, signing and closing—is documented and generates the PDF reception report, with a catalog of configurable damage areas.">Todo el flujo —de borrador a inspección, firma y cierre— queda documentado y genera el reporte PDF de recepción, con catálogo de zonas de daño configurable.</span></p>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Recepción de vehículos con visor 3D 1" loading="lazy" src="../images/projects/taller-automotriz/s2_1.png"/><figcaption><span data-en="Reception sheet with vehicle status">Ficha de recepción con estado del vehículo</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Recepción de vehículos con visor 3D 2" loading="lazy" src="../images/projects/taller-automotriz/s2_2.png"/><figcaption><span data-en="Reception during inspection process">Recepción en proceso de inspección</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Recepción de vehículos con visor 3D 5" loading="lazy" src="../images/projects/taller-automotriz/s2_5.png"/><figcaption><span data-en="3D viewer with the real model of the vehicle loaded">Visor 3D con el modelo real del vehículo cargado</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Recepción de vehículos con visor 3D 6" loading="lazy" src="../images/projects/taller-automotriz/s2_6.png"/><figcaption><span data-en="3D inspection: vehicle rotation to mark damage">Inspección 3D: rotación del vehículo para marcar daños</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Recepción de vehículos con visor 3D 3" loading="lazy" src="../images/projects/taller-automotriz/s2_3.png"/><figcaption><span data-en="Configurable damage zones">Zonas de daño configurables</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Recepción de vehículos con visor 3D 4" loading="lazy" src="../images/projects/taller-automotriz/s2_4.png"/><figcaption><span data-en="List of tickets to the workshop">Listado de entradas al taller</span></figcaption></figure>
+</div>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// block 03">// bloque 03</span></span>
+<h3><span data-en="Visual bay management">Gestión visual de bahías</span></h3>
+<p><span data-en="A real-time kanban panel shows each bay free, occupied, reserved or under maintenance, with timers, status badges and direct assignment from the vehicle reception.">Un panel kanban en tiempo real muestra cada bahía libre, ocupada, reservada o en mantenimiento, con temporizadores, badges de estado y asignación directa desde la recepción del vehículo.</span></p>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Gestión visual de bahías 1" loading="lazy" src="../images/projects/taller-automotriz/s3_1.png"/><figcaption><span data-en="Real-time bay panel">Panel de bahías en tiempo real</span></figcaption></figure>
+</div>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// block 04">// bloque 04</span></span>
+<h3><span data-en="Appointments and calendar">Citas y calendario</span></h3>
+<p><span data-en="Schedule appointments on a calendar with bay and technician assignment, automatic reminders and conversion of the appointment at reception when the vehicle arrives.">Agendá citas en un calendario con asignación de bahía y técnico, recordatorios automáticos y conversión de la cita en recepción al llegar el vehículo.</span></p><p><span data-en="Cancellations and rescheduling are recorded with their reason, maintaining the traceability of each agenda.">Cancelaciones y reprogramaciones quedan registradas con su motivo, manteniendo la trazabilidad de cada agenda.</span></p>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Citas y calendario 1" loading="lazy" src="../images/projects/taller-automotriz/s4_1.png"/><figcaption><span data-en="Workshop appointment calendar">Calendario de citas del taller</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Citas y calendario 2" loading="lazy" src="../images/projects/taller-automotriz/s4_2.png"/><figcaption><span data-en="Appointment details and status">Detalle y estado de la cita</span></figcaption></figure>
+</div>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// block 05">// bloque 05</span></span>
+<h3><span data-en="Requisitions and service orders">Requisiciones y órdenes de servicio</span></h3>
+<p><span data-en="Each requisition brings together the parts and services for the job, goes through an approval flow and becomes a sales order ready for invoice.">Cada requisición reúne los repuestos y servicios del trabajo, pasa por un flujo de aprobación y se convierte en pedido de venta listo para facturar.</span></p><p><span data-en="The total service is consolidated and fully invoiced, integrated with the Odoo sales module.">El total del servicio se consolida y se factura por completo, integrado con el módulo de ventas de Odoo.</span></p>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Requisiciones y órdenes de servicio 1" loading="lazy" src="../images/projects/taller-automotriz/s5_1.png"/><figcaption><span data-en="Requisition with spare parts and services">Requisición con repuestos y servicios</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Requisiciones y órdenes de servicio 2" loading="lazy" src="../images/projects/taller-automotriz/s5_2.png"/><figcaption><span data-en="List of workshop requirements">Listado de requisiciones del taller</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Requisiciones y órdenes de servicio 3" loading="lazy" src="../images/projects/taller-automotriz/s5_3.png"/><figcaption><span data-en="Invoiced workshop orders">Órdenes de taller facturadas</span></figcaption></figure>
+</div>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// block 06">// bloque 06</span></span>
+<h3><span data-en="Guarantees and claims">Garantías y reclamaciones</span></h3>
+<p><span data-en="When the service is closed, the warranty policy is generated with its period, coverage and terms. Customer complaints are managed with their own flow, from review to resolution.">Al cerrar el servicio se genera la póliza de garantía con su período, cobertura y términos. Las reclamaciones del cliente se gestionan con su propio flujo, desde la revisión hasta la resolución.</span></p>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Garantías y reclamaciones 1" loading="lazy" src="../images/projects/taller-automotriz/s6_1.png"/><figcaption><span data-en="Active warranty policy">Póliza de garantía activa</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Garantías y reclamaciones 2" loading="lazy" src="../images/projects/taller-automotriz/s6_2.png"/><figcaption><span data-en="List of workshop guarantees">Listado de garantías del taller</span></figcaption></figure>
+</div>
+</section>
+<section class="suite-sec">
+<div class="suite-sec__head">
+<span class="eyebrow mono"><span data-en="// block 07">// bloque 07</span></span>
+<h3><span data-en="Customer portal, dashboard and reports">Portal del cliente, dashboard y reportes</span></h3>
+<p><span data-en="A dashboard with indicators—vehicles in the workshop, available bays, pending requisitions and income—gives the operational snapshot of the day, with a portal for the customer to follow the status of their vehicle.">Un dashboard con indicadores —vehículos en taller, bahías disponibles, requisiciones pendientes e ingresos— da la foto operativa del día, con portal para que el cliente siga el estado de su vehículo.</span></p><p><span data-en="Generate reports in PDF and XLSX by receptions, bays, appointments, requisitions, guarantees or KPIs, with filters by period, client and vehicle.">Generá reportes en PDF y XLSX por recepciones, bahías, citas, requisiciones, garantías o KPIs, con filtros por período, cliente y vehículo.</span></p>
+</div>
+<div class="suite-gal">
+<figure class="suite-fig"><img alt="Portal del cliente, dashboard y reportes 1" loading="lazy" src="../images/projects/taller-automotriz/s7_1.png"/><figcaption><span data-en="Operational dashboard with KPIs">Dashboard operativo con KPIs</span></figcaption></figure>
+<figure class="suite-fig"><img alt="Portal del cliente, dashboard y reportes 2" loading="lazy" src="../images/projects/taller-automotriz/s7_2.png"/><figcaption><span data-en="Multitype report generator">Generador de reportes multitipo</span></figcaption></figure>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the suite">Tecnología detrás de la suite</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">OWL</span>
+<span class="chip">JavaScript</span>
+<span class="chip">Three.js</span>
+<span class="chip">Chart.js</span>
+<span class="chip">QWeb</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">SCSS</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Do you need the Costa Rica spreadsheet in Odoo?">¿Necesitás la planilla de Costa Rica en Odoo?</span></h3>
+<p><span data-en="I implement the complete suite and adapt it to the operation of your workshop, from reception to billing.">Implemento la suite completa y la adapto a la operación de tu taller, desde la recepción hasta la facturación.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Automotive Workshop Management System">caso · Sistema de Gestión de Taller Automotriz</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
 <script>
 (function(){
@@ -230,5 +216,5 @@
   document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return; if(e.key==='Escape')close(); else if(e.key==='ArrowLeft')show(idx-1); else if(e.key==='ArrowRight')show(idx+1);});
 })();
 </script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

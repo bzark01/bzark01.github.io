@@ -1,137 +1,129 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Asignación Cíclica de Leads (Round Robin) para Odoo — Bryan Soto B.</title>
-<meta name="description" content="Distribución automática y pareja de leads entre vendedores en Odoo CRM." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Distribución automática y pareja de leads entre vendedores en Odoo CRM." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Ventas</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · CRM</span>
-      </div>
-      <h1 class="proj-hero__title">Asignación cíclica de <span class="grad">Leads</span></h1>
-      <p class="proj-hero__pitch">Distribuye los leads nuevos sin vendedor entre los miembros del equipo de ventas, en rotación pareja o por carga de trabajo. Reparto justo y automático, sin reglas complejas.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Asignación Cíclica de Leads (Round Robin)">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/crm-round-robin/1.png" alt="Configuración Round Robin"><figcaption>01. Configuración por equipo: modo y notificación</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/crm-round-robin/2.png" alt="Acción de reasignación"><figcaption>02. Reasignar leads existentes desde la lista</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/crm-round-robin/3.png" alt="Leads distribuidos"><figcaption>03. Leads repartidos entre los vendedores</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/crm-round-robin/4.png" alt="Captura 4"><figcaption>04.</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/crm-round-robin/5.png" alt="Captura 5"><figcaption>05.</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Repartir leads a mano es injusto y lento</h3>
-        <p>Cuando entran muchos leads, asignarlos manualmente hace que unos vendedores reciban más que otros y que las oportunidades se enfríen esperando dueño.</p>
-        <p>Este módulo asigna cada lead nuevo al siguiente vendedor del equipo en rotación —o al de menos carga—, notifica al responsable y permite redistribuir la cartera existente con un clic.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4v6h6M20 20v-6h-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Rotación secuencial</h4><p>Cada lead nuevo va al siguiente vendedor, en orden configurable.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Balanceo por carga</h4><p>Opción de asignar al vendedor con menos leads abiertos.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Notificación al vendedor</h4><p>Crea una actividad para el responsable al asignarle el lead.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Reasignación manual</h4><p>Redistribuí leads existentes desde la lista con una acción.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">XML</span>
-          <span class="chip">PostgreSQL</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu equipo comercial reparte leads parejo?</h3>
-      <p>Adapto la asignación cíclica a la política de tu equipo de ventas.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Asignación Cíclica de Leads (Round Robin)</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Sales">Odoo · Ventas</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// Odoo 19 module · CRM">// módulo Odoo 19 · CRM</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Cyclic allocation of">Asignación cíclica de</span> <span class="grad"><span data-en="Leads">Leads</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Distribute new leads without a salesperson among the members of the sales team, in even rotation or by workload. Fair and automatic distribution, without complex rules.">Distribuye los leads nuevos sin vendedor entre los miembros del equipo de ventas, en rotación pareja o por carga de trabajo. Reparto justo y automático, sin reglas complejas.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
+</div>
+</header>
+<section aria-label="Capturas de Asignación Cíclica de Leads (Round Robin)" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Configuración Round Robin" src="../images/projects/crm-round-robin/1.png"/><figcaption><span data-en="01. Configuration by device: mode and notification">01. Configuración por equipo: modo y notificación</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Acción de reasignación" src="../images/projects/crm-round-robin/2.png"/><figcaption><span data-en="02. Reassign existing leads from the list">02. Reasignar leads existentes desde la lista</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Leads distribuidos" src="../images/projects/crm-round-robin/3.png"/><figcaption><span data-en="03. Leads distributed among sellers">03. Leads repartidos entre los vendedores</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Captura 4" src="../images/projects/crm-round-robin/4.png"/><figcaption>04.</figcaption></figure>
+<figure class="carousel__slide"><img alt="Captura 5" src="../images/projects/crm-round-robin/5.png"/><figcaption>05.</figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Handing out leads by hand is unfair and slow">Repartir leads a mano es injusto y lento</span></h3>
+<p><span data-en="When many leads come in, assigning them manually causes some sellers to receive more than others and the opportunities go cold waiting for an owner.">Cuando entran muchos leads, asignarlos manualmente hace que unos vendedores reciban más que otros y que las oportunidades se enfríen esperando dueño.</span></p>
+<p><span data-en="This module assigns each new lead to the next salesperson on the rotating team—or the one with the least load—, notifies the manager, and allows the existing portfolio to be redistributed with one click.">Este módulo asigna cada lead nuevo al siguiente vendedor del equipo en rotación —o al de menos carga—, notifica al responsable y permite redistribuir la cartera existente con un clic.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 4v6h6M20 20v-6h-6M20 4l-7 7M4 20l7-7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Sequential rotation">Rotación secuencial</span></h4><p><span data-en="Each new lead goes to the next salesperson, in a configurable order.">Cada lead nuevo va al siguiente vendedor, en orden configurable.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Load balancing">Balanceo por carga</span></h4><p><span data-en="Option to assign the seller with the fewest open leads.">Opción de asignar al vendedor con menos leads abiertos.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 8v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Seller Notification">Notificación al vendedor</span></h4><p><span data-en="Create an activity for the manager when assigning the lead.">Crea una actividad para el responsable al asignarle el lead.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Manual remapping">Reasignación manual</span></h4><p><span data-en="I redistributed existing leads from the list with an action.">Redistribuí leads existentes desde la lista con una acción.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">XML</span>
+<span class="chip">PostgreSQL</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your sales team distribute leads evenly?">¿Tu equipo comercial reparte leads parejo?</span></h3>
+<p><span data-en="I adapt the cyclical allocation to the policy of your sales team.">Adapto la asignación cíclica a la política de tu equipo de ventas.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Cyclic Lead Allocation (Round Robin)">caso · Asignación Cíclica de Leads (Round Robin)</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

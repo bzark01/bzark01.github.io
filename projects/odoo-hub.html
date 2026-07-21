@@ -1,141 +1,133 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Odoo-Hub — Bryan Soto B.</title>
-<meta name="description" content="Centro de mando para gestionar y desplegar instancias y módulos de Odoo." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Centro de mando para gestionar y desplegar instancias y módulos de Odoo." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">DevOps · Odoo</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// herramienta interna</span>
-      </div>
-      <h1 class="proj-hero__title">Odoo-Hub <span class="grad">— centro de mando</span></h1>
-      <p class="proj-hero__pitch">Hub centralizado para desplegar y administrar múltiples instancias de Odoo. Orquestación de contenedores Docker, gestión de módulos personalizados y vista unificada de todos los proyectos en una sola interfaz moderna.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar info</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>TypeScript</span><span>Python</span><span>Docker</span><span>Odoo</span><span>React</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Odoo-Hub">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/odoo-hub/1.png" alt="Dashboard de instancias"><figcaption>01. Dashboard de instancias activas</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odoo-hub/2.png" alt="Gestión de módulos"><figcaption>02. Gestión de módulos personalizados</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odoo-hub/3.png" alt="Logs en vivo"><figcaption>03. Logs en vivo por contenedor</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odoo-hub/4.png" alt="Despliegue"><figcaption>04. Despliegue con un click</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odoo-hub/5.png" alt="Backups"><figcaption>05. Backups automatizados</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Administrar muchas instancias de Odoo se vuelve caótico</h3>
-        <p>Cuando manejas <strong>varios clientes</strong> o ambientes (dev, staging, prod), cada uno con sus módulos personalizados, el proceso manual de levantar contenedores, conectarse por SSH, mover archivos y reiniciar servicios se vuelve lento y propenso a errores.</p>
-        <p>Odoo-Hub centraliza todo en una <strong>interfaz unificada</strong>: ves todas tus instancias, sus estados, sus módulos, sus logs — y operás sobre ellas con un click.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Multi-instancia</h4><p>Maneja docenas de instancias con aislamiento por proyecto.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Despliegue con un click</h4><p>Crea o actualiza instancias sin tocar la consola.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Logs en vivo</h4><p>Stream de logs por contenedor con filtros y búsqueda.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Backups automatizados</h4><p>Programa backups y restauralos con un click.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">TypeScript</span>
-          <span class="chip">Python</span>
-          <span class="chip">Docker</span>
-          <span class="chip">Docker Compose</span>
-          <span class="chip">Odoo 16–19</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">REST API</span>
-          <span class="chip">Tailwind CSS</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Necesitas administrar múltiples Odoos?</h3>
-      <p>Implemento Odoo-Hub adaptado a tu infraestructura para que tu equipo deje de pelearse con la consola.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Escríbeme</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Odoo-Hub</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="DevOps Odoo">DevOps · Odoo</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// internal tool">// herramienta interna</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Odoo-Hub">Odoo-Hub</span> <span class="grad"><span data-en="— command center">— centro de mando</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Centralized hub to deploy and manage multiple Odoo instances. Docker container orchestration, custom module management, and unified view of all projects in a single modern interface.">Hub centralizado para desplegar y administrar múltiples instancias de Odoo. Orquestación de contenedores Docker, gestión de módulos personalizados y vista unificada de todos los proyectos en una sola interfaz moderna.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request info">Solicitar info</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>TypeScript</span><span>Python</span><span>Docker</span><span>Odoo</span><span>React</span>
+</div>
+</header>
+<section aria-label="Capturas de Odoo-Hub" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Dashboard de instancias" src="../images/projects/odoo-hub/1.png"/><figcaption><span data-en="01. Dashboard of active instances">01. Dashboard de instancias activas</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Gestión de módulos" src="../images/projects/odoo-hub/2.png"/><figcaption><span data-en="02. Custom module management">02. Gestión de módulos personalizados</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Logs en vivo" src="../images/projects/odoo-hub/3.png"/><figcaption><span data-en="03. Live logs per container">03. Logs en vivo por contenedor</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Despliegue" src="../images/projects/odoo-hub/4.png"/><figcaption><span data-en="04. One-click deployment">04. Despliegue con un click</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Backups" src="../images/projects/odoo-hub/5.png"/><figcaption><span data-en="05. Automated backups">05. Backups automatizados</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Managing many Odoo instances becomes chaotic">Administrar muchas instancias de Odoo se vuelve caótico</span></h3>
+<p><span data-en="when you drive">Cuando manejas</span> <strong><span data-en="several clients">varios clientes</span></strong> <span data-en="or environments (dev, staging, prod), each with their custom modules, the manual process of setting up containers, connecting via SSH, moving files and restarting services becomes slow and error-prone.">o ambientes (dev, staging, prod), cada uno con sus módulos personalizados, el proceso manual de levantar contenedores, conectarse por SSH, mover archivos y reiniciar servicios se vuelve lento y propenso a errores.</span></p>
+<p><span data-en="Odoo-Hub centralizes everything in one">Odoo-Hub centraliza todo en una</span> <strong><span data-en="unified interface">interfaz unificada</span></strong><span data-en=": you see all your instances, their states, their modules, their logs — and you operate on them with one click.">: ves todas tus instancias, sus estados, sus módulos, sus logs — y operás sobre ellas con un click.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="7" x="3" y="3"></rect><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="7" x="14" y="3"></rect><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="7" x="3" y="14"></rect><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="7" x="14" y="14"></rect></svg></div>
+<div class="feat-list__body"><h4><span data-en="Multi-instance">Multi-instancia</span></h4><p><span data-en="Handle dozens of isolated instances per project.">Maneja docenas de instancias con aislamiento por proyecto.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="One-click deployment">Despliegue con un click</span></h4><p><span data-en="Create or update instances without touching the console.">Crea o actualiza instancias sin tocar la consola.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Live logs">Logs en vivo</span></h4><p><span data-en="Log stream per container with filters and search.">Stream de logs por contenedor con filtros y búsqueda.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8"></path><path d="M12 8v4l3 2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Automated backups">Backups automatizados</span></h4><p><span data-en="Schedule backups and restore them with one click.">Programa backups y restauralos con un click.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">TypeScript</span>
+<span class="chip">Python</span>
+<span class="chip">Docker</span>
+<span class="chip">Docker Compose</span>
+<span class="chip">Odoo 16–19</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">REST API</span>
+<span class="chip">Tailwind CSS</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Do you need to manage multiple Odoos?">¿Necesitas administrar múltiples Odoos?</span></h3>
+<p><span data-en="I implement Odoo-Hub adapted to your infrastructure so that your team stops fighting with the console.">Implemento Odoo-Hub adaptado a tu infraestructura para que tu equipo deje de pelearse con la consola.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="write to me">Escríbeme</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Odoo-Hub">caso · Odoo-Hub</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

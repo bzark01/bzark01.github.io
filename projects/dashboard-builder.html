@@ -1,147 +1,139 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Dashboard Builder — Soto B.</title>
-<meta name="description" content="Constructor de tableros dinámicos estilo Power BI para Odoo: indicadores, gráficas, mapas y un asistente de inteligencia artificial." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Constructor de tableros dinámicos estilo Power BI para Odoo: indicadores, gráficas, mapas y un asistente de inteligencia artificial." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Productividad</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo Odoo 19 · tableros dinámicos + IA</span>
-      </div>
-      <h1 class="proj-hero__title">Dashboard <span class="grad">Builder</span></h1>
-      <p class="proj-hero__pitch">Convierte los datos de tu Odoo en tableros visuales al estilo Power BI, sin salir del sistema y sin depender de hojas de cálculo. Indicadores, gráficas interactivas y mapas que se actualizan solos, con un asistente de inteligencia artificial que arma los tableros por vos con solo pedírselo en español.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>JavaScript</span><span>OWL</span><span>ApexCharts</span><span>PostgreSQL</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Dashboard Builder">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/dashboard-builder/1.png" alt="Todos los tableros"><figcaption>01. Todos tus tableros en un solo lugar</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/dashboard-builder/2.png" alt="KPIs y gráficas"><figcaption>02. Indicadores, gráficas y contadores en vivo</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/dashboard-builder/3.png" alt="Mapa y ranking"><figcaption>03. Ventas por país en un mapa mundial</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/dashboard-builder/4.png" alt="Asistente de IA"><figcaption>04. Asistente de IA sobre tu tablero</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/dashboard-builder/5.png" alt="Generar con IA"><figcaption>05. Generá un tablero pidiéndolo en español</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Tus indicadores viven dispersos y armar un tablero gerencial toma horas</h3>
-        <p>La información clave de tu empresa queda repartida en listas y reportes distintos. Para tener una vista gerencial hay que exportar todo a hojas de cálculo, cruzar datos a mano y rehacer el mismo trabajo cada mes.</p>
-        <p>Dashboard Builder reúne esos indicadores en tableros vivos dentro de Odoo. Arrastrás y soltás cada componente, aplicás filtros con un clic y todo se actualiza en tiempo real con los datos reales de tu operación. Y si preferís, le describís el tablero al asistente de inteligencia artificial y lo arma por vos.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Indicadores en vivo</h4><p>KPIs con metas, comparación de períodos y colores según el resultado, siempre actualizados.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Gráficas y mapas</h4><p>Barras, líneas, pastel, embudo y hasta un mapa mundial para analizar tus datos por país.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Asistente con IA</h4><p>Describís lo que querés ver en español y la inteligencia artificial crea o modifica el tablero al instante.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18M8 7l4-4 4 4M8 17l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Arrastrar y soltar</h4><p>Organizás cada tablero como quieras: mové, cambiá el tamaño y guardá el diseño en segundos.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 4h18l-7 8v7l-4 2v-9L3 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Filtros y detalle</h4><p>Filtros de fecha globales y por componente, con un clic para ver el detalle de los registros.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 15V3m0 0L8 7m4-4l4 4M4 13v6a1 1 0 001 1h14a1 1 0 001-1v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Compartir y exportar</h4><p>Exportás e importás tableros, controlás el acceso por grupos y trabajás con varias compañías.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">OWL</span>
-          <span class="chip">ApexCharts</span>
-          <span class="chip">PostgreSQL</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Querés ver los datos de tu empresa en tableros claros y en vivo?</h3>
-      <p>Adapto Dashboard Builder a tus indicadores y lo integro con los módulos que ya usás en Odoo.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Dashboard Builder</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Productivity">Odoo · Productividad</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// Odoo 19 module · dynamic dashboards + AI">// módulo Odoo 19 · tableros dinámicos + IA</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Dashboard">Dashboard</span> <span class="grad"><span data-en="Builder">Builder</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Convert your Odoo data into Power BI-style visual dashboards, without leaving the system and without depending on spreadsheets. Indicators, interactive graphs and maps that update themselves, with an artificial intelligence assistant that creates the boards for you just by asking in Spanish.">Convierte los datos de tu Odoo en tableros visuales al estilo Power BI, sin salir del sistema y sin depender de hojas de cálculo. Indicadores, gráficas interactivas y mapas que se actualizan solos, con un asistente de inteligencia artificial que arma los tableros por vos con solo pedírselo en español.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>JavaScript</span><span>OWL</span><span>ApexCharts</span><span>PostgreSQL</span>
+</div>
+</header>
+<section aria-label="Capturas de Dashboard Builder" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Todos los tableros" src="../images/projects/dashboard-builder/1.png"/><figcaption><span data-en="01. All your boards in one place">01. Todos tus tableros en un solo lugar</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="KPIs y gráficas" src="../images/projects/dashboard-builder/2.png"/><figcaption><span data-en="02. Live indicators, charts and counters">02. Indicadores, gráficas y contadores en vivo</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Mapa y ranking" src="../images/projects/dashboard-builder/3.png"/><figcaption><span data-en="03. Sales by country on a world map">03. Ventas por país en un mapa mundial</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Asistente de IA" src="../images/projects/dashboard-builder/4.png"/><figcaption><span data-en="04. AI assistant on your dashboard">04. Asistente de IA sobre tu tablero</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Generar con IA" src="../images/projects/dashboard-builder/5.png"/><figcaption><span data-en="05. Generate a board asking for it in Spanish">05. Generá un tablero pidiéndolo en español</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Your indicators live scattered and putting together a management dashboard takes hours">Tus indicadores viven dispersos y armar un tablero gerencial toma horas</span></h3>
+<p><span data-en="Your company's key information is distributed in different lists and reports. To have a management view you have to export everything to spreadsheets, cross-reference data by hand and redo the same work every month.">La información clave de tu empresa queda repartida en listas y reportes distintos. Para tener una vista gerencial hay que exportar todo a hojas de cálculo, cruzar datos a mano y rehacer el mismo trabajo cada mes.</span></p>
+<p><span data-en="Dashboard Builder brings those indicators together into live dashboards within Odoo. You drag and drop each component, apply filters with one click and everything updates in real time with the real data of your operation. And if you prefer, you describe the board to the artificial intelligence assistant and it puts it together for you.">Dashboard Builder reúne esos indicadores en tableros vivos dentro de Odoo. Arrastrás y soltás cada componente, aplicás filtros con un clic y todo se actualiza en tiempo real con los datos reales de tu operación. Y si preferís, le describís el tablero al asistente de inteligencia artificial y lo arma por vos.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Live indicators">Indicadores en vivo</span></h4><p><span data-en="KPIs with goals, comparison of periods and colors according to the result, always updated.">KPIs con metas, comparación de períodos y colores según el resultado, siempre actualizados.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><path d="M3 12h18M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18" stroke="currentColor" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Graphs and maps">Gráficas y mapas</span></h4><p><span data-en="Bars, lines, pie, funnel and even a world map to analyze your data by country.">Barras, líneas, pastel, embudo y hasta un mapa mundial para analizar tus datos por país.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="AI Assistant">Asistente con IA</span></h4><p><span data-en="You describe what you want to see in Spanish and the artificial intelligence creates or modifies the board instantly.">Describís lo que querés ver en español y la inteligencia artificial crea o modifica el tablero al instante.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v18M3 12h18M8 7l4-4 4 4M8 17l4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Drag and drop">Arrastrar y soltar</span></h4><p><span data-en="You organize each board however you want: move, resize and save the design in seconds.">Organizás cada tablero como quieras: mové, cambiá el tamaño y guardá el diseño en segundos.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 4h18l-7 8v7l-4 2v-9L3 4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Filters and detail">Filtros y detalle</span></h4><p><span data-en="Global and component date filters, with one click to see the details of the records.">Filtros de fecha globales y por componente, con un clic para ver el detalle de los registros.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 15V3m0 0L8 7m4-4l4 4M4 13v6a1 1 0 001 1h14a1 1 0 001-1v-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Share and export">Compartir y exportar</span></h4><p><span data-en="You export and import boards, control access by groups and work with several companies.">Exportás e importás tableros, controlás el acceso por grupos y trabajás con varias compañías.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo</span>
+<span class="chip">JavaScript</span>
+<span class="chip">OWL</span>
+<span class="chip">ApexCharts</span>
+<span class="chip">PostgreSQL</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Do you want to see your company's data in clear, live dashboards?">¿Querés ver los datos de tu empresa en tableros claros y en vivo?</span></h3>
+<p><span data-en="I adapt Dashboard Builder to your indicators and integrate it with the modules that you already use in Odoo.">Adapto Dashboard Builder a tus indicadores y lo integro con los módulos que ya usás en Odoo.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Soto B. — Made with code and coffee.">© 2026 Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Dashboard Builder">caso · Dashboard Builder</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

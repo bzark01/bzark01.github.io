@@ -1,148 +1,140 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Importación Masiva de Inventario — Soto B.</title>
-<meta name="description" content="Carga y actualización masiva de inventario y productos en Odoo desde Excel, con auditoría de errores." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Carga y actualización masiva de inventario y productos en Odoo desde Excel, con auditoría de errores." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · Inventario</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// 2 asistentes · importación por lotes</span>
-      </div>
-      <h1 class="proj-hero__title">Importación Masiva de <span class="grad">Inventario</span></h1>
-      <p class="proj-hero__pitch">Carga tu inventario y tu catálogo de productos desde una hoja de Excel: dos asistentes que ajustan existencias por ubicación y crean o actualizan fichas de producto en minutos, con barra de progreso y un registro de auditoría de cada importación.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar info</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Python</span><span>Odoo</span><span>JavaScript</span><span>Excel</span><span>PostgreSQL</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Importación Masiva de Inventario">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 06</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/importacion-masiva-inventario/1.png" alt="Menú de Inventario"><figcaption>01. Acceso desde Inventario → Operaciones → Importación Masiva</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/importacion-masiva-inventario/2.png" alt="Asistente Importar Inventario"><figcaption>02. Asistente para ajustar existencias por ubicación</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/importacion-masiva-inventario/3.png" alt="Resultado de importación de inventario"><figcaption>03. Resultado con barra de progreso y resumen de éxitos/errores</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/importacion-masiva-inventario/4.png" alt="Asistente Importar Productos"><figcaption>04. Asistente para crear/actualizar productos en lote</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/importacion-masiva-inventario/5.png" alt="Registros de Importación"><figcaption>05. Historial de importaciones con totales por archivo</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/importacion-masiva-inventario/6.png" alt="Resultado de importación de productos"><figcaption>06. Resultado de la carga masiva de productos</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Cargar inventario y catálogo producto por producto no escala</h3>
-        <p>Ajustar existencias o dar de alta un catálogo grande a mano, registro por registro, es lento y propenso a errores de digitación — más aún cuando hay que llenar también los datos fiscales de cada producto para Costa Rica.</p>
-        <p>Este módulo permite preparar toda la información en un Excel, revisarla ahí antes de subirla, y dejar que Odoo la procese en lotes, con una barra de progreso en tiempo real y un registro que deja trazabilidad de qué se cargó, quién lo hizo y qué filas fallaron.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 16V4M12 4l-4 4M12 4l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Carga masiva desde Excel</h4><p>Sube un archivo .xlsx o .xls y deja que el sistema procese cientos o miles de filas de una sola vez, con plantilla de ejemplo descargable.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21V9l9-6 9 6v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-8h6v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Ajuste de existencias por ubicación</h4><p>Actualiza las cantidades a mano de cada producto en la ubicación indicada, con opción de aplicar de una vez o dejar el ajuste listo para revisión.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Alta y actualización masiva de productos</h4><p>Crea o actualiza fichas completas: nombre, referencia, precios, categoría, impuestos, etiquetas y unidad de medida, todo desde el mismo archivo.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Campos fiscales de Costa Rica</h4><p>Incluye código CABYS, actividad económica y tipo de código en la misma carga, listos para la facturación electrónica.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Registro y auditoría de importaciones</h4><p>Cada carga queda guardada con usuario, fecha y archivo, y el detalle fila por fila de cualquier error para corregir y reintentar sin perder el resto.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Procesamiento por lotes con barra de progreso</h4><p>La información se procesa en bloques configurables, con avance visible en tiempo real y posibilidad de cancelar una carga en curso.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo (ORM)</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">OWL</span>
-          <span class="chip">XML</span>
-          <span class="chip">Excel (pandas)</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu equipo pierde horas cargando inventario y productos a mano?</h3>
-      <p>Adapto el módulo a tus columnas, tus ubicaciones y tus campos fiscales, e integro la carga con tu catálogo actual.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Importación Masiva de Inventario</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · Inventory">Odoo · Inventario</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// 2 assistants · batch import">// 2 asistentes · importación por lotes</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="Mass Import of">Importación Masiva de</span> <span class="grad"><span data-en="Inventory">Inventario</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="Upload your inventory and product catalog from an Excel sheet: two wizards that adjust stock by location and create or update product sheets in minutes, with a progress bar and an audit trail of each import.">Carga tu inventario y tu catálogo de productos desde una hoja de Excel: dos asistentes que ajustan existencias por ubicación y crean o actualizan fichas de producto en minutos, con barra de progreso y un registro de auditoría de cada importación.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request info">Solicitar info</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Python</span><span>Odoo</span><span>JavaScript</span><span>Excel</span><span>PostgreSQL</span>
+</div>
+</header>
+<section aria-label="Capturas de Importación Masiva de Inventario" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 06</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Menú de Inventario" src="../images/projects/importacion-masiva-inventario/1.png"/><figcaption><span data-en="01. Access from Inventory → Operations → Mass Import">01. Acceso desde Inventario → Operaciones → Importación Masiva</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Asistente Importar Inventario" src="../images/projects/importacion-masiva-inventario/2.png"/><figcaption><span data-en="02. Wizard to adjust stock by location">02. Asistente para ajustar existencias por ubicación</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Resultado de importación de inventario" src="../images/projects/importacion-masiva-inventario/3.png"/><figcaption><span data-en="03. Result with progress bar and success/error summary">03. Resultado con barra de progreso y resumen de éxitos/errores</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Asistente Importar Productos" src="../images/projects/importacion-masiva-inventario/4.png"/><figcaption><span data-en="04. Batch Create/Update Products Wizard">04. Asistente para crear/actualizar productos en lote</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Registros de Importación" src="../images/projects/importacion-masiva-inventario/5.png"/><figcaption><span data-en="05. Import history with totals per file">05. Historial de importaciones con totales por archivo</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Resultado de importación de productos" src="../images/projects/importacion-masiva-inventario/6.png"/><figcaption><span data-en="06. Result of bulk product upload">06. Resultado de la carga masiva de productos</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Load inventory and catalog product by product does not scale">Cargar inventario y catálogo producto por producto no escala</span></h3>
+<p><span data-en="Adjusting stock or registering a large catalog by hand, record by record, is slow and prone to typing errors — even more so when you also have to fill out the tax data for each product for Costa Rica.">Ajustar existencias o dar de alta un catálogo grande a mano, registro por registro, es lento y propenso a errores de digitación — más aún cuando hay que llenar también los datos fiscales de cada producto para Costa Rica.</span></p>
+<p><span data-en="This module allows you to prepare all the information in Excel, review it there before uploading it, and let Odoo process it in batches, with a real-time progress bar and a record that leaves traceability of what was uploaded, who did it, and which rows failed.">Este módulo permite preparar toda la información en un Excel, revisarla ahí antes de subirla, y dejar que Odoo la procese en lotes, con una barra de progreso en tiempo real y un registro que deja trazabilidad de qué se cargó, quién lo hizo y qué filas fallaron.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 16V4M12 4l-4 4M12 4l4 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Bulk upload from Excel">Carga masiva desde Excel</span></h4><p><span data-en="Upload a .xlsx or .xls file and let the system process hundreds or thousands of rows at once, with downloadable example template.">Sube un archivo .xlsx o .xls y deja que el sistema procese cientos o miles de filas de una sola vez, con plantilla de ejemplo descargable.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 21v-8h6v8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Stock Adjustment by Location">Ajuste de existencias por ubicación</span></h4><p><span data-en="Update the quantities on hand for each product in the indicated location, with the option to apply all at once or leave the adjustment ready for review.">Actualiza las cantidades a mano de cada producto en la ubicación indicada, con opción de aplicar de una vez o dejar el ajuste listo para revisión.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="13" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="7"></rect><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Massive product registration and update">Alta y actualización masiva de productos</span></h4><p><span data-en="Create or update complete records: name, reference, prices, category, taxes, labels and unit of measure, all from the same file.">Crea o actualiza fichas completas: nombre, referencia, precios, categoría, impuestos, etiquetas y unidad de medida, todo desde el mismo archivo.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Costa Rica tax fields">Campos fiscales de Costa Rica</span></h4><p><span data-en="Includes CABYS code, economic activity and type of code in the same load, ready for electronic invoicing.">Incluye código CABYS, actividad económica y tipo de código en la misma carga, listos para la facturación electrónica.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Import registration and audit">Registro y auditoría de importaciones</span></h4><p><span data-en="Each upload is saved with user, date and file, and row-by-row details of any errors to correct and retry without losing the rest.">Cada carga queda guardada con usuario, fecha y archivo, y el detalle fila por fila de cualquier error para corregir y reintentar sin perder el resto.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 7v5l3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Batch processing with progress bar">Procesamiento por lotes con barra de progreso</span></h4><p><span data-en="The information is processed in configurable blocks, with progress visible in real time and the possibility of canceling an upload in progress.">La información se procesa en bloques configurables, con avance visible en tiempo real y posibilidad de cancelar una carga en curso.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo (ORM)</span>
+<span class="chip">JavaScript</span>
+<span class="chip">OWL</span>
+<span class="chip">XML</span>
+<span class="chip">Excel (pandas)</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your team waste hours loading inventory and products by hand?">¿Tu equipo pierde horas cargando inventario y productos a mano?</span></h3>
+<p><span data-en="I adapt the module to your columns, your locations and your tax fields, and I integrate the load with your current catalog.">Adapto el módulo a tus columnas, tus ubicaciones y tus campos fiscales, e integro la carga con tu catálogo actual.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Soto B. — Made with code and coffee.">© 2026 Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · Mass Import of Inventory">caso · Importación Masiva de Inventario</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

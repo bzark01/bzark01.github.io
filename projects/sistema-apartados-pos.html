@@ -1,147 +1,139 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Sistema de Apartados POS — Bryan Soto B.</title>
-<meta name="description" content="Apartados (layaway) en el Punto de Venta de Odoo 18: enganche, abonos, factura electrónica y reserva de inventario." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
-</head>
+<meta content="Apartados (layaway) en el Punto de Venta de Odoo 18: enganche, abonos, factura electrónica y reserva de inventario." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body>
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero">
-      <a href="../index.html#projects" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">Odoo · POS</span>
-        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo POS · enganche, abonos y factura electrónica</span>
-      </div>
-      <h1 class="proj-hero__title">Sistema de <span class="grad">Apartados POS</span></h1>
-      <p class="proj-hero__pitch">Permite a la tienda vender en modalidad de apartado directamente desde la caja: el cliente reserva sus productos con un enganche y abona en varias visitas; al completar el pago, el sistema factura electrónicamente y entrega la mercadería. Todo sin salir de la pantalla del Punto de Venta.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>Odoo 18</span><span>Punto de Venta</span><span>Inventario</span><span>Factura Electrónica CR</span>
-      </div>
-    </header>
-
-    <section class="carousel" aria-label="Capturas de Sistema de Apartados POS">
-      <div class="carousel__head">
-        <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
-      </div>
-      <div class="carousel__viewport">
-        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/sistema-apartados-pos/1.png" alt="Nuevo apartado"><figcaption>01. Crear apartado y cobrar el enganche</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/sistema-apartados-pos/2.png" alt="Detalle del apartado"><figcaption>02. Detalle: abonos, saldo y avance</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/sistema-apartados-pos/3.png" alt="Registrar abono"><figcaption>03. Registrar abonos en cada visita</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/sistema-apartados-pos/4.png" alt="Apartado completado"><figcaption>04. Completado: factura electrónica generada</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/sistema-apartados-pos/5.png" alt="Administración"><figcaption>05. Seguimiento de apartados en backend</figcaption></figure>
-        </div>
-        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-      <div class="carousel__dots"></div>
-    </section>
-
-    <section class="detail">
-      <div class="detail__block">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Vender a plazo sin perder el control del dinero ni del inventario</h3>
-        <p>Muchos comercios apartan productos para sus clientes y reciben abonos parciales durante semanas, pero llevan ese control en cuadernos u hojas de cálculo: no se sabe cuánto se ha abonado, qué está reservado ni cuándo vence cada apartado, y el dinero recibido rara vez cuadra con la caja del día.</p>
-        <p>Este módulo integra todo el ciclo del apartado en el Punto de Venta de Odoo: reserva el inventario al crear el apartado, cobra el enganche y los abonos como movimientos reales de caja, y solo emite la factura electrónica cuando el cliente termina de pagar, entregando entonces la mercadería. Incluye anulación con devolución, extensión de plazo y avisos al cliente.</p>
-      </div>
-      <div class="detail__block">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h3>Funcionalidades clave</h3>
-        <ul class="feat-list">
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 7h14M5 12h14M5 17h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Apartados desde la caja</h4><p>El cajero crea el apartado con los productos del carrito y un enganche mínimo configurable, sin salir del POS.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Abonos en varias visitas</h4><p>Cada abono entra como dinero real en la sesión del día, así el arqueo de caja siempre cuadra.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Factura electrónica al completar</h4><p>Cuando el apartado llega al 100%, genera la factura electrónica de Costa Rica y libera la entrega.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 7V5a4 4 0 018 0v2" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Reserva de inventario</h4><p>Los productos quedan reservados desde el primer pago y no se venden a otro cliente.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l9 4v5c0 5-3.8 8-9 9-5.2-1-9-4-9-9V7l9-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Anular y extender con supervisor</h4><p>Devolución en efectivo, crédito o retención al anular; extensión de plazo, ambas con PIN de supervisor.</p></div>
-          </li>
-          <li>
-            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v4H4zM4 12h10M4 17h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-            <div class="feat-list__body"><h4>Avisos y cierre de caja</h4><p>Recordatorio de vencimiento al cliente y resumen de apartados en el cierre de la sesión.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">Python</span>
-          <span class="chip">Odoo 18</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">OWL</span>
-          <span class="chip">XML</span>
-          <span class="chip">PostgreSQL</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="proj-cta">
-      <h3>¿Tu comercio vende a plazo o por apartado?</h3>
-      <p>Integro el apartado completo en tu Punto de Venta, con factura electrónica y control de inventario.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
-        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Sistema de Apartados POS</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#projects"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero">
+<a class="proj-hero__back" href="../index.html#projects">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="Odoo · POS">Odoo · POS</span></span>
+<span class="mono" style="color: var(--text-muted); font-size: 13px;"><span data-en="// POS module · down payment, payments and electronic invoice">// módulo POS · enganche, abonos y factura electrónica</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="system">Sistema de</span> <span class="grad"><span data-en="POS sections">Apartados POS</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="It allows the store to sell in section mode directly from the checkout: the customer reserves their products with a down payment and pays in several visits; Upon completing the payment, the system electronically invoices and delivers the merchandise. All without leaving the Point of Sale screen.">Permite a la tienda vender en modalidad de apartado directamente desde la caja: el cliente reserva sus productos con un enganche y abona en varias visitas; al completar el pago, el sistema factura electrónicamente y entrega la mercadería. Todo sin salir de la pantalla del Punto de Venta.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>Odoo 18</span><span>Punto de Venta</span><span>Inventario</span><span>Factura Electrónica CR</span>
+</div>
+</header>
+<section aria-label="Capturas de Sistema de Apartados POS" class="carousel">
+<div class="carousel__head">
+<h2><span data-en="Project screenshots">Capturas del proyecto</span></h2>
+<span class="carousel__counter">01 / 05</span>
+</div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Nuevo apartado" src="../images/projects/sistema-apartados-pos/1.png"/><figcaption><span data-en="01. Create section and collect the down payment">01. Crear apartado y cobrar el enganche</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Detalle del apartado" src="../images/projects/sistema-apartados-pos/2.png"/><figcaption><span data-en="02. Detail: credits, balance and advance">02. Detalle: abonos, saldo y avance</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Registrar abono" src="../images/projects/sistema-apartados-pos/3.png"/><figcaption><span data-en="03. Register payments on each visit">03. Registrar abonos en cada visita</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Apartado completado" src="../images/projects/sistema-apartados-pos/4.png"/><figcaption><span data-en="04. Completed: electronic invoice generated">04. Completado: factura electrónica generada</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Administración" src="../images/projects/sistema-apartados-pos/5.png"/><figcaption><span data-en="05. Tracking sections in the backend">05. Seguimiento de apartados en backend</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next">
+<svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="carousel__dots"></div>
+</section>
+<section class="detail">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Sell ​​in installments without losing control of money or inventory">Vender a plazo sin perder el control del dinero ni del inventario</span></h3>
+<p><span data-en="Many businesses set aside products for their customers and receive partial payments for weeks, but they keep this control in notebooks or spreadsheets: it is not known how much has been paid, what is reserved or when each section expires, and the money received rarely matches the day's cash register.">Muchos comercios apartan productos para sus clientes y reciben abonos parciales durante semanas, pero llevan ese control en cuadernos u hojas de cálculo: no se sabe cuánto se ha abonado, qué está reservado ni cuándo vence cada apartado, y el dinero recibido rara vez cuadra con la caja del día.</span></p>
+<p><span data-en="This module integrates the entire section cycle in the Odoo Point of Sale: reserves the inventory when creating the section, collects the down payment and credits as real cash movements, and only issues the electronic invoice when the customer finishes paying, then delivering the merchandise. Includes cancellation with refund, deadline extension and customer notices.">Este módulo integra todo el ciclo del apartado en el Punto de Venta de Odoo: reserva el inventario al crear el apartado, cobra el enganche y los abonos como movimientos reales de caja, y solo emite la factura electrónica cuando el cliente termina de pagar, entregando entonces la mercadería. Incluye anulación con devolución, extensión de plazo y avisos al cliente.</span></p>
+</div>
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h3><span data-en="Key features">Funcionalidades clave</span></h3>
+<ul class="feat-list">
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h9" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Sections from the box">Apartados desde la caja</span></h4><p><span data-en="The cashier creates the section with the products in the cart and a minimum configurable down payment, without leaving the POS.">El cajero crea el apartado con los productos del carrito y un enganche mínimo configurable, sin salir del POS.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Subscriptions for several visits">Abonos en varias visitas</span></h4><p><span data-en="Each subscription enters as real money in the day's session, so the cash balance always balances.">Cada abono entra como dinero real en la sesión del día, así el arqueo de caja siempre cuadra.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Electronic invoice upon completion">Factura electrónica al completar</span></h4><p><span data-en="When the section reaches 100%, it generates the electronic invoice from Costa Rica and releases the delivery.">Cuando el apartado llega al 100%, genera la factura electrónica de Costa Rica y libera la entrega.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="13" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="7"></rect><path d="M8 7V5a4 4 0 018 0v2" stroke="currentColor" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Inventory Reserve">Reserva de inventario</span></h4><p><span data-en="The products are reserved from the first payment and are not sold to another customer.">Los productos quedan reservados desde el primer pago y no se venden a otro cliente.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3l9 4v5c0 5-3.8 8-9 9-5.2-1-9-4-9-9V7l9-4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Cancel and extend with supervisor">Anular y extender con supervisor</span></h4><p><span data-en="Refund in cash, credit or retention upon cancellation; deadline extension, both with supervisor PIN.">Devolución en efectivo, crédito o retención al anular; extensión de plazo, ambas con PIN de supervisor.</span></p></div>
+</li>
+<li>
+<div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M4 4h16v4H4zM4 12h10M4 17h7" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div>
+<div class="feat-list__body"><h4><span data-en="Notices and cash closing">Avisos y cierre de caja</span></h4><p><span data-en="Expiration reminder to the client and summary of sections at the end of the session.">Recordatorio de vencimiento al cliente y resumen de apartados en el cierre de la sesión.</span></p></div>
+</li>
+</ul>
+</div>
+</section>
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">Python</span>
+<span class="chip">Odoo 18</span>
+<span class="chip">JavaScript</span>
+<span class="chip">OWL</span>
+<span class="chip">XML</span>
+<span class="chip">PostgreSQL</span>
+</div>
+</div>
+</section>
+<section class="proj-cta">
+<h3><span data-en="Does your business sell in installments or by section?">¿Tu comercio vende a plazo o por apartado?</span></h3>
+<p><span data-en="I integrate the complete section into your Point of Sale, with electronic invoice and inventory control.">Integro el apartado completo en tu Punto de Venta, con factura electrónica y control de inventario.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="../index.html#projects"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · POS Box System">caso · Sistema de Apartados POS</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>

@@ -79,14 +79,18 @@
   function initTyped() {
     var el = document.getElementById('typedRole');
     if (!el) return;
-    var roles;
+    var roles, rolesEn;
     try { roles = JSON.parse(el.getAttribute('data-roles') || '[]'); } catch (e) { roles = []; }
+    try { rolesEn = JSON.parse(el.getAttribute('data-roles-en') || '[]'); } catch (e) { rolesEn = []; }
     if (!roles.length) return;
-    if (reduceMotion) { el.textContent = roles[0]; return; }
+    function curRoles() { return (document.documentElement.lang === 'en' && rolesEn.length) ? rolesEn : roles; }
+    if (reduceMotion) { el.textContent = curRoles()[0]; return; }
 
     var roleIdx = 0, typed = '', deleting = false;
     function step() {
-      var word = roles[roleIdx];
+      var arr = curRoles();
+      if (roleIdx >= arr.length) roleIdx = 0;
+      var word = arr[roleIdx];
       if (!deleting) {
         typed = word.slice(0, typed.length + 1);
         el.textContent = typed;
@@ -94,7 +98,7 @@
       } else {
         typed = typed.slice(0, -1);
         el.textContent = typed;
-        if (typed.length === 0) { deleting = false; roleIdx = (roleIdx + 1) % roles.length; setTimeout(step, 300); return; }
+        if (typed.length === 0) { deleting = false; roleIdx = (roleIdx + 1) % arr.length; setTimeout(step, 300); return; }
       }
       setTimeout(step, deleting ? 42 : 78);
     }

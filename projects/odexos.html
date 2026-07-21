@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark" data-style="hybrid">
+
+<html data-style="hybrid" data-theme="dark" lang="es">
 <head>
 <script>document.documentElement.classList.add('js');</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/><link href="../images/favicon.png" rel="icon" type="image/png"/><link href="../images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>OdexOS — Bryan Soto B.</title>
-<meta name="description" content="OdexOS: plataforma (PaaS) para desplegar, migrar, monitorear y administrar múltiples instancias de Odoo desde una sola interfaz — con deploy en vivo, consola SQL, asistente IA y runner de tareas." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../portfolio.css" />
-<link rel="stylesheet" href="project.css" />
+<meta content="OdexOS: plataforma (PaaS) para desplegar, migrar, monitorear y administrar múltiples instancias de Odoo desde una sola interfaz — con deploy en vivo, consola SQL, asistente IA y runner de tareas." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="../portfolio.css" rel="stylesheet"/>
+<link href="project.css" rel="stylesheet"/>
 <style>
 /* ===========================================================
    OdexOS — realce visual exclusivo de esta página (self-contained)
@@ -135,199 +136,186 @@
 .ox-layer__v { font-size: 13.5px; font-weight: 600; margin-top: 8px; color: var(--text); }
 .ox-layer__s { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 4px; }
 </style>
-</head>
+<style id="i18n-style">.lang-toggle{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono,ui-monospace,monospace);font-size:12px;font-weight:600;color:var(--muted,var(--text-muted,#98a1b3));background:transparent;border:1px solid var(--b10,var(--border,rgba(255,255,255,.12)));border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .2s ease,border-color .2s ease;line-height:1;}.lang-toggle:hover{color:var(--accent,#4ade80);border-color:var(--accent,#4ade80);}.lang-toggle svg{opacity:.85;flex-shrink:0;}</style></head>
 <body class="ox">
 <div class="wrap">
-
-  <nav class="nav">
-    <a href="../index.html" class="nav__brand">
-      <span class="dot"></span>
-      <span>bryan<span class="muted">.dev</span></span>
-    </a>
-    <div class="nav__links">
-      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
-      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
-      <a href="../index.html#destacados"><span class="hash">#</span> proyectos</a>
-      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <header class="proj-hero" style="position:relative;">
-      <div class="ox-hero-bg" aria-hidden="true">
-        <span class="ox-orb a"></span>
-        <span class="ox-orb b"></span>
-      </div>
-      <a href="../index.html#destacados" class="proj-hero__back">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Volver al portafolio
-      </a>
-      <div class="proj-hero__meta">
-        <span class="proj-hero__cat">PaaS · Gestión Odoo</span>
-        <span class="ox-status"><span class="ld"></span> plataforma propia · en producción</span>
-      </div>
-      <h1 class="proj-hero__title">OdexOS <span class="grad">— tu panel de control para Odoo</span></h1>
-      <p class="proj-hero__pitch">Una sola interfaz para desplegar, migrar, monitorear y administrar <strong>todas</strong> tus instancias de Odoo. Deploy en vivo desde un <em>git push</em>, consola SQL de solo lectura, asistente de IA, respaldos automatizados y un runner de tareas — sin volver a pelear con la consola ni el SSH.</p>
-      <div class="proj-hero__actions">
-        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
-        <a href="#showcase" class="btn btn--ghost">Ver el producto</a>
-      </div>
-      <div class="proj-hero__tags">
-        <span>TypeScript</span><span>React</span><span>Python</span><span>FastAPI</span><span>Docker</span><span>PostgreSQL</span><span>Odoo 16–19</span>
-      </div>
-    </header>
-
-    <!-- Banda de métricas -->
-    <section class="ox-stats" aria-label="Métricas de OdexOS">
-      <div class="ox-stat ox-rv"><div class="ox-stat__num" data-count="4" data-suffix="">4</div><div class="ox-stat__lbl">versiones de Odoo soportadas (16 → 19)</div></div>
-      <div class="ox-stat ox-rv" style="--d:90ms"><div class="ox-stat__num" data-count="60" data-prefix="&lt;" data-suffix="s">60s</div><div class="ox-stat__lbl">de un push a la instancia actualizada</div></div>
-      <div class="ox-stat ox-rv" style="--d:180ms"><div class="ox-stat__num">multi‑tenant</div><div class="ox-stat__lbl">aislamiento total por organización</div></div>
-      <div class="ox-stat ox-rv" style="--d:270ms"><div class="ox-stat__num" data-count="100" data-suffix="%">100%</div><div class="ox-stat__lbl">self‑hosted, en tu propia infraestructura</div></div>
-    </section>
-
-    <!-- Recorrido por el producto (capturas reales) -->
-    <section class="ox-sec" id="showcase">
-      <div class="ox-sec__head ox-rv">
-        <span class="eyebrow mono">// el producto</span>
-        <h2>Recorrido por el producto</h2>
-        <p>Capturas reales de OdexOS en funcionamiento · datos de demostración.</p>
-      </div>
-      <div class="carousel ox-rv" style="--d:80ms; margin: 8px 0 0;">
-        <div class="carousel__head"><span></span><span class="carousel__counter">01 / 08</span></div>
-        <div class="carousel__viewport">
-          <button class="carousel__nav carousel__nav--prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/odexos/1.webp" alt="Panel de control" loading="lazy"><figcaption>01. Panel de control — proyectos, despliegues y estado de servidores</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odexos/2.webp" alt="Proyectos y ambientes" loading="lazy"><figcaption>02. Proyectos y ambientes de Odoo, con versión y rama</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odexos/3.webp" alt="Detalle del ambiente" loading="lazy"><figcaption>03. Detalle del ambiente — dominio, SSL, recursos y base de datos</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odexos/4.webp" alt="Historial de despliegues" loading="lazy"><figcaption>04. Historial de despliegues con commit, duración y rollback</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odexos/5.webp" alt="Runner de tareas" loading="lazy"><figcaption>05. Runner de tareas en segundo plano con log en vivo</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odexos/6.webp" alt="Feed de actividad" loading="lazy"><figcaption>06. Feed de actividad — cada acción auditada</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odexos/7.webp" alt="Asistente IA · habilidades" loading="lazy"><figcaption>07. Asistente IA — habilidades activables por organización</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/odexos/8.webp" alt="Asistente IA respondiendo" loading="lazy"><figcaption>08. El asistente IA responde consultando tus datos con herramientas</figcaption></figure>
-          </div>
-          <button class="carousel__nav carousel__nav--next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        </div>
-        <div class="carousel__dots"></div>
-      </div>
-    </section>
-
-    <!-- Problema -->
-    <section class="detail">
-      <div class="detail__block ox-rv">
-        <span class="eyebrow mono">// el problema</span>
-        <h3>Administrar muchas instancias de Odoo se vuelve caótico</h3>
-        <p>Cuando manejás <strong>varios clientes</strong> o ambientes (dev, staging, prod), cada uno con sus módulos personalizados, el proceso manual de levantar contenedores, conectarse por SSH, mover archivos, migrar versiones y reiniciar servicios se vuelve lento y propenso a errores.</p>
-        <p>OdexOS centraliza todo en una <strong>interfaz unificada</strong> con aislamiento por organización: ves cada instancia, su estado, sus módulos y sus logs — y operás sobre ellas con un click, con trazabilidad de cada acción.</p>
-      </div>
-      <div class="detail__block ox-rv" style="--d:120ms">
-        <span class="eyebrow mono">// en números</span>
-        <h3>Pensado para escalar</h3>
-        <ul class="feat-list">
-          <li><div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg></div><div class="feat-list__body"><h4>Multi‑instancia y multi‑tenant</h4><p>Docenas de instancias, aisladas por organización y por proyecto.</p></div></li>
-          <li><div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><div class="feat-list__body"><h4>Seguridad por diseño</h4><p>Roles, claves API, auditoría de cada acción y sesiones de solo lectura.</p></div></li>
-          <li><div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="feat-list__body"><h4>Monitoreo continuo</h4><p>Estado de salud, logs en vivo y alertas por instancia.</p></div></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section class="ox-sec">
-      <div class="ox-sec__head ox-rv">
-        <span class="eyebrow mono">// qué incluye</span>
-        <h2>Funcionalidades clave</h2>
-        <p>Cada pieza de la operación de Odoo, resuelta desde la interfaz.</p>
-      </div>
-      <div class="ox-feat">
-        <div class="ox-fcard ox-rv"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Deploy en vivo</h4><p>Un <em>git push</em> dispara el despliegue y ves el progreso etapa por etapa hasta que la instancia queda actualizada.</p></div>
-        <div class="ox-fcard ox-rv" style="--d:60ms"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3.5 9a9 9 0 1 0 2-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 4v4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Migración de versiones</h4><p>Subí una instancia de Odoo 16 a 19 eligiendo la rama de tus módulos custom, con proceso desacoplado y reversible.</p></div>
-        <div class="ox-fcard ox-rv" style="--d:120ms"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z" stroke="currentColor" stroke-width="1.8"/><path d="M4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7" stroke="currentColor" stroke-width="1.8"/></svg></div><h4>Consola SQL de solo lectura</h4><p>Consultá la base de cualquier instancia con la sesión forzada a <em>READ ONLY</em>: ninguna escritura puede persistir.</p></div>
-        <div class="ox-fcard ox-rv"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1-1 8H9a4 4 0 0 1-1-8V7a4 4 0 0 1 4-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 20h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><h4>Asistente de IA</h4><p>Un agente que consulta, diagnostica y ejecuta acciones — acotado al rol del usuario y con habilidades activables por organización.</p></div>
-        <div class="ox-fcard ox-rv" style="--d:60ms"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 4v16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h4>Runner de tareas</h4><p>Backups, migraciones y análisis pesados corren en cola, fuera del proceso web, con log en vivo, progreso y cancelación.</p></div>
-        <div class="ox-fcard ox-rv" style="--d:120ms"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h4>Backups automatizados</h4><p>Programá respaldos por política, verificá su integridad y restaurá con un click.</p></div>
-        <div class="ox-fcard ox-rv"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke="currentColor" stroke-width="1.8"/><path d="M4 12s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6z" stroke="currentColor" stroke-width="1.8"/></svg></div><h4>“Ingresar como”</h4><p>Entrá a cualquier instancia como el administrador o cualquier usuario, sin contraseña — estilo Odoo.sh — y todo queda auditado.</p></div>
-        <div class="ox-fcard ox-rv" style="--d:60ms"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Monitoreo y logs en vivo</h4><p>Stream de logs por contenedor con filtros y estado de salud de cada instancia, con alertas.</p></div>
-        <div class="ox-fcard ox-rv" style="--d:120ms"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h4>Auditoría exportable</h4><p>Cada acción queda registrada por organización y se exporta a CSV o Excel para cumplimiento.</p></div>
-        <div class="ox-fcard ox-rv"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="13" width="18" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M7 7.5h.01M7 16.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h4>Servidores y auto‑provisión</h4><p>Conectá tus servidores, detectá sus specs y repartí instancias con readiness y limpieza de recursos.</p></div>
-        <div class="ox-fcard ox-rv" style="--d:60ms"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><h4>Gestión de módulos</h4><p>Instalá, actualizá y versioná módulos personalizados por instancia; los nuevos aparecen solos tras el push.</p></div>
-        <div class="ox-fcard ox-rv" style="--d:120ms"><div class="ox-fcard__ico"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h4>Shell y herramientas</h4><p>Consola de Odoo, gestión de cron jobs, filestore y utilidades de mantenimiento — sin abrir una terminal SSH.</p></div>
-      </div>
-    </section>
-
-    <!-- Cómo funciona -->
-    <section class="ox-sec">
-      <div class="ox-sec__head ox-rv">
-        <span class="eyebrow mono">// cómo funciona</span>
-        <h2>Del código a producción, sin fricción</h2>
-        <p>OdexOS orquesta el ciclo completo por vos. Este es el camino de un cambio hasta la instancia viva.</p>
-      </div>
-      <div class="ox-show ox-rv" style="--d:80ms"><div style="padding:26px 22px;">
-        <div class="ox-pipe" id="oxPipe2">
-          <div class="ox-node" data-step="0"><div class="ox-node__dot"><svg viewBox="0 0 24 24" fill="none"><path d="M6 3v12M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 3a3 3 0 1 0 0 .01M18 9a3 3 0 1 0 0-.01M18 9c0 4-6 3-6 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><div class="ox-node__lbl">git push</div></div>
-          <div class="ox-node" data-step="1"><div class="ox-node__dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7l8-4 8 4v10l-8 4-8-4V7z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div><div class="ox-node__lbl">pull + addons</div></div>
-          <div class="ox-node" data-step="2"><div class="ox-node__dot"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v6l4 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg></div><div class="ox-node__lbl">upgrade módulos</div></div>
-          <div class="ox-node" data-step="3"><div class="ox-node__dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4v6h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 10a8 8 0 0 0-14-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><div class="ox-node__lbl">restart + apps</div></div>
-          <div class="ox-node" data-step="4"><div class="ox-node__dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ox-node__lbl">instancia viva</div></div>
-        </div>
-      </div></div>
-    </section>
-
-    <!-- Arquitectura -->
-    <section class="ox-sec">
-      <div class="ox-sec__head ox-rv">
-        <span class="eyebrow mono">// bajo el capó</span>
-        <h2>Arquitectura</h2>
-        <p>Una app de un solo contenedor, detrás de un reverse proxy con TLS, orquestando Docker sobre tus servidores.</p>
-      </div>
-      <div class="ox-arch">
-        <div class="ox-layer ox-rv"><div class="ox-layer__k">Frontend</div><div class="ox-layer__v">React + TypeScript</div><div class="ox-layer__s">Vite · Tailwind</div></div>
-        <div class="ox-layer ox-rv" style="--d:70ms"><div class="ox-layer__k">Backend</div><div class="ox-layer__v">FastAPI (Python)</div><div class="ox-layer__s">async · WebSocket</div></div>
-        <div class="ox-layer ox-rv" style="--d:140ms"><div class="ox-layer__k">Orquestación</div><div class="ox-layer__v">Docker + Traefik</div><div class="ox-layer__s">TLS · multi‑host</div></div>
-        <div class="ox-layer ox-rv" style="--d:210ms"><div class="ox-layer__k">Datos</div><div class="ox-layer__v">PostgreSQL</div><div class="ox-layer__s">1 BD por instancia</div></div>
-        <div class="ox-layer ox-rv" style="--d:280ms"><div class="ox-layer__k">Objetivo</div><div class="ox-layer__v">Odoo 16 – 19</div><div class="ox-layer__s">community · enterprise</div></div>
-      </div>
-    </section>
-
-    <!-- Stack -->
-    <section class="detail" style="grid-template-columns: 1fr;">
-      <div class="detail__block ox-rv">
-        <span class="eyebrow mono">// stack técnico</span>
-        <h3>Tecnología detrás del producto</h3>
-        <div class="stack-grid">
-          <span class="chip">TypeScript</span>
-          <span class="chip">React</span>
-          <span class="chip">Python</span>
-          <span class="chip">FastAPI</span>
-          <span class="chip">Docker</span>
-          <span class="chip">Docker Compose</span>
-          <span class="chip">Traefik</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">SQLite (WAL)</span>
-          <span class="chip">WebSocket</span>
-          <span class="chip">Tailwind CSS</span>
-          <span class="chip">Odoo 16–19</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="proj-cta ox-rv">
-      <h3>¿Necesitás administrar múltiples Odoos?</h3>
-      <p>Implemento OdexOS adaptado a tu infraestructura para que tu equipo deje de pelearse con la consola.</p>
-      <div class="proj-cta__actions">
-        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Escríbeme</a>
-        <a href="../index.html#destacados" class="btn btn--ghost">Ver otros proyectos</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2026 Bryan Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · OdexOS</span>
-    </footer>
-  </main>
+<nav class="nav">
+<a class="nav__brand" href="../index.html">
+<span class="dot"></span>
+<span>bryan<span class="muted">.dev</span></span>
+</a>
+<div class="nav__links">
+<a href="../index.html#about"><span class="hash">#</span> <span data-en="about-me">sobre-mí</span></a>
+<a href="../index.html#stack"><span class="hash">#</span> <span data-en="stack">stack</span></a>
+<a href="../index.html#destacados"><span class="hash">#</span> <span data-en="projects">proyectos</span></a>
+<button aria-label="Cambiar idioma / Switch language" class="lang-toggle" data-lang-toggle="" type="button"><svg fill="none" height="15" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="15"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18" stroke-linecap="round"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z" stroke-linejoin="round"></path></svg><span class="lang-toggle__val">ES</span></button><a class="nav__cta" href="../index.html#contact"><span data-en="Contact me">Contáctame</span></a>
 </div>
-
+</nav>
+<main class="container">
+<header class="proj-hero" style="position:relative;">
+<div aria-hidden="true" class="ox-hero-bg">
+<span class="ox-orb a"></span>
+<span class="ox-orb b"></span>
+</div>
+<a class="proj-hero__back" href="../index.html#destacados">
+<svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        <span data-en="Back to portfolio">Volver al portafolio</span>
+      </a>
+<div class="proj-hero__meta">
+<span class="proj-hero__cat"><span data-en="PaaS · Odoo Management">PaaS · Gestión Odoo</span></span>
+<span class="ox-status"><span class="ld"></span> <span data-en="own platform · in production">plataforma propia · en producción</span></span>
+</div>
+<h1 class="proj-hero__title"><span data-en="OdexOS">OdexOS</span> <span class="grad"><span data-en="— your control panel for Odoo">— tu panel de control para Odoo</span></span></h1>
+<p class="proj-hero__pitch"><span data-en="A single interface to deploy, migrate, monitor and manage">Una sola interfaz para desplegar, migrar, monitorear y administrar</span> <strong><span data-en="all">todas</span></strong> <span data-en="your Odoo instances. Deploy live from a">tus instancias de Odoo. Deploy en vivo desde un</span> <em><span data-en="git push">git push</span></em><span data-en=", read-only SQL console, AI wizard, automated backups, and a task runner — no more fighting with the console or SSH.">, consola SQL de solo lectura, asistente de IA, respaldos automatizados y un runner de tareas — sin volver a pelear con la consola ni el SSH.</span></p>
+<div class="proj-hero__actions">
+<a class="btn btn--primary" href="../index.html#contact"><span data-en="Request a demo">Solicitar demo</span></a>
+<a class="btn btn--ghost" href="#showcase"><span data-en="See the product">Ver el producto</span></a>
+</div>
+<div class="proj-hero__tags">
+<span>TypeScript</span><span>React</span><span>Python</span><span>FastAPI</span><span>Docker</span><span>PostgreSQL</span><span>Odoo 16–19</span>
+</div>
+</header>
+ <span data-en="Metric Band">Banda de métricas</span> 
+<section aria-label="Métricas de OdexOS" class="ox-stats">
+<div class="ox-stat ox-rv"><div class="ox-stat__num" data-count="4" data-suffix="">4</div><div class="ox-stat__lbl"><span data-en="Supported Odoo versions (16 → 19)">versiones de Odoo soportadas (16 → 19)</span></div></div>
+<div class="ox-stat ox-rv" style="--d:90ms"><div class="ox-stat__num" data-count="60" data-prefix="&lt;" data-suffix="s"><span data-en="60s">60s</span></div><div class="ox-stat__lbl"><span data-en="from a push to the updated instance">de un push a la instancia actualizada</span></div></div>
+<div class="ox-stat ox-rv" style="--d:180ms"><div class="ox-stat__num"><span data-en="multi-tenant">multi‑tenant</span></div><div class="ox-stat__lbl"><span data-en="total isolation by organization">aislamiento total por organización</span></div></div>
+<div class="ox-stat ox-rv" style="--d:270ms"><div class="ox-stat__num" data-count="100" data-suffix="%">100%</div><div class="ox-stat__lbl"><span data-en="self-hosted, on your own infrastructure">self‑hosted, en tu propia infraestructura</span></div></div>
+</section>
+ <span data-en="Product tour (real shots)">Recorrido por el producto (capturas reales)</span> 
+<section class="ox-sec" id="showcase">
+<div class="ox-sec__head ox-rv">
+<span class="eyebrow mono"><span data-en="// the product">// el producto</span></span>
+<h2><span data-en="Product tour">Recorrido por el producto</span></h2>
+<p><span data-en="Real shots of OdexOS in operation · demo data.">Capturas reales de OdexOS en funcionamiento · datos de demostración.</span></p>
+</div>
+<div class="carousel ox-rv" style="--d:80ms; margin: 8px 0 0;">
+<div class="carousel__head"><span></span><span class="carousel__counter">01 / 08</span></div>
+<div class="carousel__viewport">
+<button aria-label="Anterior" class="carousel__nav carousel__nav--prev"><svg fill="none" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+<div class="carousel__track">
+<figure class="carousel__slide"><img alt="Panel de control" loading="lazy" src="../images/projects/odexos/1.webp"/><figcaption><span data-en="01. Dashboard — projects, deployments and server status">01. Panel de control — proyectos, despliegues y estado de servidores</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Proyectos y ambientes" loading="lazy" src="../images/projects/odexos/2.webp"/><figcaption><span data-en="02. Odoo projects and environments, with version and branch">02. Proyectos y ambientes de Odoo, con versión y rama</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Detalle del ambiente" loading="lazy" src="../images/projects/odexos/3.webp"/><figcaption><span data-en="03. Environment detail — domain, SSL, resources and database">03. Detalle del ambiente — dominio, SSL, recursos y base de datos</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Historial de despliegues" loading="lazy" src="../images/projects/odexos/4.webp"/><figcaption><span data-en="04. Deployment history with commit, duration and rollback">04. Historial de despliegues con commit, duración y rollback</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Runner de tareas" loading="lazy" src="../images/projects/odexos/5.webp"/><figcaption><span data-en="05. Background task runner with live log">05. Runner de tareas en segundo plano con log en vivo</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Feed de actividad" loading="lazy" src="../images/projects/odexos/6.webp"/><figcaption><span data-en="06. Activity feed — every action audited">06. Feed de actividad — cada acción auditada</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Asistente IA · habilidades" loading="lazy" src="../images/projects/odexos/7.webp"/><figcaption><span data-en="07. AI Assistant — skills that can be activated by organization">07. Asistente IA — habilidades activables por organización</span></figcaption></figure>
+<figure class="carousel__slide"><img alt="Asistente IA respondiendo" loading="lazy" src="../images/projects/odexos/8.webp"/><figcaption><span data-en="08. The AI ​​assistant responds by consulting your data with tools">08. El asistente IA responde consultando tus datos con herramientas</span></figcaption></figure>
+</div>
+<button aria-label="Siguiente" class="carousel__nav carousel__nav--next"><svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+<div class="carousel__dots"></div>
+</div>
+</section>
+ <span data-en="Problem">Problema</span> 
+<section class="detail">
+<div class="detail__block ox-rv">
+<span class="eyebrow mono"><span data-en="// the problem">// el problema</span></span>
+<h3><span data-en="Managing many Odoo instances becomes chaotic">Administrar muchas instancias de Odoo se vuelve caótico</span></h3>
+<p><span data-en="when you drive">Cuando manejás</span> <strong><span data-en="several clients">varios clientes</span></strong> <span data-en="or environments (dev, staging, prod), each with their custom modules, the manual process of setting up containers, connecting via SSH, moving files, migrating versions and restarting services becomes slow and error-prone.">o ambientes (dev, staging, prod), cada uno con sus módulos personalizados, el proceso manual de levantar contenedores, conectarse por SSH, mover archivos, migrar versiones y reiniciar servicios se vuelve lento y propenso a errores.</span></p>
+<p><span data-en="OdexOS centralizes everything in one">OdexOS centraliza todo en una</span> <strong><span data-en="unified interface">interfaz unificada</span></strong> <span data-en="with isolation by organization: you see each instance, its status, its modules and its logs — and you operate on them with one click, with traceability of each action.">con aislamiento por organización: ves cada instancia, su estado, sus módulos y sus logs — y operás sobre ellas con un click, con trazabilidad de cada acción.</span></p>
+</div>
+<div class="detail__block ox-rv" style="--d:120ms">
+<span class="eyebrow mono"><span data-en="// in numbers">// en números</span></span>
+<h3><span data-en="Designed for climbing">Pensado para escalar</span></h3>
+<ul class="feat-list">
+<li><div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="7" x="3" y="3"></rect><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="7" x="14" y="3"></rect><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="7" x="3" y="14"></rect><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="7" x="14" y="14"></rect></svg></div><div class="feat-list__body"><h4><span data-en="Multi-instance and multi-tenant">Multi‑instancia y multi‑tenant</span></h4><p><span data-en="Dozens of instances, isolated by organization and by project.">Docenas de instancias, aisladas por organización y por proyecto.</span></p></div></li>
+<li><div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg></div><div class="feat-list__body"><h4><span data-en="Security by design">Seguridad por diseño</span></h4><p><span data-en="Roles, API keys, auditing of each action and read-only sessions.">Roles, claves API, auditoría de cada acción y sesiones de solo lectura.</span></p></div></li>
+<li><div class="feat-list__icon"><svg fill="none" viewbox="0 0 24 24"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div><div class="feat-list__body"><h4><span data-en="Continuous monitoring">Monitoreo continuo</span></h4><p><span data-en="Health status, live logs and alerts per instance.">Estado de salud, logs en vivo y alertas por instancia.</span></p></div></li>
+</ul>
+</div>
+</section>
+ <span data-en="Features">Features</span> 
+<section class="ox-sec">
+<div class="ox-sec__head ox-rv">
+<span class="eyebrow mono"><span data-en="// what's included">// qué incluye</span></span>
+<h2><span data-en="Key features">Funcionalidades clave</span></h2>
+<p><span data-en="Every piece of the Odoo operation, resolved from the interface.">Cada pieza de la operación de Odoo, resuelta desde la interfaz.</span></p>
+</div>
+<div class="ox-feat">
+<div class="ox-fcard ox-rv"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div><h4><span data-en="live deployment">Deploy en vivo</span></h4><p><span data-en="A">Un</span> <em><span data-en="git push">git push</span></em> <span data-en="trigger the deployment and see the progress stage by stage until the instance is updated.">dispara el despliegue y ves el progreso etapa por etapa hasta que la instancia queda actualizada.</span></p></div>
+<div class="ox-fcard ox-rv" style="--d:60ms"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v6l4 2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M3.5 9a9 9 0 1 0 2-3.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M3 4v4h4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div><h4><span data-en="Version migration">Migración de versiones</span></h4><p><span data-en="I uploaded an instance of Odoo 16 to 19 choosing the branch of your custom modules, with a decoupled and reversible process.">Subí una instancia de Odoo 16 a 19 eligiendo la rama de tus módulos custom, con proceso desacoplado y reversible.</span></p></div>
+<div class="ox-fcard ox-rv" style="--d:120ms"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z" stroke="currentColor" stroke-width="1.8"></path><path d="M4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7" stroke="currentColor" stroke-width="1.8"></path></svg></div><h4><span data-en="Read-only SQL console">Consola SQL de solo lectura</span></h4><p><span data-en="Query the database of any instance with the session forced to">Consultá la base de cualquier instancia con la sesión forzada a</span> <em><span data-en="READ ONLY">READ ONLY</span></em><span data-en=": No writes can be persisted.">: ninguna escritura puede persistir.</span></p></div>
+<div class="ox-fcard ox-rv"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1-1 8H9a4 4 0 0 1-1-8V7a4 4 0 0 1 4-4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M9 20h6" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></div><h4><span data-en="AI assistant">Asistente de IA</span></h4><p><span data-en="An agent that consults, diagnoses and executes actions — limited to the user's role and with skills that can be activated by organization.">Un agente que consulta, diagnostica y ejecuta acciones — acotado al rol del usuario y con habilidades activables por organización.</span></p></div>
+<div class="ox-fcard ox-rv" style="--d:60ms"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M4 4v16" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div><h4><span data-en="Task Runner">Runner de tareas</span></h4><p><span data-en="Backups, migrations and heavy analytics run in queue, outside of the web process, with live logging, progress and cancellation.">Backups, migraciones y análisis pesados corren en cola, fuera del proceso web, con log en vivo, progreso y cancelación.</span></p></div>
+<div class="ox-fcard ox-rv" style="--d:120ms"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8"></path><path d="M12 8v4l3 2" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div><h4><span data-en="Automated backups">Backups automatizados</span></h4><p><span data-en="Schedule backups by policy, verify their integrity and restore with one click.">Programá respaldos por política, verificá su integridad y restaurá con un click.</span></p></div>
+<div class="ox-fcard ox-rv"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke="currentColor" stroke-width="1.8"></path><path d="M4 12s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6z" stroke="currentColor" stroke-width="1.8"></path></svg></div><h4><span data-en="“Enter as”">“Ingresar como”</span></h4><p><span data-en="Enter any instance as the administrator or any user, without a password — Odoo.sh style — and everything is audited.">Entrá a cualquier instancia como el administrador o cualquier usuario, sin contraseña — estilo Odoo.sh — y todo queda auditado.</span></p></div>
+<div class="ox-fcard ox-rv" style="--d:60ms"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div><h4><span data-en="Monitoring and live logs">Monitoreo y logs en vivo</span></h4><p><span data-en="Stream of logs per container with filters and health status of each instance, with alerts.">Stream de logs por contenedor con filtros y estado de salud de cada instancia, con alertas.</span></p></div>
+<div class="ox-fcard ox-rv" style="--d:120ms"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div><h4><span data-en="Exportable audit">Auditoría exportable</span></h4><p><span data-en="Each action is recorded per organization and exported to CSV or Excel for compliance.">Cada acción queda registrada por organización y se exporta a CSV o Excel para cumplimiento.</span></p></div>
+<div class="ox-fcard ox-rv"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="4"></rect><rect height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="13"></rect><path d="M7 7.5h.01M7 16.5h.01" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></div><h4><span data-en="Servers and self-provisioning">Servidores y auto‑provisión</span></h4><p><span data-en="Connect your servers, detect their specs and distribute instances with readiness and resource cleaning.">Conectá tus servidores, detectá sus specs y repartí instancias con readiness y limpieza de recursos.</span></p></div>
+<div class="ox-fcard ox-rv" style="--d:60ms"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg></div><h4><span data-en="Module management">Gestión de módulos</span></h4><p><span data-en="Install, update and version custom modules per instance; the new ones appear alone after the push.">Instalá, actualizá y versioná módulos personalizados por instancia; los nuevos aparecen solos tras el push.</span></p></div>
+<div class="ox-fcard ox-rv" style="--d:120ms"><div class="ox-fcard__ico"><svg fill="none" viewbox="0 0 24 24"><path d="M4 17l6-6-6-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M12 19h8" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></div><h4><span data-en="Shell and tools">Shell y herramientas</span></h4><p><span data-en="Odoo console, cron job management, filestore and maintenance utilities — without opening an SSH terminal.">Consola de Odoo, gestión de cron jobs, filestore y utilidades de mantenimiento — sin abrir una terminal SSH.</span></p></div>
+</div>
+</section>
+ <span data-en="How it works">Cómo funciona</span> 
+<section class="ox-sec">
+<div class="ox-sec__head ox-rv">
+<span class="eyebrow mono"><span data-en="// how it works">// cómo funciona</span></span>
+<h2><span data-en="From code to production, without friction">Del código a producción, sin fricción</span></h2>
+<p><span data-en="OdexOS orchestrates the entire cycle for you. This is the path of a change to the living instance.">OdexOS orquesta el ciclo completo por vos. Este es el camino de un cambio hasta la instancia viva.</span></p>
+</div>
+<div class="ox-show ox-rv" style="--d:80ms"><div style="padding:26px 22px;">
+<div class="ox-pipe" id="oxPipe2">
+<div class="ox-node" data-step="0"><div class="ox-node__dot"><svg fill="none" viewbox="0 0 24 24"><path d="M6 3v12M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 3a3 3 0 1 0 0 .01M18 9a3 3 0 1 0 0-.01M18 9c0 4-6 3-6 8" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></div><div class="ox-node__lbl"><span data-en="git push">git push</span></div></div>
+<div class="ox-node" data-step="1"><div class="ox-node__dot"><svg fill="none" viewbox="0 0 24 24"><path d="M4 7l8-4 8 4v10l-8 4-8-4V7z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path></svg></div><div class="ox-node__lbl"><span data-en="pull + addons">pull + addons</span></div></div>
+<div class="ox-node" data-step="2"><div class="ox-node__dot"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3v6l4 2" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"></circle></svg></div><div class="ox-node__lbl"><span data-en="upgrade modules">upgrade módulos</span></div></div>
+<div class="ox-node" data-step="3"><div class="ox-node__dot"><svg fill="none" viewbox="0 0 24 24"><path d="M4 4v6h6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path><path d="M20 10a8 8 0 0 0-14-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></div><div class="ox-node__lbl"><span data-en="restart + apps">restart + apps</span></div></div>
+<div class="ox-node" data-step="4"><div class="ox-node__dot"><svg fill="none" viewbox="0 0 24 24"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg></div><div class="ox-node__lbl"><span data-en="living instance">instancia viva</span></div></div>
+</div>
+</div></div>
+</section>
+ <span data-en="Architecture">Arquitectura</span> 
+<section class="ox-sec">
+<div class="ox-sec__head ox-rv">
+<span class="eyebrow mono"><span data-en="// under the hood">// bajo el capó</span></span>
+<h2><span data-en="Architecture">Arquitectura</span></h2>
+<p><span data-en="A single container app, behind a reverse proxy with TLS, orchestrating Docker over your servers.">Una app de un solo contenedor, detrás de un reverse proxy con TLS, orquestando Docker sobre tus servidores.</span></p>
+</div>
+<div class="ox-arch">
+<div class="ox-layer ox-rv"><div class="ox-layer__k"><span data-en="Frontend">Frontend</span></div><div class="ox-layer__v"><span data-en="React + TypeScript">React + TypeScript</span></div><div class="ox-layer__s"><span data-en="Vite Tailwind">Vite · Tailwind</span></div></div>
+<div class="ox-layer ox-rv" style="--d:70ms"><div class="ox-layer__k"><span data-en="Backend">Backend</span></div><div class="ox-layer__v"><span data-en="FastAPI (Python)">FastAPI (Python)</span></div><div class="ox-layer__s"><span data-en="async WebSocket">async · WebSocket</span></div></div>
+<div class="ox-layer ox-rv" style="--d:140ms"><div class="ox-layer__k"><span data-en="Orchestration">Orquestación</span></div><div class="ox-layer__v"><span data-en="Docker + Traefik">Docker + Traefik</span></div><div class="ox-layer__s"><span data-en="TLS · multi-host">TLS · multi‑host</span></div></div>
+<div class="ox-layer ox-rv" style="--d:210ms"><div class="ox-layer__k"><span data-en="Data">Datos</span></div><div class="ox-layer__v"><span data-en="PostgreSQL">PostgreSQL</span></div><div class="ox-layer__s"><span data-en="1 DB per instance">1 BD por instancia</span></div></div>
+<div class="ox-layer ox-rv" style="--d:280ms"><div class="ox-layer__k"><span data-en="Aim">Objetivo</span></div><div class="ox-layer__v"><span data-en="Odoo 16 – 19">Odoo 16 – 19</span></div><div class="ox-layer__s"><span data-en="community enterprise">community · enterprise</span></div></div>
+</div>
+</section>
+ <span data-en="stack">Stack</span> 
+<section class="detail" style="grid-template-columns: 1fr;">
+<div class="detail__block ox-rv">
+<span class="eyebrow mono"><span data-en="// tech stack">// stack técnico</span></span>
+<h3><span data-en="Technology behind the product">Tecnología detrás del producto</span></h3>
+<div class="stack-grid">
+<span class="chip">TypeScript</span>
+<span class="chip">React</span>
+<span class="chip">Python</span>
+<span class="chip">FastAPI</span>
+<span class="chip">Docker</span>
+<span class="chip">Docker Compose</span>
+<span class="chip">Traefik</span>
+<span class="chip">PostgreSQL</span>
+<span class="chip">SQLite (WAL)</span>
+<span class="chip">WebSocket</span>
+<span class="chip">Tailwind CSS</span>
+<span class="chip">Odoo 16–19</span>
+</div>
+</div>
+</section>
+ <span data-en="CTA">CTA</span> 
+<section class="proj-cta ox-rv">
+<h3><span data-en="Do you need to manage multiple Odoos?">¿Necesitás administrar múltiples Odoos?</span></h3>
+<p><span data-en="I implement OdexOS adapted to your infrastructure so that your team stops fighting with the console.">Implemento OdexOS adaptado a tu infraestructura para que tu equipo deje de pelearse con la consola.</span></p>
+<div class="proj-cta__actions">
+<a class="btn btn--primary" href="mailto:bryan.soto@techconsultingservices.net"><span data-en="write to me">Escríbeme</span></a>
+<a class="btn btn--ghost" href="../index.html#destacados"><span data-en="See other projects">Ver otros proyectos</span></a>
+</div>
+</section>
+<footer class="footer">
+<span><span data-en="© 2026 Bryan Soto B. — Made with code and coffee.">© 2026 Bryan Soto B. — Hecho con código y café.</span></span>
+<span class="mono"><span data-en="case · OdexOS">caso · OdexOS</span></span>
+</footer>
+</main>
+</div>
 <script src="project.js"></script>
 <script>
 /* ===== OdexOS — animaciones self-contained ===== */
@@ -453,5 +441,5 @@
   playStatic('oxPipe2');
 })();
 </script>
-</body>
+<script src="../i18n.js"></script></body>
 </html>
