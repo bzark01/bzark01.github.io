@@ -4,8 +4,8 @@
 <script>document.documentElement.classList.add('js');</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Compra y Venta de Divisas — Soto B.</title>
-<meta name="description" content="Automatización del asiento de compra y venta de divisas con diferencial cambiario para Odoo." />
+<title>Traslado entre Diarios — Soto B.</title>
+<meta name="description" content="Traslados entre diarios contables con diferencial cambiario automático para Odoo." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
@@ -39,8 +39,8 @@
         <span class="proj-hero__cat">Odoo · Contabilidad</span>
         <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · asiento contable automático</span>
       </div>
-      <h1 class="proj-hero__title">Compra y Venta de <span class="grad">Divisas</span></h1>
-      <p class="proj-hero__pitch">Un asistente que convierte una operación de cambio de divisas entre dos bancos en un solo asiento contable balanceado, calculando automáticamente el diferencial cambiario frente al tipo de cambio oficial.</p>
+      <h1 class="proj-hero__title">Traslado entre <span class="grad">Diarios</span></h1>
+      <p class="proj-hero__pitch">Un asistente que traslada dinero entre dos diarios contables en un solo asiento balanceado: si las monedas difieren, calcula automáticamente el diferencial cambiario frente al tipo de cambio oficial; si son iguales, es un traslado simple.</p>
       <div class="proj-hero__actions">
         <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
       </div>
@@ -49,21 +49,22 @@
       </div>
     </header>
 
-    <section class="carousel" aria-label="Capturas de Compra y Venta de Divisas">
+    <section class="carousel" aria-label="Capturas de Traslado entre Diarios">
       <div class="carousel__head">
         <h2>Capturas del proyecto</h2>
-        <span class="carousel__counter">01 / 05</span>
+        <span class="carousel__counter">01 / 06</span>
       </div>
       <div class="carousel__viewport">
         <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
           <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="carousel__track">
-          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/1.png" alt="Dashboard Contabilidad"><figcaption>01. Módulo de Contabilidad, donde vive el asistente</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/2.png" alt="Configuración"><figcaption>02. Configuración de diarios y cuentas de diferencial</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/3.png" alt="Asistente"><figcaption>03. Asistente de compra y venta de divisas</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/4.png" alt="Resultado calculado"><figcaption>04. Diferencial cambiario calculado en pantalla</figcaption></figure>
-          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/5.png" alt="Asiento contable"><figcaption>05. Asiento contable balanceado y publicado</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/1.png" alt="Configuración"><figcaption>01. Configuración de diarios y cuentas de diferencial</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/2.png" alt="Asistente"><figcaption>02. Asistente de traslado entre diarios</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/3.png" alt="Resultado calculado"><figcaption>03. Diferencial cambiario calculado en pantalla</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/4.png" alt="Asiento con diferencial"><figcaption>04. Asiento con diferencial cambiario, balanceado y publicado</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/5.png" alt="Traslado simple"><figcaption>05. Traslado simple entre diarios de la misma moneda</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/6.png" alt="Asiento simple"><figcaption>06. Asiento simple de 2 líneas, sin diferencial</figcaption></figure>
         </div>
         <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
           <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -75,9 +76,9 @@
     <section class="detail">
       <div class="detail__block">
         <span class="eyebrow mono">// el problema</span>
-        <h3>El diferencial cambiario, hecho a mano, tres asientos por operación</h3>
-        <p>Cambiar dinero entre un banco en dólares y uno en colones parece simple, pero contablemente exige tres movimientos: la salida del banco de origen, la entrada al banco de destino y un asiento aparte para el diferencial cambiario que exige la normativa de Hacienda al comparar el tipo de cambio oficial con el que realmente aplica el banco comercial.</p>
-        <p>Este módulo reúne los tres movimientos en un único asistente: el usuario ingresa el monto y el tipo de cambio real del banco, y el sistema calcula el tipo de cambio oficial, determina si hay ganancia o pérdida cambiaria y publica un solo asiento balanceado, sin pasos manuales adicionales.</p>
+        <h3>Un traslado entre bancos, hecho a mano, hasta tres asientos por operación</h3>
+        <p>Mover dinero entre dos cuentas bancarias parece simple, pero cuando las monedas son distintas exige tres movimientos contables: la salida del diario de origen, la entrada al diario de destino y un asiento aparte para el diferencial cambiario que exige la normativa de Hacienda al comparar el tipo de cambio oficial con el que realmente aplica el banco comercial.</p>
+        <p>Este módulo reúne todo en un único asistente: el usuario elige los dos diarios y el monto, y el sistema decide solo qué hacer. Si las monedas coinciden, registra un traslado simple de 2 líneas. Si difieren, calcula el tipo de cambio oficial, determina si hay ganancia o pérdida cambiaria y publica un solo asiento balanceado de 3 líneas, sin pasos manuales adicionales.</p>
       </div>
       <div class="detail__block">
         <span class="eyebrow mono">// qué incluye</span>
@@ -85,7 +86,7 @@
         <ul class="feat-list">
           <li>
             <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12l4 4 14-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Un solo asiento balanceado</h4><p>Salida, entrada y diferencial en un único movimiento contable, publicado de inmediato.</p></div>
+            <div class="feat-list__body"><h4>Un solo asiento balanceado</h4><p>Salida, entrada y (si aplica) diferencial, en un único movimiento contable publicado de inmediato.</p></div>
           </li>
           <li>
             <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
@@ -93,7 +94,7 @@
           </li>
           <li>
             <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l6-6 4 4 6-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Ganancia o pérdida cambiaria</h4><p>Detecta el signo del diferencial y lo dirige a la cuenta contable correspondiente.</p></div>
+            <div class="feat-list__body"><h4>Ganancia o pérdida cambiaria</h4><p>Detecta el signo del diferencial y lo dirige a la cuenta contable correspondiente, solo cuando corresponde.</p></div>
           </li>
           <li>
             <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 3v4M16 3v4M4 10h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
@@ -101,11 +102,11 @@
           </li>
           <li>
             <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="feat-list__body"><h4>Compra o venta, mismo flujo</h4><p>El cálculo es simétrico para ambos sentidos de la operación de cambio.</p></div>
+            <div class="feat-list__body"><h4>Cualquier par de diarios</h4><p>Misma moneda o monedas distintas: el asistente se adapta solo, sin modos que elegir.</p></div>
           </li>
           <li>
             <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
-            <div class="feat-list__body"><h4>Resultado antes de confirmar</h4><p>Muestra el monto real, el monto oficial y el diferencial antes de generar el asiento.</p></div>
+            <div class="feat-list__body"><h4>Resultado antes de confirmar</h4><p>Muestra el monto real, el monto oficial y el diferencial (si lo hay) antes de generar el asiento.</p></div>
           </li>
         </ul>
       </div>
@@ -125,7 +126,7 @@
     </section>
 
     <section class="proj-cta">
-      <h3>¿Tu equipo hace cambios de divisas manuales cada semana?</h3>
+      <h3>¿Tu equipo hace traslados entre bancos a mano cada semana?</h3>
       <p>Adapto el módulo a tus cuentas bancarias, tus monedas y tu normativa contable local.</p>
       <div class="proj-cta__actions">
         <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
@@ -135,7 +136,7 @@
 
     <footer class="footer">
       <span>© 2026 Soto B. — Hecho con código y café.</span>
-      <span class="mono">caso · Compra y Venta de Divisas</span>
+      <span class="mono">caso · Traslado entre Diarios</span>
     </footer>
   </main>
 </div>
