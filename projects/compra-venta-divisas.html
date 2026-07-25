@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" data-style="hybrid">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Compra y Venta de Divisas — Soto B.</title>
+<meta name="description" content="Automatización del asiento de compra y venta de divisas con diferencial cambiario para Odoo." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../portfolio.css" />
+<link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav__brand">
+      <span class="dot"></span>
+      <span>bryan<span class="muted">.dev</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../index.html#about"><span class="hash">#</span> sobre-mí</a>
+      <a href="../index.html#stack"><span class="hash">#</span> stack</a>
+      <a href="../index.html#projects"><span class="hash">#</span> proyectos</a>
+      <a href="../index.html#contact" class="nav__cta">Contáctame</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="proj-hero">
+      <a href="../index.html#projects" class="proj-hero__back">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Volver al portafolio
+      </a>
+      <div class="proj-hero__meta">
+        <span class="proj-hero__cat">Odoo · Contabilidad</span>
+        <span class="mono" style="color: var(--text-muted); font-size: 13px;">// módulo enterprise · asiento contable automático</span>
+      </div>
+      <h1 class="proj-hero__title">Compra y Venta de <span class="grad">Divisas</span></h1>
+      <p class="proj-hero__pitch">Un asistente que convierte una operación de cambio de divisas entre dos bancos en un solo asiento contable balanceado, calculando automáticamente el diferencial cambiario frente al tipo de cambio oficial.</p>
+      <div class="proj-hero__actions">
+        <a href="../index.html#contact" class="btn btn--primary">Solicitar demo</a>
+      </div>
+      <div class="proj-hero__tags">
+        <span>Python</span><span>Odoo</span><span>XML</span><span>PostgreSQL</span>
+      </div>
+    </header>
+
+    <section class="carousel" aria-label="Capturas de Compra y Venta de Divisas">
+      <div class="carousel__head">
+        <h2>Capturas del proyecto</h2>
+        <span class="carousel__counter">01 / 05</span>
+      </div>
+      <div class="carousel__viewport">
+        <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__track">
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/1.png" alt="Dashboard Contabilidad"><figcaption>01. Módulo de Contabilidad, donde vive el asistente</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/2.png" alt="Configuración"><figcaption>02. Configuración de diarios y cuentas de diferencial</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/3.png" alt="Asistente"><figcaption>03. Asistente de compra y venta de divisas</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/4.png" alt="Resultado calculado"><figcaption>04. Diferencial cambiario calculado en pantalla</figcaption></figure>
+          <figure class="carousel__slide"><img src="../images/projects/compra-venta-divisas/5.png" alt="Asiento contable"><figcaption>05. Asiento contable balanceado y publicado</figcaption></figure>
+        </div>
+        <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </section>
+
+    <section class="detail">
+      <div class="detail__block">
+        <span class="eyebrow mono">// el problema</span>
+        <h3>El diferencial cambiario, hecho a mano, tres asientos por operación</h3>
+        <p>Cambiar dinero entre un banco en dólares y uno en colones parece simple, pero contablemente exige tres movimientos: la salida del banco de origen, la entrada al banco de destino y un asiento aparte para el diferencial cambiario que exige la normativa de Hacienda al comparar el tipo de cambio oficial con el que realmente aplica el banco comercial.</p>
+        <p>Este módulo reúne los tres movimientos en un único asistente: el usuario ingresa el monto y el tipo de cambio real del banco, y el sistema calcula el tipo de cambio oficial, determina si hay ganancia o pérdida cambiaria y publica un solo asiento balanceado, sin pasos manuales adicionales.</p>
+      </div>
+      <div class="detail__block">
+        <span class="eyebrow mono">// qué incluye</span>
+        <h3>Funcionalidades clave</h3>
+        <ul class="feat-list">
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12l4 4 14-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Un solo asiento balanceado</h4><p>Salida, entrada y diferencial en un único movimiento contable, publicado de inmediato.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Tipo de cambio oficial automático</h4><p>Toma la tasa de venta vigente en el sistema; el usuario nunca la digita a mano.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17l6-6 4 4 6-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Ganancia o pérdida cambiaria</h4><p>Detecta el signo del diferencial y lo dirige a la cuenta contable correspondiente.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 3v4M16 3v4M4 10h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="feat-list__body"><h4>Configuración por compañía</h4><p>Diarios y cuentas de diferencial definidos una sola vez en Ajustes.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="feat-list__body"><h4>Compra o venta, mismo flujo</h4><p>El cálculo es simétrico para ambos sentidos de la operación de cambio.</p></div>
+          </li>
+          <li>
+            <div class="feat-list__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div class="feat-list__body"><h4>Resultado antes de confirmar</h4><p>Muestra el monto real, el monto oficial y el diferencial antes de generar el asiento.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detail" style="grid-template-columns: 1fr;">
+      <div class="detail__block">
+        <span class="eyebrow mono">// stack técnico</span>
+        <h3>Tecnología detrás del producto</h3>
+        <div class="stack-grid">
+          <span class="chip">Python</span>
+          <span class="chip">Odoo</span>
+          <span class="chip">XML</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-cta">
+      <h3>¿Tu equipo hace cambios de divisas manuales cada semana?</h3>
+      <p>Adapto el módulo a tus cuentas bancarias, tus monedas y tu normativa contable local.</p>
+      <div class="proj-cta__actions">
+        <a href="mailto:bryan.soto@techconsultingservices.net" class="btn btn--primary">Solicitar demo</a>
+        <a href="../index.html#projects" class="btn btn--ghost">Ver otros proyectos</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Soto B. — Hecho con código y café.</span>
+      <span class="mono">caso · Compra y Venta de Divisas</span>
+    </footer>
+  </main>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
